@@ -142,7 +142,6 @@ Hello, this is the BuddyPress Legacy stylesheet.
 body.no-js #buddypress form#whats-new-form textarea {
 	height: 50px;
 }
-
 #buddypress form#whats-new-form #whats-new-options select {
 	max-width: 200px;
 	height: 29px !important;
