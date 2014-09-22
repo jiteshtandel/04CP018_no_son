@@ -1,0 +1,68 @@
+/* Boozurk - Widgets page */
+
+div#widgets-right #primary-widget-area {
+	background: url("../images/widgets/widget_s2.png") no-repeat center 10px transparent;
+	padding-top: 90px;
+}
+div#widgets-right #fixed-widget-area {
+	background: url("../images/widgets/widget_s1.png") no-repeat center 10px transparent;
+	padding-top: 90px;
+}
+div#widgets-right #first-footer-widget-area {
+	background: url("../images/widgets/widget_f1.png") no-repeat center 10px transparent;
+	padding-top: 90px;
+}
+div#widgets-right #second-footer-widget-area {
+	background: url("../images/widgets/widget_f2.png") no-repeat center 10px transparent;
+	padding-top: 90px;
+}
+div#widgets-right #third-footer-widget-area {
+	background: url("../images/widgets/widget_f3.png") no-repeat center 10px transparent;
+	padding-top: 90px;
+}
+div#widgets-right #header-widget-area {
+	background: url("../images/widgets/widget_h1.png") no-repeat center 10px transparent;
+	padding-top: 90px;
+}
+div#widgets-right #single-widgets-area {
+	background: url("../images/widgets/widget_p1.png") no-repeat center 10px transparent;
+	padding-top: 90px;
+}
+div#widgets-right #error404-widgets-area {
+	background: url("../images/widgets/widget_404.png") no-repeat center 10px transparent;
+	padding-top: 90px;
+}
+div#widgets-right #tbm-widget-area {
+	background: url("../images/widgets/mobwig.png") no-repeat center 10px transparent;
+	padding-top: 80px;
+}
+div[id*=_bz-] .widget-title {
+	background: url("../images/widgets/bz_micrologo.png") no-repeat 4px center transparent;
+	padding-left: 24px;
+}
+.widgets-separator {
+	padding: 10px 0;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #ddd;
+}
+.widget .widget-inside p.invalid {
+	border: 1px solid red;
+	margin-right: -5px;
+	margin-left: -5px;
+	padding: 4px;
+}
+.services-wrap .service:nth-of-type(odd) {
+	clear: left;
+}
+.mp6 div.widget-liquid-left div#widgets-left #available-widgets div[id*=_bz-] .widget-top:before {
+	content: '';
+}
+.mp6 div.widget-liquid-right div#widgets-right .widgets-sortables {
+	padding-top: 90px;
+}
+.mp6 div[id*=_bz-] .widget-title {
+	background-position: 16px center;
+}
+.mp6 div.widget-liquid-right div#widgets-right .widget .widget-title {
+	padding-left: 42px;
+}

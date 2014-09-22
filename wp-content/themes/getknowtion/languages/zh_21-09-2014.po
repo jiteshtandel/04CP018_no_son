@@ -1,0 +1,1898 @@
+# Copyright (C) 2014 bbPress
+# This file is distributed under the same license as the bbPress package.
+msgid ""
+msgstr ""
+"Project-Id-Version: knowtion\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
+"POT-Creation-Date: 2014-09-15 00:00+0530\n"
+"PO-Revision-Date: 2014-09-21 01:22+0530\n"
+"Last-Translator: \n"
+"Language-Team: knowtion <knowtion@gmail.com>\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../bbpress/best-conversation-starter.php:31 ../bbpress/loop-forums.php:78
+#: ../bbpress/most-active-experts.php:31
+msgid "BEST CONVERSATION STARTERS"
+msgstr "最好的交谈首发"
+
+#: ../bbpress/best-conversation-starter.php:32 ../bbpress/loop-forums -
+#: Copy.php:20 ../bbpress/loop-forums-X.php:17 ../bbpress/loop-forums.php:19
+#: ../bbpress/loop-forums.php:40 ../bbpress/loop-subforum-recent-topics.php:21
+#: ../bbpress/loop-topics Copy (2).php:15 Copy.php:21
+#: ../bbpress/loop-topics.php:17 ../bbpress/top-contributors.php:32
+msgid "TOPICS"
+msgstr "主题"
+
+#: ../bbpress/content-single-topic-lead.php:18
+#: ../bbpress/content-single-topic-lead.php:90
+msgid "Creator"
+msgstr "造物主"
+
+#: ../bbpress/content-single-topic-lead.php:22
+#: ../bbpress/content-single-topic-lead.php:94
+#: ../buddypress/forums/forums-loop.php:39
+msgid "Topic"
+msgstr "主题"
+
+#: ../bbpress/content-single-view.php:13
+msgid "Unanswered Post"
+msgstr "未回答的帖子"
+
+#: ../bbpress/content-statistics.php:17
+msgid "Registered Users"
+msgstr "注册用户"
+
+#: ../bbpress/content-statistics.php:22
+#, fuzzy
+msgid "Forums"
+msgstr "论坛"
+
+#: ../bbpress/content-statistics.php:27
+msgid "Topics"
+msgstr "主题"
+
+#: ../bbpress/content-statistics.php:32 ../bbpress/loop-forums - Copy.php:21
+#: ../bbpress/loop-forums-X.php:18 ../bbpress/loop-topics Copy.php:23
+msgid "Replies"
+msgstr "回复"
+
+#: ../bbpress/content-statistics.php:37
+msgid "Topic Tags"
+msgstr "主题标签"
+
+#: ../bbpress/content-statistics.php:44
+msgid "Empty Topic Tags"
+msgstr "空的主题标签"
+
+#: ../bbpress/content-statistics.php:53
+msgid "Hidden Topics"
+msgstr "隐藏主题"
+
+#: ../bbpress/content-statistics.php:64
+msgid "Hidden Replies"
+msgstr "隐藏回复"
+
+#: ../bbpress/feedback-logged-in.php:13
+msgid "You are already logged in."
+msgstr "您已经登录。"
+
+#: ../bbpress/feedback-no-access.php:13
+msgid "Private"
+msgstr "私人"
+
+#: ../bbpress/feedback-no-access.php:16
+msgid "You do not have permission to view this forum."
+msgstr "您没有权限浏览这个论坛。"
+
+#: ../bbpress/feedback-no-forums.php:13
+msgid "Oh bother! No forums were found here!"
+msgstr "烦人！没有论坛，在这里找到！"
+
+#: ../bbpress/feedback-no-replies.php:13
+msgid "Oh bother! No replies were found here!"
+msgstr "烦人！没有回复都是在这里找到！"
+
+#: ../bbpress/feedback-no-search.php:13
+msgid "Oh bother! No search results were found here!"
+msgstr "烦人！没有搜索结果在这里找到！"
+
+#: ../bbpress/feedback-no-topics.php:13
+msgid "Oh bother! No topics were found here!"
+msgstr "烦人！任何话题都在这里找到！"
+
+#: ../bbpress/form-anonymous.php:17
+msgid "Author Information"
+msgstr "作者信息"
+
+#: ../bbpress/form-anonymous.php:17
+msgid "Your information:"
+msgstr "您的信息："
+
+#: ../bbpress/form-anonymous.php:22
+msgid "Name (required):"
+msgstr "姓名（必填） ："
+
+#: ../bbpress/form-anonymous.php:27
+msgid "Mail (will not be published) (required):"
+msgstr "邮件（将不会被发表）（必填） ："
+
+#: ../bbpress/form-anonymous.php:32
+msgid "Website:"
+msgstr "网址："
+
+#: ../bbpress/form-forum.php:35 ../bbpress/form-topic.php:41
+#, php-format
+msgid "Now Editing &ldquo;%s&rdquo;"
+msgstr ""
+
+#: ../bbpress/form-forum.php:37
+#, php-format
+msgid "Create New Forum in &ldquo;%s&rdquo;"
+msgstr ""
+
+#: ../bbpress/form-forum.php:37
+msgid "Create New Forum"
+msgstr "创建新论坛"
+
+#: ../bbpress/form-forum.php:47
+msgid ""
+"This forum is closed to new content, however your account still allows you "
+"to do so."
+msgstr "该论坛被关闭，以新的内容，但您的帐户仍然允许你这样做。"
+
+#: ../bbpress/form-forum.php:55 ../bbpress/form-reply.php:44
+#: ../bbpress/form-topic.php:61
+msgid "Your account has the ability to post unrestricted HTML content."
+msgstr "您的帐户有无限制的发布HTML内容的能力。"
+
+#: ../bbpress/form-forum.php:67
+#, php-format
+msgid "Forum Name (Maximum Length: %d):"
+msgstr ""
+
+#: ../bbpress/form-forum.php:82 ../bbpress/form-reply.php:64
+#: ../bbpress/form-topic.php:90
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes:"
+msgstr ""
+
+#: ../bbpress/form-forum.php:91
+msgid "Forum Type:"
+msgstr "论坛类型："
+
+#: ../bbpress/form-forum.php:100
+msgid "Status:"
+msgstr "状态："
+
+#: ../bbpress/form-forum.php:109
+msgid "Visibility:"
+msgstr "可见性："
+
+#: ../bbpress/form-forum.php:118
+msgid "Parent Forum:"
+msgstr "家长论坛："
+
+#: ../bbpress/form-forum.php:123
+msgid "(No Parent)"
+msgstr "（无父母）"
+
+#: ../bbpress/form-forum.php:138 ../bbpress/form-reply-move.php:72
+#: ../bbpress/form-reply.php:135 ../bbpress/form-topic-merge.php:93
+#: ../bbpress/form-topic-split.php:97 ../bbpress/form-topic.php:203
+msgid "Submit"
+msgstr "提交"
+
+#: ../bbpress/form-forum.php:161
+#, php-format
+msgid "The forum &#8216;%s&#8217; is closed to new content."
+msgstr ""
+
+#: ../bbpress/form-forum.php:169
+msgid "You cannot create new forums."
+msgstr "您无法创建新的论坛。"
+
+#: ../bbpress/form-forum.php:169
+msgid "You must be logged in to create new forums."
+msgstr "您必须先登录创建新的论坛。"
+
+#: ../bbpress/form-protected.php:14
+msgid "Protected"
+msgstr "受保护"
+
+#: ../bbpress/form-reply-move.php:24
+#, php-format
+msgid "Move reply \"%s\""
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:29
+msgid ""
+"You can either make this reply a new topic with a new title, or merge it "
+"into an existing topic."
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:33
+msgid ""
+"If you choose an existing topic, replies will be ordered by the time and "
+"date they were created."
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:37
+msgid "Move Method"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:41 ../bbpress/form-topic-split.php:41
+#, php-format
+msgid "New topic in <strong>%s</strong> titled:"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:42
+#, php-format
+msgid "Moved: %s"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:49 ../bbpress/form-topic-split.php:49
+msgid "Use an existing topic in this forum:"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:68 ../bbpress/form-topic-merge.php:89
+#: ../bbpress/form-topic-split.php:93
+msgid "<strong>WARNING:</strong> This process cannot be undone."
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:85
+msgid "You do not have the permissions to edit this reply!"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:85
+msgid "You cannot edit this reply."
+msgstr ""
+
+#: ../bbpress/form-reply.php:29
+#, php-format
+msgid "Reply To: %s"
+msgstr ""
+
+#: ../bbpress/form-reply.php:36
+msgid ""
+"This topic is marked as closed to new replies, however your posting "
+"capabilities still allow you to do so."
+msgstr ""
+
+#: ../bbpress/form-reply.php:75
+msgid "Tags:"
+msgstr ""
+
+#: ../bbpress/form-reply.php:93 ../bbpress/form-topic.php:164
+msgid "Notify the author of follow-up replies via email"
+msgstr ""
+
+#: ../bbpress/form-reply.php:97 ../bbpress/form-topic.php:168
+msgid "Notify me of follow-up replies via email"
+msgstr ""
+
+#: ../bbpress/form-reply.php:114 ../bbpress/form-topic.php:184
+msgid "Keep a log of this edit:"
+msgstr ""
+
+#: ../bbpress/form-reply.php:118 ../bbpress/form-topic.php:188
+msgid "Optional reason for editing:"
+msgstr ""
+
+#: ../bbpress/form-reply.php:158
+#, php-format
+msgid "The topic &#8216;%s&#8217; is closed to new replies."
+msgstr ""
+
+#: ../bbpress/form-reply.php:166 ../bbpress/form-topic.php:226
+#, php-format
+msgid "The forum &#8216;%s&#8217; is closed to new topics and replies."
+msgstr ""
+
+#: ../bbpress/form-reply.php:174
+msgid "You cannot reply to this topic."
+msgstr ""
+
+#: ../bbpress/form-reply.php:174
+msgid "You must be logged in to reply to this topic."
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:24
+#, php-format
+msgid "Merge topic \"%s\""
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:29
+msgid ""
+"Select the topic to merge this one into. The destination topic will remain "
+"the lead topic, and this one will change into a reply."
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:30
+msgid ""
+"To keep this topic as the lead, go to the other topic and use the merge tool "
+"from there instead."
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:34
+msgid ""
+"All replies within both topics will be merged chronologically. The order of "
+"the merged replies is based on the time and date they were posted. If the "
+"destination topic was created after this one, it's post date will be updated "
+"to second earlier than this one."
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:38
+msgid "Destination"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:42
+msgid "Merge with this topic:"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:56
+msgid "There are no other topics in this forum to merge with."
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:64 ../bbpress/form-topic-split.php:68
+msgid "Topic Extras"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:71
+msgid "Merge topic subscribers"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:76
+msgid "Merge topic favoriters"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:81
+msgid "Merge topic tags"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:106 ../bbpress/form-topic-split.php:110
+msgid "You do not have the permissions to edit this topic!"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:106 ../bbpress/form-topic-split.php:110
+msgid "You cannot edit this topic."
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:24
+#, php-format
+msgid "Split topic \"%s\""
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:29
+msgid ""
+"When you split a topic, you are slicing it in half starting with the reply "
+"you just selected. Choose to use that reply as a new topic with a new title, "
+"or merge those replies into an existing topic."
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:33
+msgid ""
+"If you use the existing topic option, replies within both topics will be "
+"merged chronologically. The order of the merged replies is based on the time "
+"and date they were posted."
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:37
+msgid "Split Method"
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:42
+#, php-format
+msgid "Split: %s"
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:75
+msgid "Copy subscribers to the new topic"
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:80
+msgid "Copy favoriters to the new topic"
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:85
+msgid "Copy topic tags to the new topic"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:18
+#, php-format
+msgid "Manage Tag: \"%s\""
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:22
+msgid "Rename"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:25
+msgid "Leave the slug empty to have one automatically generated."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:29
+msgid ""
+"Changing the slug affects its permalink. Any links to the old slug will stop "
+"working."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:35
+msgid "Name:"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:40
+msgid "Slug:"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:59
+msgid "Merge"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:62
+msgid "Merging tags together cannot be undone."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:68
+msgid "Existing tag:"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:73
+#, php-format
+msgid ""
+"Are you sure you want to merge the \"%s\" tag into the tag you specified?"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:88 ../buddypress/activity/comment.php:44
+#: ../buddypress/members/single/messages/messages-loop.php:53
+#: ../buddypress/members/single/messages/single.php:24
+msgid "Delete"
+msgstr "删除"
+
+#: ../bbpress/form-topic-tag.php:91
+msgid "This does not delete your topics. Only the tag itself is deleted."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:94
+msgid "Deleting a tag cannot be undone."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:95
+msgid "Any links to this tag will no longer function."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:101
+#, php-format
+msgid ""
+"Are you sure you want to delete the \"%s\" tag? This is permanent and cannot "
+"be undone."
+msgstr ""
+
+#: ../bbpress/form-topic.php:43
+#, php-format
+msgid "Create New Topic in &ldquo;%s&rdquo;"
+msgstr ""
+
+#: ../bbpress/form-topic.php:43
+msgid "Create New Topic"
+msgstr ""
+
+#: ../bbpress/form-topic.php:53
+msgid ""
+"This forum is marked as closed to new topics, however your posting "
+"capabilities still allow you to do so."
+msgstr ""
+
+#: ../bbpress/form-topic.php:75
+#, php-format
+msgid "Topic Title (Maximum Length: %d):"
+msgstr ""
+
+#: ../bbpress/form-topic.php:101
+msgid "Topic Tags:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:114
+msgid "Forum:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:117
+msgid "(No Forum)"
+msgstr ""
+
+#: ../bbpress/form-topic.php:133
+msgid "Topic Type:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:145
+msgid "Topic Status:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:234
+msgid "You cannot create new topics."
+msgstr ""
+
+#: ../bbpress/form-topic.php:234
+msgid "You must be logged in to create new topics."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:14 ../bbpress/form-user-edit.php:19
+#: ../buddypress/members/single/profile/profile-wp.php:15
+msgid "Name"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:24
+msgid "First Name"
+msgstr "名字"
+
+#: ../bbpress/form-user-edit.php:29
+msgid "Last Name"
+msgstr "姓"
+
+#: ../bbpress/form-user-edit.php:34
+msgid "Nickname"
+msgstr "昵称"
+
+#: ../bbpress/form-user-edit.php:39
+msgid "Display Name"
+msgstr "显示名称"
+
+#: ../bbpress/form-user-edit.php:49 ../bbpress/form-user-edit.php:52
+msgid "Contact Info"
+msgstr "联系方式"
+
+#: ../bbpress/form-user-edit.php:57
+#: ../buddypress/members/single/profile/profile-wp.php:33
+msgid "Website"
+msgstr "网站"
+
+#: ../bbpress/form-user-edit.php:74 ../bbpress/form-user-edit.php:77
+msgid "About Yourself"
+msgstr "关于自己"
+
+#: ../bbpress/form-user-edit.php:74 ../bbpress/form-user-edit.php:77
+msgid "About the user"
+msgstr "关于用户"
+
+#: ../bbpress/form-user-edit.php:82
+msgid "Biographical Info"
+msgstr "履历信息"
+
+#: ../bbpress/form-user-edit.php:90 ../bbpress/form-user-edit.php:93
+msgid "Account"
+msgstr "帐户"
+
+#: ../bbpress/form-user-edit.php:98 ../bbpress/form-user-login.php:17
+#: ../bbpress/form-user-register.php:23
+#: ../buddypress/members/index-register.php:35
+#: ../buddypress/members/register.php:28 ../page-templates/login.php:41
+msgid "Username"
+msgstr "用户名"
+
+#: ../bbpress/form-user-edit.php:103 ../bbpress/form-user-register.php:28
+msgid "Email"
+msgstr "电子邮件"
+
+#: ../bbpress/form-user-edit.php:115
+#, php-format
+msgid ""
+"There is a pending email address change to <code>%1$s</code>. <a href=\"%2$s"
+"\">Cancel</a>"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:124
+#: ../buddypress/members/single/settings/general.php:17
+msgid "New Password"
+msgstr "新密码"
+
+#: ../bbpress/form-user-edit.php:127
+msgid ""
+"If you would like to change the password type a new one. Otherwise leave "
+"this blank."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:130
+msgid "Type your new password again."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:133
+msgid ""
+"Your password should be at least ten characters long. Use upper and lower "
+"case letters, numbers, and symbols to make it even stronger."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:143 ../bbpress/form-user-edit.php:146
+msgid "User Role"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:153
+msgid "Network Role"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:156
+msgid "Grant this user super admin privileges for the Network."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:173
+msgid "Save Changes"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:178
+msgid "Update Profile"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:178
+msgid "Update User"
+msgstr ""
+
+#: ../bbpress/form-user-login.php:14 ../bbpress/form-user-login.php:35
+#: ../page-templates/login.php:44
+msgid "Log In"
+msgstr ""
+
+#: ../bbpress/form-user-login.php:22 ../page-templates/login.php:42
+msgid "Password"
+msgstr ""
+
+#: ../bbpress/form-user-login.php:28
+msgid "Keep me signed in"
+msgstr ""
+
+#: ../bbpress/form-user-lost-pass.php:14
+msgid "Lost Password"
+msgstr ""
+
+#: ../bbpress/form-user-lost-pass.php:18
+msgid "Username or Email"
+msgstr ""
+
+#: ../bbpress/form-user-lost-pass.php:27
+msgid "Reset My Password"
+msgstr ""
+
+#: ../bbpress/form-user-register.php:14
+msgid "Create an Account"
+msgstr ""
+
+#: ../bbpress/form-user-register.php:17
+msgid "Your username must be unique, and cannot be changed later."
+msgstr ""
+
+#: ../bbpress/form-user-register.php:18
+msgid ""
+"We use your email address to email you a secure password and verify your "
+"account."
+msgstr ""
+
+#: ../bbpress/form-user-register.php:36
+msgid "Register"
+msgstr "注册"
+
+#: ../bbpress/form-user-roles.php:13
+msgid "Blog Role"
+msgstr ""
+
+#: ../bbpress/form-user-roles.php:20
+msgid "Forum Role"
+msgstr "论坛的作用"
+
+#: ../bbpress/loop-forums - Copy.php:19 ../bbpress/loop-forums-X.php:16
+#: ../bbpress/loop-forums.php:18
+msgid "FORUMS"
+msgstr "论坛"
+
+#: ../bbpress/loop-forums - Copy.php:21 ../bbpress/loop-forums-X.php:18
+#: ../bbpress/loop-forums.php:20 ../bbpress/loop-forums.php:41
+#: ../bbpress/loop-subforum-recent-topics.php:23 ../bbpress/loop-topics Copy
+#: (2).php:16 Copy.php:23 ../bbpress/loop-topics.php:19
+msgid "POSTS"
+msgstr "作者："
+
+#: ../bbpress/loop-forums - Copy.php:22 ../bbpress/loop-forums-X.php:19
+#: ../bbpress/loop-forums.php:21 ../bbpress/loop-forums.php:42
+#: ../bbpress/loop-subforum-recent-topics.php:24 ../bbpress/loop-topics Copy
+#: (2).php:17 Copy.php:24 ../bbpress/loop-topics.php:20
+msgid "LAST POSTS"
+msgstr "最新帖子。"
+
+#: ../bbpress/loop-forums.php:20 ../bbpress/loop-forums.php:41
+#: ../bbpress/loop-subforum-recent-topics.php:23 ../bbpress/loop-topics - Copy
+#: (2).php:16 ../bbpress/loop-topics.php:19 ../bbpress/top-contributors.php:33
+msgid "REPLIES"
+msgstr "的答复"
+
+#: ../bbpress/loop-forums.php:111
+msgid "MOST ACTIVE EXPERTS"
+msgstr "最活跃的专家"
+
+#: ../bbpress/loop-forums.php:171
+msgid "There are no users currently online"
+msgstr "有没有用户在线"
+
+#: ../bbpress/loop-search-forum.php:16
+#, php-format
+msgid "Last updated %s"
+msgstr ""
+
+#: ../bbpress/loop-search-forum.php:26
+msgid "Forum: "
+msgstr "论坛："
+
+#: ../bbpress/loop-search-reply.php:24
+msgid "In reply to: "
+msgstr "在回答："
+
+#: ../bbpress/loop-search-topic.php:26
+msgid "Topic: "
+msgstr "主题："
+
+#: ../bbpress/loop-search-topic.php:33
+msgid "in group forum "
+msgstr "在小组论坛"
+
+#: ../bbpress/loop-search-topic.php:37
+msgid "in forum "
+msgstr "在论坛"
+
+#: ../bbpress/loop-search.php:18
+msgid "Author"
+msgstr "作者"
+
+#: ../bbpress/loop-search.php:22
+msgid "Search Results"
+msgstr "搜索结果"
+
+#: ../bbpress/loop-single-reply.php:21
+msgid "in reply to: "
+msgstr "在回答："
+
+#: ../bbpress/loop-single-topic.php:24
+#, php-format
+msgid "Started by: %1$s"
+msgstr ""
+
+#: ../bbpress/loop-single-topic.php:41
+#, php-format
+msgid "by: %1$s"
+msgstr ""
+
+#: ../bbpress/loop-subforum-recent-topics.php:22 ../bbpress/loop-topics.php:18
+msgid "VOICES"
+msgstr "声音"
+
+#: ../bbpress/loop-topics - Copy.php:22
+msgid "Voices"
+msgstr "声音"
+
+#: ../bbpress/most-active-experts.php:32
+msgid "REPLY"
+msgstr "回复"
+
+#: ../bbpress/top-contributors.php:31
+msgid "TOP CONTRIBUTORS"
+msgstr "杰出贡献者"
+
+#: ../bbpress/user-details.php:29 ../bbpress/user-profile.php:15
+msgid "Profile"
+msgstr "简介"
+
+#: ../bbpress/user-details.php:35
+msgid "Topics Started"
+msgstr "话题开始"
+
+#: ../bbpress/user-details.php:41
+msgid "Replies Created"
+msgstr "回复作者"
+
+#: ../bbpress/user-details.php:48
+msgid "Favorites"
+msgstr "收藏"
+
+#: ../bbpress/user-details.php:58
+msgid "Subscriptions"
+msgstr "订阅"
+
+#: ../bbpress/user-details.php:65
+msgid "Edit"
+msgstr ""
+
+#: ../bbpress/user-favorites.php:15
+msgid "Favorite Forum Topics"
+msgstr ""
+
+#: ../bbpress/user-favorites.php:28
+msgid "You currently have no favorite topics."
+msgstr ""
+
+#: ../bbpress/user-favorites.php:28
+msgid "This user has no favorite topics."
+msgstr ""
+
+#: ../bbpress/user-profile.php:24
+#, php-format
+msgid "Forum Role: %s"
+msgstr ""
+
+#: ../bbpress/user-profile.php:25
+#, php-format
+msgid "Topics Started: %s"
+msgstr ""
+
+#: ../bbpress/user-profile.php:26
+#, php-format
+msgid "Replies Created: %s"
+msgstr ""
+
+#: ../bbpress/user-replies-created.php:15
+msgid "Forum Replies Created"
+msgstr ""
+
+#: ../bbpress/user-replies-created.php:28
+msgid "You have not replied to any topics."
+msgstr ""
+
+#: ../bbpress/user-replies-created.php:28
+msgid "This user has not replied to any topics."
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:19
+msgid "Subscribed Forums"
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:28
+msgid "You are not currently subscribed to any forums."
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:28
+msgid "This user is not currently subscribed to any forums."
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:34
+msgid "Subscribed Topics"
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:47
+msgid "You are not currently subscribed to any topics."
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:47
+msgid "This user is not currently subscribed to any topics."
+msgstr ""
+
+#: ../bbpress/user-topics-created - Copy.php:15
+#: ../bbpress/user-topics-created.php:15
+msgid "Forum Topics Started"
+msgstr ""
+
+#: ../bbpress/user-topics-created - Copy.php:28
+#: ../bbpress/user-topics-created.php:28
+#: ../buddypress/members/single/index-action-topics.php:36
+msgid "You have not created any topics."
+msgstr ""
+
+#: ../bbpress/user-topics-created - Copy.php:28
+#: ../bbpress/user-topics-created.php:28
+#: ../buddypress/members/single/index-action-topics.php:36
+msgid "This user has not created any topics."
+msgstr ""
+
+#: ../buddypress.php:54 ../page.php:29
+msgid "Pages:"
+msgstr ""
+
+#: ../buddypress/activity/activity-loop.php:35
+#: ../buddypress/activity/member-activity-loop.php:32
+#: ../buddypress/members/single/member-reviews.php:51
+msgid "Load More"
+msgstr "加载更多"
+
+#: ../buddypress/activity/activity-loop.php:53
+#: ../buddypress/activity/member-activity-loop.php:50
+msgid "Sorry, there was no activity found."
+msgstr ""
+
+#. translators: 1: user profile link, 2: user name, 3: activity permalink, 4: activity timestamp
+#. printf( __( '<a href="%1$s">%2$s</a> replied <a href="%3$s" class="activity-time-since"><span class="time-since">%4$s</span></a>', 'buddypress' ), bp_get_activity_comment_user_link(), bp_get_activity_comment_name(), bp_get_activity_comment_permalink(), bp_get_activity_comment_date_recorded() );
+#: ../buddypress/activity/comment.php:28
+#, php-format
+msgid ""
+"<a href=\"%1$s\">%2$s</a> replied <span class=\"time-since\">%3$s</span>"
+msgstr ""
+
+#: ../buddypress/activity/comment.php:38
+#: ../buddypress/groups/single/forum/edit.php:10
+msgid "Reply"
+msgstr "回复"
+
+#: ../buddypress/activity/entry.php:27
+#: ../buddypress/activity/member-entry.php:19
+msgid "View Conversation"
+msgstr "查看会话"
+
+#: ../buddypress/activity/entry.php:35
+#: ../buddypress/activity/member-entry.php:27
+#: ../buddypress/activity/test.php:15
+#, php-format
+msgid "Comment ( <span>%s</span>)"
+msgstr ""
+
+#: ../buddypress/activity/entry.php:66
+#: ../buddypress/activity/member-entry.php:59
+#: ../buddypress/activity/test.php:36
+msgid "Cancel"
+msgstr ""
+
+#: ../buddypress/activity/index.php:19 ../buddypress/members/index.php:19
+#, php-format
+msgid "All Members <span>%s</span>"
+msgstr ""
+
+#: ../buddypress/activity/index.php:29 ../buddypress/members/index.php:22
+#, php-format
+msgid "My Friends <span>%s</span>"
+msgstr ""
+
+#: ../buddypress/activity/index.php:41 ../buddypress/groups/index.php:22
+#, php-format
+msgid "My Groups <span>%s</span>"
+msgstr ""
+
+#: ../buddypress/activity/index.php:51
+#, php-format
+msgid "My Favorites <span>%s</span>"
+msgstr ""
+
+#: ../buddypress/activity/index.php:59
+msgid "Mentions"
+msgstr ""
+
+#: ../buddypress/activity/index.php:71
+#: ../buddypress/groups/single/activity.php:3
+msgid "RSS"
+msgstr ""
+
+#: ../buddypress/activity/index.php:76
+#: ../buddypress/groups/single/activity.php:8
+#: ../buddypress/members/single/activity.php:19
+msgid "Show:"
+msgstr ""
+
+#: ../buddypress/activity/index.php:78
+#: ../buddypress/groups/single/activity.php:10
+#: ../buddypress/members/single/activity.php:21
+msgid "Everything"
+msgstr "一切"
+
+#: ../buddypress/activity/index.php:79
+#: ../buddypress/groups/single/activity.php:11
+#: ../buddypress/members/single/activity.php:22
+msgid "Updates"
+msgstr "更新"
+
+#: ../buddypress/activity/index.php:83 ../buddypress/forums/forums-loop.php:40
+#: ../buddypress/members/single/activity.php:28
+msgid "Posts"
+msgstr "帖子"
+
+#: ../buddypress/activity/index.php:84
+#: ../buddypress/members/single/activity.php:29
+msgid "Comments"
+msgstr "评论"
+
+#: ../buddypress/activity/index.php:90
+#: ../buddypress/groups/single/activity.php:14
+#: ../buddypress/members/single/activity.php:44
+msgid "Forum Topics"
+msgstr "论坛主题"
+
+#: ../buddypress/activity/index.php:91
+#: ../buddypress/groups/single/activity.php:15
+#: ../buddypress/members/single/activity.php:45
+msgid "Forum Replies"
+msgstr "论坛回复"
+
+#: ../buddypress/activity/index.php:97
+#: ../buddypress/members/single/activity.php:51
+msgid "New Groups"
+msgstr "新群组"
+
+#: ../buddypress/activity/index.php:98
+#: ../buddypress/groups/single/activity.php:18
+#: ../buddypress/members/single/activity.php:52
+msgid "Group Memberships"
+msgstr ""
+
+#: ../buddypress/activity/index.php:104
+#: ../buddypress/members/single/activity.php:36
+msgid "Friendships"
+msgstr ""
+
+#: ../buddypress/activity/index.php:108
+msgid "New Members"
+msgstr ""
+
+#: ../buddypress/activity/post-form.php:23
+#, php-format
+msgid "What's new in %s, %s?"
+msgstr ""
+
+#: ../buddypress/activity/post-form.php:25
+#, php-format
+msgid "What's new, %s?"
+msgstr ""
+
+#: ../buddypress/activity/post-form.php:42
+msgid "Post in"
+msgstr ""
+
+#: ../buddypress/activity/post-form.php:45
+#: ../buddypress/members/single/profile/profile-wp.php:8
+msgid "My Profile"
+msgstr ""
+
+#: ../buddypress/blogs/blogs-loop.php:90
+msgid "Sorry, there were no sites found."
+msgstr ""
+
+#: ../buddypress/blogs/create.php:14
+msgid "Site registration is currently disabled"
+msgstr ""
+
+#: ../buddypress/blogs/index.php:16
+#, php-format
+msgid "All Sites <span>%s</span>"
+msgstr ""
+
+#: ../buddypress/blogs/index.php:20
+#, php-format
+msgid "My Sites <span>%s</span>"
+msgstr ""
+
+#: ../buddypress/blogs/index.php:36 ../buddypress/forums/index.php:42
+#: ../buddypress/groups/index.php:36 ../buddypress/groups/single/forum.php:36
+#: ../buddypress/members/index.php:35
+#: ../buddypress/members/single/blogs.php:19
+#: ../buddypress/members/single/forums.php:18
+#: ../buddypress/members/single/friends.php:19
+#: ../buddypress/members/single/groups.php:20
+msgid "Order By:"
+msgstr "排序："
+
+#: ../buddypress/blogs/index.php:38 ../buddypress/forums/index.php:44
+#: ../buddypress/groups/index.php:39 ../buddypress/groups/single/forum.php:38
+#: ../buddypress/members/index.php:37
+#: ../buddypress/members/single/blogs.php:21
+#: ../buddypress/members/single/forums.php:20
+#: ../buddypress/members/single/friends.php:21
+#: ../buddypress/members/single/groups.php:22
+msgid "Last Active"
+msgstr "最后上线"
+
+#: ../buddypress/blogs/index.php:39 ../buddypress/members/single/blogs.php:22
+msgid "Newest"
+msgstr "最新"
+
+#: ../buddypress/blogs/index.php:40 ../buddypress/groups/index.php:42
+#: ../buddypress/members/index.php:41
+#: ../buddypress/members/single/blogs.php:23
+#: ../buddypress/members/single/friends.php:23
+#: ../buddypress/members/single/groups.php:25
+msgid "Alphabetical"
+msgstr "按字母顺序排列"
+
+#: ../buddypress/forums/forums-loop.php:41
+msgid "Freshness"
+msgstr "新鲜"
+
+#. translators: "started by [poster] in [forum]"
+#: ../buddypress/forums/forums-loop.php:61
+#, php-format
+msgid "Started by %1$s"
+msgstr ""
+
+#. translators: "started by [poster] in [forum]"
+#: ../buddypress/forums/forums-loop.php:72
+#, php-format
+msgid "in %1$s"
+msgstr ""
+
+#: ../buddypress/forums/forums-loop.php:122
+msgid "Sorry, there were no forum topics found."
+msgstr "很抱歉，没有发现帖子。"
+
+#: ../buddypress/forums/index.php:22
+#, php-format
+msgid "All Topics <span>%s</span>"
+msgstr ""
+
+#: ../buddypress/forums/index.php:26
+#, php-format
+msgid "My Topics <span>%s</span>"
+msgstr ""
+
+#: ../buddypress/forums/index.php:45 ../buddypress/groups/single/forum.php:39
+#: ../buddypress/members/single/forums.php:21
+msgid "Most Posts"
+msgstr "大多数帖子"
+
+#: ../buddypress/forums/index.php:46 ../buddypress/groups/single/forum.php:40
+#: ../buddypress/members/single/forums.php:22
+msgid "Unreplied"
+msgstr "未回复"
+
+#: ../buddypress/forums/index.php:82
+msgid "Create New Topic:"
+msgstr ""
+
+#: ../buddypress/forums/index.php:86 ../buddypress/groups/single/forum.php:75
+#: ../buddypress/groups/single/forum/edit.php:47
+msgid "Title:"
+msgstr "标题："
+
+#: ../buddypress/forums/index.php:89 ../buddypress/groups/single/forum.php:78
+#: ../buddypress/groups/single/forum/edit.php:50
+msgid "Content:"
+msgstr "内容："
+
+#: ../buddypress/forums/index.php:92 ../buddypress/groups/single/forum.php:81
+#: ../buddypress/groups/single/forum/edit.php:53
+msgid "Tags (comma separated):"
+msgstr ""
+
+#: ../buddypress/forums/index.php:95
+msgid "Post In Group Forum:"
+msgstr ""
+
+#. translators: no option picked in select box
+#: ../buddypress/forums/index.php:98
+msgid "----"
+msgstr ""
+
+#: ../buddypress/forums/index.php:127
+#, php-format
+msgid ""
+"You are not a member of any groups so you don't have any group forums you "
+"can post in. To start posting, first find a group that matches the topic "
+"subject you'd like to start. If this group does not exist, why not <a "
+"href='%s'>create a new group</a>? Once you have joined or created the group "
+"you can post your topic in that group's forum."
+msgstr ""
+
+#: ../buddypress/groups/create.php:29 ../buddypress/groups/single/admin.php:16
+msgid "Group Name (required)"
+msgstr ""
+
+#: ../buddypress/groups/create.php:34 ../buddypress/groups/single/admin.php:19
+msgid "Group Description (required)"
+msgstr ""
+
+#: ../buddypress/groups/create.php:51 ../buddypress/groups/single/admin.php:56
+msgid "Privacy Options"
+msgstr ""
+
+#: ../buddypress/groups/create.php:55 ../buddypress/groups/single/admin.php:61
+msgid "This is a public group"
+msgstr ""
+
+#: ../buddypress/groups/create.php:57 ../buddypress/groups/single/admin.php:63
+msgid "Any site member can join this group."
+msgstr ""
+
+#: ../buddypress/groups/create.php:58 ../buddypress/groups/create.php:67
+#: ../buddypress/groups/single/admin.php:64
+#: ../buddypress/groups/single/admin.php:74
+msgid ""
+"This group will be listed in the groups directory and in search results."
+msgstr ""
+
+#: ../buddypress/groups/create.php:59 ../buddypress/groups/single/admin.php:65
+msgid "Group content and activity will be visible to any site member."
+msgstr ""
+
+#: ../buddypress/groups/create.php:64 ../buddypress/groups/single/admin.php:71
+msgid "This is a private group"
+msgstr ""
+
+#: ../buddypress/groups/create.php:66 ../buddypress/groups/single/admin.php:73
+msgid "Only users who request membership and are accepted can join the group."
+msgstr ""
+
+#: ../buddypress/groups/create.php:68 ../buddypress/groups/create.php:77
+#: ../buddypress/groups/single/admin.php:75
+#: ../buddypress/groups/single/admin.php:85
+msgid ""
+"Group content and activity will only be visible to members of the group."
+msgstr ""
+
+#: ../buddypress/groups/create.php:73 ../buddypress/groups/single/admin.php:81
+msgid "This is a hidden group"
+msgstr ""
+
+#: ../buddypress/groups/create.php:75 ../buddypress/groups/single/admin.php:83
+msgid "Only users who are invited can join the group."
+msgstr ""
+
+#: ../buddypress/groups/create.php:76 ../buddypress/groups/single/admin.php:84
+msgid ""
+"This group will not be listed in the groups directory or search results."
+msgstr ""
+
+#: ../buddypress/groups/create.php:82 ../buddypress/groups/single/admin.php:92
+msgid "Group Invitations"
+msgstr ""
+
+#: ../buddypress/groups/create.php:84 ../buddypress/groups/single/admin.php:94
+msgid "Which members of this group are allowed to invite others?"
+msgstr ""
+
+#: ../buddypress/groups/create.php:89 ../buddypress/groups/single/admin.php:99
+msgid "All group members"
+msgstr ""
+
+#: ../buddypress/groups/create.php:94
+#: ../buddypress/groups/single/admin.php:104
+msgid "Group admins and mods only"
+msgstr ""
+
+#: ../buddypress/groups/create.php:99
+#: ../buddypress/groups/single/admin.php:109
+msgid "Group admins only"
+msgstr ""
+
+#: ../buddypress/groups/create.php:105
+msgid "Group Forums"
+msgstr ""
+
+#: ../buddypress/groups/create.php:109
+msgid "Should this group have a forum?"
+msgstr ""
+
+#: ../buddypress/groups/create.php:112
+#: ../buddypress/groups/single/admin.php:47
+msgid "Enable discussion forum"
+msgstr ""
+
+#: ../buddypress/groups/create.php:116
+#, php-format
+msgid ""
+"<strong>Attention Site Admin:</strong> Group forums require the <a href=\"%s"
+"\">correct setup and configuration</a> of a bbPress installation."
+msgstr ""
+
+#: ../buddypress/groups/create.php:142
+#: ../buddypress/groups/single/admin.php:127
+msgid ""
+"Upload an image to use as an avatar for this group. The image will be shown "
+"on the main group page, and in search results."
+msgstr ""
+
+#: ../buddypress/groups/create.php:150
+msgid "To skip the avatar upload process, hit the \"Next Step\" button."
+msgstr ""
+
+#: ../buddypress/groups/create.php:157
+msgid "Crop Group Avatar"
+msgstr ""
+
+#: ../buddypress/groups/create.php:204
+#: ../buddypress/groups/single/invites-loop.php:79
+msgid "Select people to invite from your friends list."
+msgstr ""
+
+#: ../buddypress/groups/create.php:222
+#: ../buddypress/groups/single/invites-loop.php:51
+msgid "Remove Invite"
+msgstr ""
+
+#: ../buddypress/groups/create.php:239
+msgid ""
+"Once you have built up friend connections you will be able to invite others "
+"to your group."
+msgstr ""
+
+#: ../buddypress/groups/groups-loop.php:47
+#: ../buddypress/groups/single/group-header.php:42
+#, php-format
+msgid "active %s"
+msgstr ""
+
+#: ../buddypress/groups/groups-loop.php:95
+msgid "There were no groups found."
+msgstr ""
+
+#: ../buddypress/groups/index.php:19
+#, php-format
+msgid "All Groups <span>%s</span>"
+msgstr ""
+
+#: ../buddypress/groups/index.php:40
+#: ../buddypress/members/single/groups.php:23
+msgid "Most Members"
+msgstr ""
+
+#: ../buddypress/groups/index.php:41
+#: ../buddypress/members/single/groups.php:24
+msgid "Newly Created"
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:26
+msgid "Notify group members of these changes via email"
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:137
+msgid ""
+"If you'd like to remove the existing avatar but not upload a new one, please "
+"use the delete avatar button."
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:139
+msgid "Delete Avatar"
+msgstr "删除头像"
+
+#: ../buddypress/groups/single/admin.php:149
+msgid "Crop Avatar"
+msgstr "作物头像"
+
+#: ../buddypress/groups/single/admin.php:177
+msgid "Administrators"
+msgstr "管理员"
+
+#: ../buddypress/groups/single/admin.php:185
+#: ../buddypress/groups/single/admin.php:212
+#, php-format
+msgid "Profile picture of %s"
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:190
+#: ../buddypress/groups/single/admin.php:217
+msgid "Demote to Member"
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:205
+msgid "Moderators"
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:216
+#: ../buddypress/groups/single/admin.php:272
+msgid "Promote to Admin"
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:231
+msgid "Members"
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:260
+msgid "(banned)"
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:266
+msgid "Remove Ban"
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:270
+msgid "Kick &amp; Ban"
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:271
+msgid "Promote to Mod"
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:276
+msgid "Remove from group"
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:290
+#: ../buddypress/groups/single/members.php:79
+msgid "This group has no members."
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:324
+msgid ""
+"WARNING: Deleting this group will completely remove ALL content associated "
+"with it. There is no way back, please be careful with this option."
+msgstr ""
+
+#: ../buddypress/groups/single/admin.php:327
+msgid "I understand the consequences of deleting this group."
+msgstr ""
+
+#: ../buddypress/groups/single/forum.php:19
+msgid "New Topic"
+msgstr "新主题"
+
+#: ../buddypress/groups/single/forum.php:27
+#: ../buddypress/groups/single/forum/edit.php:16
+#: ../buddypress/groups/single/forum/topic.php:17
+msgid "Forum Directory"
+msgstr ""
+
+#: ../buddypress/groups/single/forum.php:69
+msgid "You will auto join this group when you start a new topic."
+msgstr ""
+
+#: ../buddypress/groups/single/forum.php:73
+msgid "Post a New Topic:"
+msgstr ""
+
+#: ../buddypress/groups/single/forum/edit.php:25
+msgid "Edit:"
+msgstr ""
+
+#: ../buddypress/groups/single/forum/edit.php:87
+msgid "This topic does not exist."
+msgstr ""
+
+#: ../buddypress/groups/single/forum/topic.php:9
+msgid "New Reply"
+msgstr ""
+
+#: ../buddypress/groups/single/forum/topic.php:32
+msgid "Topic tags:"
+msgstr ""
+
+#: ../buddypress/groups/single/forum/topic.php:81
+#, php-format
+msgid "%1$s said %2$s:"
+msgstr ""
+
+#: ../buddypress/groups/single/forum/topic.php:119
+msgid "There are no posts for this topic."
+msgstr ""
+
+#: ../buddypress/groups/single/forum/topic.php:134
+msgid "You will auto join this group when you reply to this topic."
+msgstr ""
+
+#: ../buddypress/groups/single/forum/topic.php:139
+msgid "Add a reply:"
+msgstr ""
+
+#: ../buddypress/groups/single/forum/topic.php:155
+msgid "This topic is closed, replies are no longer accepted."
+msgstr ""
+
+#: ../buddypress/groups/single/group-header.php:11
+msgid "Group Admins"
+msgstr ""
+
+#: ../buddypress/groups/single/group-header.php:20
+msgid "Group Mods"
+msgstr ""
+
+#: ../buddypress/groups/single/request-membership.php:4
+#, php-format
+msgid "You are requesting to become a member of the group '%s'."
+msgstr ""
+
+#: ../buddypress/groups/single/request-membership.php:7
+msgid "Comments (optional)"
+msgstr ""
+
+#: ../buddypress/groups/single/requests-loop.php:31
+#: ../buddypress/members/single/friends/requests.php:38
+#: ../buddypress/members/single/groups/invites.php:23
+msgid "Accept"
+msgstr "接受"
+
+#: ../buddypress/groups/single/requests-loop.php:33
+#: ../buddypress/members/single/friends/requests.php:39
+#: ../buddypress/members/single/groups/invites.php:24
+msgid "Reject"
+msgstr "拒绝"
+
+#: ../buddypress/groups/single/requests-loop.php:62
+msgid "There are no pending membership requests."
+msgstr ""
+
+#: ../buddypress/members/activate.php:14
+#: ../buddypress/members/index-activate.php:18
+msgid ""
+"Your account was activated successfully! Your account details have been sent "
+"to you in a separate email."
+msgstr ""
+
+#: ../buddypress/members/activate.php:16
+#: ../buddypress/members/index-activate.php:20
+#, php-format
+msgid ""
+"Your account was activated successfully! You can now <a href=\"%s\">log in</"
+"a> with the username and password you provided when you signed up."
+msgstr ""
+
+#: ../buddypress/members/activate.php:20
+#: ../buddypress/members/index-activate.php:24
+msgid "Please provide a valid activation key."
+msgstr ""
+
+#: ../buddypress/members/activate.php:23
+#: ../buddypress/members/index-activate.php:27
+msgid "Activation Key:"
+msgstr ""
+
+#: ../buddypress/members/index-register.php:16
+#: ../buddypress/members/register.php:9
+msgid "User registration is currently not allowed."
+msgstr ""
+
+#: ../buddypress/members/index-register.php:25
+#: ../buddypress/members/register.php:18
+msgid ""
+"Registering for this site is easy. Just fill in the fields below, and we'll "
+"get a new account set up for you in no time."
+msgstr ""
+
+#: ../buddypress/members/index-register.php:33
+#: ../buddypress/members/register.php:26
+msgid "Account Details"
+msgstr ""
+
+#: ../buddypress/members/index-register.php:35
+#: ../buddypress/members/index-register.php:39
+#: ../buddypress/members/index-register.php:43
+#: ../buddypress/members/index-register.php:47
+#: ../buddypress/members/index-register.php:115
+#: ../buddypress/members/index-register.php:124
+#: ../buddypress/members/register.php:28 ../buddypress/members/register.php:32
+#: ../buddypress/members/register.php:36 ../buddypress/members/register.php:40
+#: ../buddypress/members/register.php:128
+#: ../buddypress/members/register.php:137
+msgid "(required)"
+msgstr ""
+
+#: ../buddypress/members/index-register.php:39
+#: ../buddypress/members/register.php:32
+msgid "Email Address"
+msgstr "电子邮件地址"
+
+#: ../buddypress/members/index-register.php:43
+#: ../buddypress/members/register.php:36
+msgid "Choose a Password"
+msgstr ""
+
+#: ../buddypress/members/index-register.php:47
+#: ../buddypress/members/register.php:40
+msgid "Confirm Password"
+msgstr ""
+
+#: ../buddypress/members/index-register.php:65
+#: ../buddypress/members/register.php:58
+msgid "Profile Details"
+msgstr "详细资料"
+
+#: ../buddypress/members/index-register.php:109
+#: ../buddypress/members/register.php:122
+msgid "Blog Details"
+msgstr ""
+
+#: ../buddypress/members/index-register.php:111
+#: ../buddypress/members/register.php:124
+msgid "Yes, I'd like to create a new site"
+msgstr ""
+
+#: ../buddypress/members/index-register.php:115
+#: ../buddypress/members/register.php:128
+msgid "Blog URL"
+msgstr ""
+
+#: ../buddypress/members/index-register.php:124
+#: ../buddypress/members/register.php:137
+msgid "Site Title"
+msgstr "网站标题"
+
+#: ../buddypress/members/index-register.php:128
+#: ../buddypress/members/register.php:141
+msgid ""
+"I would like my site to appear in search engines, and in public listings "
+"around this network."
+msgstr ""
+
+#: ../buddypress/members/index-register.php:131
+#: ../buddypress/members/register.php:144
+msgid "Yes"
+msgstr "是的"
+
+#: ../buddypress/members/index-register.php:132
+#: ../buddypress/members/register.php:145
+msgid "No"
+msgstr "无"
+
+#: ../buddypress/members/index-register.php:162
+#: ../buddypress/members/register.php:175
+msgid ""
+"You have successfully created your account! To begin using this site you "
+"will need to activate your account via the email we have just sent to your "
+"address."
+msgstr ""
+
+#: ../buddypress/members/index-register.php:164
+#: ../buddypress/members/register.php:177
+msgid ""
+"You have successfully created your account! Please log in using the username "
+"and password you have just created."
+msgstr ""
+
+#: ../buddypress/members/index.php:38
+#: ../buddypress/members/single/friends.php:22
+msgid "Newest Registered"
+msgstr "最新注册"
+
+#: ../buddypress/members/members-loop.php:219
+msgid "Sorry, no members were found."
+msgstr ""
+
+#: ../buddypress/members/register.php:75 ../buddypress/members/register.php:90
+#: ../buddypress/members/single/profile/edit.php:28
+#, php-format
+msgid ""
+"This field can be seen by: <span class=\"current-visibility-level\">%s</span>"
+msgstr ""
+
+#: ../buddypress/members/register.php:80
+#: ../buddypress/members/single/profile/edit.php:33
+msgid "Who can see this field?"
+msgstr ""
+
+#: ../buddypress/members/register.php:85
+#: ../buddypress/members/single/profile/edit.php:38
+msgid "Close"
+msgstr "关闭"
+
+#: ../buddypress/members/single/friends/requests.php:71
+msgid "You have no pending friendship requests."
+msgstr ""
+
+#: ../buddypress/members/single/groups/invites.php:37
+msgid "You have no outstanding group invites."
+msgstr ""
+
+#: ../buddypress/members/single/index-action-topics.php:21
+msgid "View Your Posts"
+msgstr ""
+
+#: ../buddypress/members/single/member-reviews.php:63
+msgid "Sorry, there was no review found."
+msgstr ""
+
+#: ../buddypress/members/single/messages/compose.php:5
+msgid "Send To (Username or Friend's Name)"
+msgstr ""
+
+#: ../buddypress/members/single/messages/compose.php:15
+msgid "This is a notice to all users."
+msgstr ""
+
+#: ../buddypress/members/single/messages/compose.php:18
+msgid "Subject"
+msgstr ""
+
+#: ../buddypress/members/single/messages/compose.php:21
+msgid "Message"
+msgstr ""
+
+#: ../buddypress/members/single/messages/messages-loop.php:34
+msgid "From:"
+msgstr ""
+
+#: ../buddypress/members/single/messages/messages-loop.php:39
+msgid "To:"
+msgstr ""
+
+#: ../buddypress/members/single/messages/messages-loop.php:69
+msgid "Sorry, no messages were found."
+msgstr ""
+
+#: ../buddypress/members/single/messages/notices-loop.php:36
+msgid "Sent:"
+msgstr ""
+
+#: ../buddypress/members/single/messages/notices-loop.php:54
+msgid "Sorry, no notices were found."
+msgstr ""
+
+#: ../buddypress/members/single/messages/single.php:14
+msgid "You are alone in this conversation."
+msgstr ""
+
+#: ../buddypress/members/single/messages/single.php:18
+#, php-format
+msgid "Conversation between %s and you."
+msgstr ""
+
+#: ../buddypress/members/single/messages/single.php:86
+msgid "Send a Reply"
+msgstr ""
+
+#: ../buddypress/members/single/notifications/feedback-no-notifications.php:7
+msgid "You have no unread notifications."
+msgstr ""
+
+#: ../buddypress/members/single/notifications/feedback-no-notifications.php:11
+msgid "This member has no unread notifications."
+msgstr ""
+
+#: ../buddypress/members/single/notifications/feedback-no-notifications.php:19
+msgid "You have no notifications."
+msgstr ""
+
+#: ../buddypress/members/single/notifications/feedback-no-notifications.php:23
+msgid "This member has no notifications."
+msgstr ""
+
+#: ../buddypress/members/single/notifications/notifications-loop.php:5
+msgid "Notification"
+msgstr ""
+
+#: ../buddypress/members/single/notifications/notifications-loop.php:6
+msgid "Date Received"
+msgstr ""
+
+#: ../buddypress/members/single/notifications/notifications-loop.php:7
+msgid "Actions"
+msgstr "操作"
+
+#: ../buddypress/members/single/profile/change-avatar.php:1
+msgid "Change Avatar"
+msgstr "修改头像"
+
+#: ../buddypress/members/single/profile/change-avatar.php:7
+msgid ""
+"Your avatar will be used on your profile and throughout the site. You can "
+"upload an image from your computer."
+msgstr ""
+
+#: ../buddypress/members/single/profile/change-avatar.php:14
+msgid ""
+"Click below to select a JPG, GIF or PNG format photo from your computer and "
+"then click 'Upload Image' to proceed."
+msgstr ""
+
+#: ../buddypress/members/single/profile/change-avatar.php:23
+msgid ""
+"If you'd like to delete your current avatar but not upload a new one, please "
+"use the delete avatar button."
+msgstr ""
+
+#: ../buddypress/members/single/profile/change-avatar.php:24
+msgid "Delete My Avatar"
+msgstr "删除我的头像"
+
+#: ../buddypress/members/single/profile/change-avatar.php:31
+msgid "Crop Your New Avatar"
+msgstr "裁剪你的阿凡达"
+
+#: ../buddypress/members/single/profile/change-avatar.php:55
+msgid ""
+"Your avatar will be used on your profile and throughout the site. To change "
+"your avatar, please create an account with <a href=\"http://gravatar.com"
+"\">Gravatar</a> using the same email address as you used to register with "
+"this site."
+msgstr ""
+
+#: ../buddypress/members/single/profile/edit.php:28
+msgid "Change"
+msgstr "更改"
+
+#: ../buddypress/members/single/profile/profile-wp.php:8
+#, php-format
+msgid "%s's Profile"
+msgstr ""
+
+#: ../buddypress/members/single/profile/profile-wp.php:24
+msgid "About Me"
+msgstr "关于我"
+
+#: ../buddypress/members/single/profile/profile-wp.php:42
+msgid "Jabber"
+msgstr ""
+
+#: ../buddypress/members/single/profile/profile-wp.php:51
+msgid "AOL Messenger"
+msgstr ""
+
+#: ../buddypress/members/single/profile/profile-wp.php:60
+msgid "Yahoo Messenger"
+msgstr ""
+
+#: ../buddypress/members/single/settings/capabilities.php:9
+msgid "This user is a spammer."
+msgstr ""
+
+#: ../buddypress/members/single/settings/delete-account.php:7
+msgid ""
+"Deleting your account will delete all of the content you have created. It "
+"will be completely irrecoverable."
+msgstr ""
+
+#: ../buddypress/members/single/settings/delete-account.php:11
+msgid ""
+"Deleting this account will delete all of the content it has created. It will "
+"be completely irrecoverable."
+msgstr ""
+
+#: ../buddypress/members/single/settings/delete-account.php:23
+msgid "I understand the consequences."
+msgstr ""
+
+#: ../buddypress/members/single/settings/general.php:8
+msgid ""
+"Current Password <span>(required to update email or change current "
+"password)</span>"
+msgstr ""
+
+#: ../buddypress/members/single/settings/general.php:13
+msgid "Account Email"
+msgstr ""
+
+#: ../buddypress/members/single/settings/general.php:16
+msgid "Change Password <span>(leave blank for no change)</span>"
+msgstr ""
+
+#: ../buddypress/members/single/settings/general.php:18
+msgid "Repeat New Password"
+msgstr ""
+
+#: ../buddypress/members/single/settings/notifications.php:6
+msgid "Send an email notice when:"
+msgstr ""
+
+#: ../buddypress/members/single/settings/profile.php:15
+msgid "Visibility"
+msgstr "能见度"
+
+#: ../page-templates/forgot-password-reset.php:33
+msgid "Your new password for the account at:"
+msgstr ""
+
+#: ../page-templates/forgot-password-reset.php:35
+#: ../page-templates/forgot-password-reset.php:93
+#, php-format
+msgid "Username: %s"
+msgstr ""
+
+#: ../page-templates/forgot-password-reset.php:36
+#, php-format
+msgid "Password: %s"
+msgstr ""
+
+#: ../page-templates/forgot-password-reset.php:37
+msgid "You can now login with your new password at: "
+msgstr ""
+
+#: ../page-templates/forgot-password-reset.php:91
+msgid "Someone requested that the password be reset for the following account:"
+msgstr ""
+
+#: ../page-templates/forgot-password-reset.php:94
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+
+#: ../page-templates/forgot-password-reset.php:95
+msgid "To reset your password, visit the following address:"
+msgstr ""
+
+#: ../page-templates/forgot-password-reset.php:169
+msgid "Not Found"
+msgstr "未找到"
+
+#: ../page-templates/login.php:43
+msgid "REMEBER ME"
+msgstr ""
+
+#: ../sidebar-forums.php:54
+msgid "No Most Contributer found !"
+msgstr "没有大多数贡献者找到了！"
+
+#~ msgid "Forum"
+#~ msgstr "论坛"
+
+#~ msgid "SUB-FORUMS"
+#~ msgstr "分论坛"

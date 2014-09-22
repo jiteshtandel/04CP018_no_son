@@ -1,0 +1,218 @@
+.clear{
+    clear: both;
+}
+#calender{
+    margin: 0 auto;
+    padding: 0 20px 0;
+}
+
+.calender-placeholder{
+    float: left;
+    /*height: 470px;
+    margin-top: 20px;*/
+    width: 370px;
+}
+
+.time-placeholder{
+    float: left;
+    margin-left: 40px;
+    /*margin-top: 20px;*/
+}
+
+.time-placeholder .title{
+    float: left;
+    margin-top: 20px;
+}
+.time-placeholder .options{
+    float: left;
+    margin: 20px 0 10px 20px;
+}
+.time-placeholder ul li{
+    list-style: none;
+}
+
+.time-placeholder .times{
+    border: 1px solid #000;
+    height: 240px;
+    margin-top: 10px;
+    width: 250px;
+}
+#calender p{
+    margin: 0;
+}
+#calender .note{
+    margin-top: 20px;
+}
+
+.round_button{
+    border: 1px solid #b7b7b7;
+    display: inline-block;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 110px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.active{
+    background-color: #03873c;
+    color: #ffffff;
+}
+.times-container {
+    height: 100%;
+    overflow-y: scroll;
+    width: 250px;
+}
+.times-container .chkbox{
+    display: block;
+    margin: 10px;
+}
+
+.times-container .chkbox label input{
+    margin-right: 10px;
+}
+
+#np_message{
+    display: none;
+    float: left;
+    line-height: 40px;
+    /*margin-left: 100px;*/
+    min-width: 360px;
+    padding-left: 40px;
+}
+#np_message.success{
+    background: url("../../images/notifications/icon-success.png") no-repeat scroll 9px 9px #efc;
+    border: 1px solid #591;
+    color: #250;
+}
+#np_message.error{
+    background: url("../../images/notifications/icon-warning.png") no-repeat scroll 9px 9px #fdc;
+    border: 1px solid #800;
+    color: #800;
+}
+
+#schedule_requests a.button{
+    background: none repeat scroll 0 0 #006738;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    outline: medium none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*jQuery UI Specific modifications*/
+#datepicker .ui-datepicker{
+    height: 100%;
+    width: 100%;
+}
+#datepicker_member .ui-datepicker, #datepicker_secondary .ui-datepicker{
+    width: 180px;
+}
+#datepicker_member .ui-datepicker-title, #datepicker_secondary .ui-datepicker-title{
+    font-size: 12px;
+}
+#datepicker .ui-widget-header, #datepicker_member .ui-widget-header, #datepicker_secondary .ui-widget-header{
+    background-color: #ffffff;
+    background-image: none;
+    border: medium none;
+    margin: 5px 0;
+}
+
+#datepicker .ui-state-default{
+    background: none;
+    border: medium none;
+    color: #555555;
+    font-weight: normal;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#datepicker_member .ui-state-default, #datepicker_secondary .ui-state-default{
+    background: none;
+    border: medium none;
+    color: #555555;
+    font-weight: normal;
+    text-align: center;
+}
+
+#datepicker_member .highlight .ui-state-default:hover, #datepicker_secondary .highlight .ui-state-default:hover{
+    color: #dddddd;
+}
+
+#datepicker .highlight a{
+    color: #ffffff !important;
+}
+#datepicker .highlight a:hover{
+    color: #dddddd !important;
+}
+
+#datepicker .ui-state-active{
+    color: #591 !important;
+}
+
+#datepicker .highlight{
+    text-align: center;
+}
+#datepicker .highlight a, #datepicker_member .highlight a,  #datepicker_secondary .highlight a{
+    background-color: #591;
+    border-radius: 20px;
+    color: #fff;
+    display: inline;
+    font-weight: bold;
+    height: 20px;
+    text-decoration: none;
+    width: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+#datepicker_member  .ui-widget-content, #datepicker_secondary  .ui-widget-content{
+    border: medium none;
+}
+
+/* Time selection model*/
+#time_picker .selected_date{
+    width: 170px;
+    margin: 0 auto;
+}
+#time_picker{
+    border: 1px solid #183548;
+    padding: 40px;
+    width: 800px;
+}
+
+#time_picker .times-placeholder .chkbox{
+    display: block;
+    margin: 5px 10px;
+}
+
+#time_picker .times-placeholder .chkbox label input{
+    margin-right: 10px;
+}
+
+#time_picker .times-placeholder ul li{
+    float: left;
+    float: left;
+    list-style: none outside none;
+    margin: 10px 0;
+    width: 200px;
+}
+#time_picker #action_btns{
+    float: right;
+    margin-top: 10px;
+}
+
+#time_picker .timezone{
+    font-style: italic ;
+    font-size: 10px;
+    color: #0e0e0e;
+}

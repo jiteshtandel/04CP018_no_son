@@ -1,0 +1,28 @@
+.page_tital_text{
+	font-family:'qsregular';
+	font-size:23px;
+        font-weight: bold;
+}
+#searchbox{
+	width:100%; border:1px solid #bdbec0;
+}
+#searchoptions td{
+	padding-right:5px;
+}
+.search_border_bottom{
+	border-bottom:1px solid #c8cacc;
+}
+.connect-arrow-btn{
+    background-image:url(../images/icons/down-arrow.png);
+    background-repeat:no-repeat;
+    background-position: 62px 8px;
+    text-align:left;
+    width:82px; 
+}
+.optiondisabled{
+    color:#939597;
+    padding: 5px 0px;
+}
+.greytext{
+    color:#939597;
+}

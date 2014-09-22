@@ -1,0 +1,13 @@
+<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'bbpress-adv-recent-topics'); ?> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></label></p>
+<p><label for="<?php echo $this->get_field_id('max_shown'); ?>"><?php _e('Maximum topics to show:', 'bbpress-adv-recent-topics'); ?> <input class="widefat" id="<?php echo $this->get_field_id('max_shown'); ?>" name="<?php echo $this->get_field_name('max_shown'); ?>" type="text" value="<?php echo $max_shown; ?>" /></label></p>
+<p><label for="<?php echo $this->get_field_id('show_date'); ?>"><?php _e('Show post date:', 'bbpress-adv-recent-topics'); ?> <input type="checkbox" id="<?php echo $this->get_field_id('show_date'); ?>" name="<?php echo $this->get_field_name('show_date'); ?>" <?php echo $show_date; ?> /></label></p>
+<p><label for="<?php echo $this->get_field_id('show_user'); ?>"><?php _e('Show topic author:', 'bbpress-adv-recent-topics'); ?> <input type="checkbox" id="<?php echo $this->get_field_id('show_user'); ?>" name="<?php echo $this->get_field_name('show_user'); ?>" <?php echo $show_user; ?> /></label></p>
+<p><label for="<?php echo $this->get_field_id('show_forum'); ?>"><?php _e('Show parent forum:', 'bbpress-adv-recent-topics'); ?> <input type="checkbox" id="<?php echo $this->get_field_id('show_forum'); ?>" name="<?php echo $this->get_field_name('show_forum'); ?>" <?php echo $show_forum; ?> /></label></p>
+<p><label for="<?php echo $this->get_field_id('show_detail'); ?>"><?php _e('Show forum post excerpt:', 'bbpress-adv-recent-topics'); ?> <input type="checkbox" id="<?php echo $this->get_field_id('show_detail'); ?>" name="<?php echo $this->get_field_name('show_detail'); ?>" <?php echo $show_detail; ?> /></label></p>
+<p><label for="<?php echo $this->get_field_id('order_by'); ?>"><?php _e('Order By:', 'bbpress-adv-recent-topics'); ?></label>
+    <select name="<?php echo $this->get_field_name('order_by'); ?>" id="<?php echo $this->get_field_name('order_by'); ?>">
+        <option <?php selected($order_by, 'newness');   ?> value="newness"><?php _e('Newest Topics', 'bbpress-adv-recent-topics'); ?></option>
+        <option <?php selected($order_by, 'popular');   ?> value="popular"><?php _e('Popular Topics', 'bbpress-adv-recent-topics'); ?></option>
+        <option <?php selected($order_by, 'freshness'); ?> value="freshness"><?php _e('Topics With Recent Replies', 'bbpress-adv-recent-topics'); ?></option>
+    </select>
+</p>

@@ -1,0 +1,203 @@
+.page_tital_text{
+	font-family:'qsregular';
+	font-size:23px;
+        font-weight: bold;
+}
+#searchbox{
+    border:1px solid #bdbec0;
+}
+#searchoptions td{
+	padding-right:5px;
+}
+.search_border_bottom{
+	border-bottom:1px solid #c8cacc;
+}
+.connect-arrow-btn{
+    background-image:url(../images/icons/down-arrow.png);
+    background-repeat:no-repeat;
+    background-position: 62px 8px;
+    text-align:left;
+    width:82px; 
+}
+.optiondisabled{
+    color:#939597;
+    padding: 5px 0px;
+}
+.greytext{
+    color:#939597;
+}
+
+.notification-count-main{
+    background-color: #e14d43;
+    border-radius: 10px;
+    color: #fff;
+    display: inline;
+    font-size: 10px;
+    left: 2px;
+    padding: 2px 5px;
+    position: relative;
+    text-align: left;
+    top: -1px;
+}
+.header-account-text{
+    color: #fff;
+    padding: 2px 0 0 28px;
+    vertical-align: middle;
+}
+.box-round-border{
+    border: 1px solid #E6E7E8;
+    border-radius: 4px;
+}
+.profile-round-padding{
+    padding: 20px 20px 12px 20px;
+}
+.userpresence-online{
+    background-image:url(../images/icons/status-online.png);
+    background-repeat:no-repeat;
+    width: 12px;
+    height: 15px;
+    background-position: 0px center;
+}
+.userpresence-offline{
+    background-image:url(../images/icons/status-offline.png);
+    background-repeat:no-repeat;
+    width: 12px;
+    height: 15px;
+    background-position: 0px center;
+}
+
+.member-profile-name {
+    color: #231f20;
+    font-size: 19px;
+    line-height: 16px;
+    padding: 0 0 0 5px;
+    vertical-align: top;
+}
+.member-profile-pic{
+    padding:12px 0px 8px 0px;
+}
+.member-profile-details{
+    padding:22px 0px 8px 25px;
+}
+.member-profile-aboutme{
+    padding:0px 0px 28px 0px;
+}
+.member-add-connection-box{
+    border: 1px solid #E6E7E8;
+    border-radius: 4px;
+    background-color: #f1f1f2;
+    margin: 12px 0px 12px 0px;
+    height:50px;
+    color:#231f20;
+    font-size: 15px;
+}
+.member-myschedule-box{
+    font-size: 16px;
+    color:#006738;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #f1f1f2;
+}
+.member-myconnection-box{
+    font-size: 14px;
+    color:#fff;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    padding:0px 10px 0px 5px;
+    background-color:#006738;
+    border-bottom:1px solid #e6e7e8;
+}
+.member-connnection-list{
+    padding: 0px 8px 0px 8px;
+}
+.member-connnection-list img{
+    height: 30px;
+    width: 30px;
+    margin:5px 2px;
+}
+.member-posts-title-main{
+    padding: 0px 0px 0px 10px;
+}
+.member-posts-title{
+    width: 90px;
+    border-top:1px solid #e6e7e8;
+    border-left:1px solid #e6e7e8;
+    border-right:1px solid #e6e7e8;
+    color:#231f20;
+    font-size: 14px;
+    text-align: center;
+    height: 25px;
+    line-height:25px;
+    vertical-align: 25px;
+    margin: 0px 5px 0px 0px;
+    background-color: #a7a9ab;
+}
+.member-post{
+    padding:10px 13px 15px 13px;
+}
+.meber-posts-selected{
+    background-color: #fff;
+}
+.member-post-comment{
+    padding: 0px 10px 0px 0px;
+    color:#006738;
+}
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+.small-font-11{
+    font-size: 11px;
+}
+.full-width{
+    width: 100%;   
+}
+.medium-font{
+    font-size: 15px;
+}
+.bg-contactus{   
+    background-image: url("../images/bg-contactus.png");
+    background-repeat: no-repeat;
+    height: 193px;
+    width: 334px;
+}
+.wpcf7-form input[type="text"],.wpcf7-form input[type="email"]{
+    width: 90%;
+}
+.wpcf7-form textarea{
+    width: 92.5%;
+}
+.wpcf7-form .wpcf7-response-output.wpcf7-validation-errors{
+    display: none !important;
+}
+.wpcf7-form .wpcf7-mail-sent-ok{
+    background: url("../images/notifications/icon-success.png") no-repeat scroll 9px 9px #efc;
+    border: 1px solid #591;
+    color: #250;
+    margin: 10px 0px 0px 0px;
+    padding:10px 0px 10px 40px;
+}
+
+#buddypress .standard-form div.error, form div.wpcf7-not-valid-tip {
+    background: none repeat scroll 0 0 #fdc;
+    border: 1px solid #a00;
+    color: #800;
+    margin: 0 0 10px;
+    padding: 6px;
+    width: 90%;	
+}
+.displaytable{
+    display: table;
+}
+.tablerow{
+    display: table-row;
+}
+.tablecell{
+    display: table-cell;
+    vertical-align: top;
+}

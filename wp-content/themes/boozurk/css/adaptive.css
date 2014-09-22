@@ -1,0 +1,134 @@
+/* Very Hi Resolutions
+----------------------------------------------------------*/
+@media screen and (min-width: 1360px) {
+	#fixed-bg,
+	#main {
+		max-width:1340px;
+	}
+	#head_wrap.fixed {
+		max-width: 737px;
+	}
+}
+
+/* Low Resolutions
+----------------------------------------------------------*/
+@media screen and (max-width: 960px) {
+	div#content,
+	div#footer {
+		margin: 0 40px;
+		position: static;
+	}
+	.top-menu #main {
+		padding-top: 0;
+	}
+	#main {
+		position: relative;
+	}
+	#sidebars {
+		margin: 0 40px;
+	}
+	#main #sidebar-primary ,
+	#main #sidebar-secondary {
+		position: static;
+		width: 49.5%;
+		float: left;
+		padding: 0;
+		margin: 0;
+	}
+	#main  #sidebar-primary .viewport,
+	#main  #sidebar-secondary .viewport {
+		position: static;
+		width: auto !important;
+		height: auto !important;
+		overflow: auto;
+		padding: 0;
+		margin: 0;
+	}
+	#sidebar-primary.fixed:hover .viewport,
+	#sidebar-secondary.fixed:hover .viewport {
+		overflow-y: auto;
+	}
+	#main  #sidebar-primary .overview ,
+	#main  #sidebar-secondary .overview {
+		width: auto;
+		padding: 10px;
+		position: static;
+	}
+	.sidebar.tinyscroll .scrollbar{
+		display: none !important;
+	}
+	div#fixed-bg {
+		background-position: -14px 0;
+	}
+	.post-top-date,
+	.post-top-tag,
+	.post-top-cat {
+		margin-right: 10px;
+	}
+	.top-fade,
+	.bottom-fade {
+		display: none;
+	}
+	#navbuttons.fixed ul {
+		width: 40px;
+		padding-left: 0;
+		padding-right: 0;
+		right: 0;
+		border-right: none;
+	}
+	.minib_edit ,
+	.minib_print ,
+	.minib_track ,
+	.minib_home {
+		display: none;
+	}
+	#secondary1_wrap {
+		margin: 0 40px;
+	}
+	.tinynav {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		border: 1px solid #ddd;
+	}
+	body > .tinynav {
+		padding-left: 40px;
+	}
+	.menu-wrap:before {
+		content: "...";
+		display: block;
+		width: 32px;
+		height: 32px;
+	}
+	.tinynav option {
+		padding: 5px 0;
+	}
+	.nav-menu {
+		display: none;
+	}
+	.tinynav_label {
+		display: inline-block;
+		font-size:23px;
+		position: absolute;
+		left: 8px;
+		margin-top: 4px;
+	}
+	#head_wrap.fixed {
+		background: transparent;
+		margin: 0;
+		padding: 0;
+		position: static;
+		z-index: 100;
+	}
+	#posts_content {
+		padding-top: 0 !important;
+	}
+}
+/* Super Low Resolutions
+----------------------------------------------------------*/
+@media screen and (max-width: 640px) {
+	#main #sidebar-primary ,
+	#main #sidebar-secondary {
+		width: 99%;
+	}
+}
