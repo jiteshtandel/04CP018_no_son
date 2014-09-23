@@ -6,7 +6,6 @@
  */
 /* Disable BP CHAT ON ALL PRELOGIN PAGE to hide error message*/
 add_filter("bpchat_is_disabled","my_custom_chat_disable");
-
 ?>
 <!DOCTYPE html>
 <html style="margin: 0px !important;" xmlns="http://www.w3.org/1999/xhtml">

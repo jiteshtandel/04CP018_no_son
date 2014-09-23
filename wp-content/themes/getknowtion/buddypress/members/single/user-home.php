@@ -17,7 +17,7 @@
                     <div class="left-site-menu">
                         <ul class="menu-items">
                             <li class="page-item">
-                                <a href="<?php echo $homepagepath;?>">Home</a>
+                                <a id="homelink" href="<?php echo $homepagepath;?>">Home</a>
                             </li>
                             <li class="page-item">
                                 <a href="#calender-container" class="manage_calender fancybox">Manage my calender</a>
