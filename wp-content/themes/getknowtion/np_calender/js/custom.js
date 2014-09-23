@@ -115,7 +115,7 @@ var first_half = 1;
         $('.fancybox').fancybox({
             fitToView	: false,
             width		: 710,
-            height		: 510,
+            height		: 520,
             autoSize	: false,
             closeClick	: false,
             openEffect	: 'none',

@@ -57,7 +57,6 @@
                                             </ul>
                                         </div>
 
-                                        <div id="np_message"></div>
                                         <?php if(!empty($approved_schedules)): ?>
 
                                         <?php

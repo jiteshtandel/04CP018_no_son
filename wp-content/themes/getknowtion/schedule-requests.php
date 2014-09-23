@@ -58,10 +58,14 @@
                                                 <li class="current selected" id="friends-my-friends-personal-li"><a href="<?php echo  home_url(); ?>/schedule-request/" id="friends-my-friends">Requests</a></li>
                                                 <li id="requests-personal-li"><a href="<?php echo  home_url(); ?>/schedule-request-accepted/" id="requests">Accepted</a></li>
                                                 <li id="requests-personal-li"><a href="<?php echo  home_url(); ?>/sent-requests/" id="sent_requests">Request Sent</a></li>
+                                                <?php /*<li id="requests-personal-li">
+                                                    <div class="message-search"><?php bp_message_search_form(); ?></div>
+                                                </li> */?>
                                             </ul>
                                         </div>
 
                                     <?php if($busy_dates): ?>
+
                                         <?php
                                             foreach($busy_dates as $busy_date) :
                                                 //echo '<pre>';print_r($busy_date);echo '</pre>';

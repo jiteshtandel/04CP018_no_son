@@ -71,6 +71,21 @@ function get_schedule_times($user_id, $batch_id, $schedule_date){
     return false;
 }
 
+
+/*
+ * Get the schedule date records for a specific date
+ */
+function get_schedule_free_times($user_id, $batch_id, $schedule_date){
+    global $wpdb, $schedule_table,$schedule_time_batch_table;
+    $result = $wpdb->get_results('select * from '.$schedule_time_batch_table.' WHERE user_id = '.$user_id.' AND batch_id="'.$batch_id.'" AND schedule_date="'.$schedule_date.'" AND booked=0');
+    //echo $wpdb->last_query."\n";
+
+    if(!empty($result))
+        return $result;
+
+    return false;
+}
+
 function get_approved_schedules($user_id){
     global $wpdb, $schedule_time_batch_table;
     $result = $wpdb->get_results('select * from '.$schedule_time_batch_table.' WHERE (user_id = '.$user_id.' OR booked_user_id='. $user_id .') AND booked=1 ORDER BY schedule_date ASC');

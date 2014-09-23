@@ -18,7 +18,7 @@
 <div id="hidden_divs" style="display: none">
     <div id="calender-container">
 
-        <div class="popup_notify" style="display: block;min-height:25px"></div>
+        <div class="popup_notify"></div>
         <div class="clear"></div>
         <div id="calender">
             <p style="float: left;margin-bottom: 24px">Select date and time for your video chat</p>
@@ -80,7 +80,7 @@
     </div>
 
     <div id="time_picker">
-        <div class="popup_notify" style="display: block;min-height:25px"></div>
+        <div class="popup_notify"></div>
         <p class="selected_date">Wednesday January 16</p>
         <p>Select time for your video chat :</p>
 
