@@ -5,6 +5,7 @@
         exit(0);
     }
     global $bp;
+    
     $totalfriendsrequest=0;
     $current_loggedin_userid=$bp->loggedin_user->id;
     $homepagepath=$bp->loggedin_user->domain;
