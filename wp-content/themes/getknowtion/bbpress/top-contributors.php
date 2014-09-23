@@ -37,7 +37,7 @@ get_header(); ?>
 							global $wpdb, $paged;
 							
 							$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-							$post_per_page =  2 ;//(intval(get_query_var('posts_per_page'))>0) ? intval(get_query_var('posts_per_page')) : 10;
+							$post_per_page =  (intval(get_query_var('posts_per_page'))>0) ? intval(get_query_var('posts_per_page')) : PER_PAGE_RECORDS;
 							$offset =  ($paged - 1)*$post_per_page;
 							// query normal post
 							$top_contributors_query =  "SELECT SUM(CASE WHEN {$wpdb->posts}.`post_type` LIKE '%topic%' THEN 1 ELSE 0 END) AS topic, SUM(CASE WHEN {$wpdb->posts}.`post_type` LIKE '%reply%' THEN 1 ELSE 0 END) AS reply,{$wpdb->posts}.post_author FROM {$wpdb->posts} INNER JOIN {$wpdb->users} ON {$wpdb->posts}.post_author={$wpdb->users}.ID WHERE {$wpdb->posts}.post_author NOT IN (1) GROUP BY {$wpdb->posts}.post_author ORDER BY topic DESC, reply DESC, post_author ASC ";
