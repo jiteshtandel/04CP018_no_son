@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
-"POT-Creation-Date: 2014-09-23 00:30+0530\n"
-"PO-Revision-Date: 2014-09-24 00:18+0530\n"
+"POT-Creation-Date: 2014-09-24 01:25+0530\n"
+"PO-Revision-Date: 2014-09-24 01:25+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -592,7 +592,7 @@ msgstr "帐户"
 #: ../bbpress/form-user-edit.php:98 ../bbpress/form-user-login.php:17
 #: ../bbpress/form-user-register.php:23
 #: ../buddypress/members/index-register.php:35
-#: ../buddypress/members/register.php:28 ../page-templates/login.php:41
+#: ../buddypress/members/register.php:28 ../page-templates/login.php:34
 msgid "Username"
 msgstr "用户名"
 
@@ -653,11 +653,11 @@ msgid "Update User"
 msgstr "更新用户"
 
 #: ../bbpress/form-user-login.php:14 ../bbpress/form-user-login.php:35
-#: ../page-templates/login.php:44
+#: ../page-templates/login.php:37
 msgid "Log In"
 msgstr "登录"
 
-#: ../bbpress/form-user-login.php:22 ../page-templates/login.php:42
+#: ../bbpress/form-user-login.php:22 ../page-templates/login.php:35
 msgid "Password"
 msgstr "密码"
 
@@ -942,7 +942,7 @@ msgstr "您尚未创建任何主题。"
 msgid "This user has not created any topics."
 msgstr "该用户还没有创建任何主题。"
 
-#: ../buddypress.php:54 ../page.php:29
+#: ../buddypress.php:49 ../page.php:29
 msgid "Pages:"
 msgstr "页数："
 
@@ -1111,6 +1111,7 @@ msgstr ""
 
 #: ../buddypress/blogs/index.php:36 ../buddypress/forums/index.php:42
 #: ../buddypress/groups/index.php:36 ../buddypress/groups/single/forum.php:36
+#: ../buddypress/members/index-directory.php:111
 #: ../buddypress/members/index.php:35
 #: ../buddypress/members/single/blogs.php:19
 #: ../buddypress/members/single/forums.php:18
@@ -1121,6 +1122,7 @@ msgstr "排序："
 
 #: ../buddypress/blogs/index.php:38 ../buddypress/forums/index.php:44
 #: ../buddypress/groups/index.php:39 ../buddypress/groups/single/forum.php:38
+#: ../buddypress/members/index-directory.php:113
 #: ../buddypress/members/index.php:37
 #: ../buddypress/members/single/blogs.php:21
 #: ../buddypress/members/single/forums.php:20
@@ -1134,6 +1136,7 @@ msgid "Newest"
 msgstr "最新"
 
 #: ../buddypress/blogs/index.php:40 ../buddypress/groups/index.php:42
+#: ../buddypress/members/index-directory.php:117
 #: ../buddypress/members/index.php:41
 #: ../buddypress/members/single/blogs.php:23
 #: ../buddypress/members/single/friends.php:23
@@ -1428,7 +1431,7 @@ msgstr ""
 
 #: ../buddypress/groups/single/admin.php:266
 msgid "Remove Ban"
-msgstr "删除班"
+msgstr ""
 
 #: ../buddypress/groups/single/admin.php:270
 msgid "Kick &amp; Ban"
@@ -1570,6 +1573,12 @@ msgstr ""
 msgid "Activation Key:"
 msgstr ""
 
+#: ../buddypress/members/index-directory.php:114
+#: ../buddypress/members/index.php:38
+#: ../buddypress/members/single/friends.php:22
+msgid "Newest Registered"
+msgstr "最新注册"
+
 #: ../buddypress/members/index-register.php:16
 #: ../buddypress/members/register.php:9
 msgid "User registration is currently not allowed."
@@ -1672,12 +1681,7 @@ msgid ""
 "and password you have just created."
 msgstr ""
 
-#: ../buddypress/members/index.php:38
-#: ../buddypress/members/single/friends.php:22
-msgid "Newest Registered"
-msgstr "最新注册"
-
-#: ../buddypress/members/members-loop.php:238
+#: ../buddypress/members/members-loop.php:235
 msgid "Sorry, no members were found."
 msgstr ""
 
@@ -1933,9 +1937,14 @@ msgstr ""
 msgid "Not Found"
 msgstr "未找到"
 
-#: ../page-templates/login.php:43
-msgid "REMEBER ME"
-msgstr ""
+#: ../page-templates/login.php:36
+#, fuzzy
+msgid "REMEMBER ME"
+msgstr "记得我"
+
+#: ../page-templates/login.php:66
+msgid "Need an account"
+msgstr "需要一个帐户"
 
 #: ../sidebar-forums.php:7
 msgid "The Knowtion Community"
@@ -1945,18 +1954,16 @@ msgstr "该Knowtion社区"
 msgid "CATEGORIES"
 msgstr "类别"
 
-#: ../sidebar-forums.php:48 ../widget.php:55
+#: ../sidebar-forums.php:48
 msgid "More"
 msgstr "更多"
 
-#: ../widget.php:49
-msgid "Show Comments"
-msgstr "查看评论"
+#~ msgid "Show Comments"
+#~ msgstr "查看评论"
 
-#: ../widget.php:59
 #, fuzzy
-msgid "Sorry, there was no Activity found. "
-msgstr "很抱歉，没有找到活动。"
+#~ msgid "Sorry, there was no Activity found. "
+#~ msgstr "很抱歉，没有找到活动。"
 
 #~ msgid "Voices"
 #~ msgstr "声音"

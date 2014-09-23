@@ -21,13 +21,6 @@
                                     <h6>//unlock how you learn</h6>
                                     <div class="videoblock">
                                         <?php echo do_shortcode($video_shortcode);?>
-                                        
-                                        <!--<video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls
-                                            preload="auto" width="530" height="219" poster="<?php bloginfo('template_directory'); ?>/images/poster.jpg"
-                                            data-setup="{}">
-                                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4'>
-                                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'>
-                                       </video>-->
                                     </div>
                                 </div>
                             </td>
@@ -36,11 +29,11 @@
                                     <?php
                                             $args = array(
                                             'echo' => true,
-                                            'redirect' => 'http://localhost/wordpress/members/', 
+                                            'redirect' => '', 
                                             'form_id' => 'loginform',
-                                            'label_username' => __( 'Username' ),
-                                            'label_password' => __( 'Password' ),
-                                            'label_remember' => __( 'REMEBER ME' ),
+                                            'label_username' => __( 'Username','knowtion' ),
+                                            'label_password' => __( 'Password','knowtion' ),
+                                            'label_remember' => __( 'REMEMBER ME','knowtion'),
                                             'label_log_in' => __( 'Log In' ),
                                             'id_username' => 'user_login',
                                             'id_password' => 'user_pass',
@@ -70,7 +63,7 @@
                                         wp_login_form( $args );
                                     ?>
                                     <div align="right" style="padding:10px 0px 0px 0px;">
-                                        <span>Need an account?</span> <a href="<?php echo get_permalink( get_page_by_title( 'register' ) );?>" class="signuplink">SIGN UP</a> | 
+                                        <span><?php _e('Need an account','knowtion');?>?</span> <a href="<?php echo get_permalink( get_page_by_title( 'register' ) );?>" class="signuplink">SIGN UP</a> | 
                                         <a class="nodecorationlink" href="forgot-password" title="Lost Password">Forgot Password?</a>
                                     </div>								
                                 </div>
