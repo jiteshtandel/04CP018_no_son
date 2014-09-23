@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
 "POT-Creation-Date: 2014-09-23 00:30+0530\n"
-"PO-Revision-Date: 2014-09-23 00:45+0530\n"
+"PO-Revision-Date: 2014-09-24 00:00+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -863,7 +863,7 @@ msgstr "订阅"
 
 #: ../bbpress/user-details.php:65
 msgid "Edit"
-msgstr ""
+msgstr "编辑"
 
 #: ../bbpress/user-favorites.php:15
 msgid "Favorite Forum Topics"
@@ -963,7 +963,7 @@ msgstr "很抱歉，没有找到活动。"
 #, php-format
 msgid ""
 "<a href=\"%1$s\">%2$s</a> replied <span class=\"time-since\">%3$s</span>"
-msgstr ""
+msgstr "<a href=\"%1$s\">%2$s</a> 回答<span class=\"time-since\">%3$s</span>"
 
 #: ../buddypress/activity/entry.php:27
 #: ../buddypress/activity/member-entry.php:19
@@ -1005,7 +1005,7 @@ msgstr ""
 
 #: ../buddypress/activity/index.php:59
 msgid "Mentions"
-msgstr ""
+msgstr "法律"
 
 #: ../buddypress/activity/index.php:71
 #: ../buddypress/groups/single/activity.php:3
@@ -1169,7 +1169,7 @@ msgstr "所有主题 <span>%s</span>"
 #: ../buddypress/forums/index.php:26
 #, php-format
 msgid "My Topics <span>%s</span>"
-msgstr ""
+msgstr "法律 <span>%s</span>"
 
 #: ../buddypress/forums/index.php:45 ../buddypress/groups/single/forum.php:39
 #: ../buddypress/members/single/forums.php:21
@@ -1494,7 +1494,7 @@ msgstr "主题标签："
 #: ../buddypress/groups/single/forum/topic.php:81
 #, php-format
 msgid "%1$s said %2$s:"
-msgstr ""
+msgstr "%1$s 说 %2$s:"
 
 #: ../buddypress/groups/single/forum/topic.php:119
 msgid "There are no posts for this topic."
@@ -1506,7 +1506,7 @@ msgstr ""
 
 #: ../buddypress/groups/single/forum/topic.php:139
 msgid "Add a reply:"
-msgstr ""
+msgstr "回复主题："
 
 #: ../buddypress/groups/single/forum/topic.php:155
 msgid "This topic is closed, replies are no longer accepted."
@@ -1876,7 +1876,7 @@ msgstr ""
 msgid ""
 "Current Password <span>(required to update email or change current "
 "password)</span>"
-msgstr ""
+msgstr "当前密码 <span>（需要更新电子邮件或更改当前密码）</span>"
 
 #: ../buddypress/members/single/settings/general.php:13
 msgid "Account Email"
