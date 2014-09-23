@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
 "POT-Creation-Date: 2014-09-23 00:30+0530\n"
-"PO-Revision-Date: 2014-09-24 00:00+0530\n"
+"PO-Revision-Date: 2014-09-24 00:18+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -1428,7 +1428,7 @@ msgstr ""
 
 #: ../buddypress/groups/single/admin.php:266
 msgid "Remove Ban"
-msgstr ""
+msgstr "删除班"
 
 #: ../buddypress/groups/single/admin.php:270
 msgid "Kick &amp; Ban"
