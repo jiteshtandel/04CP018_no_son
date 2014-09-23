@@ -36,7 +36,7 @@ get_header(); ?>
 							global $wpdb, $paged;
 							//$user_id = (is_super_admin() && get_current_user_id()>0) ? get_current_user_id() : 0;
 							$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-							$post_per_page =  2 ;//(intval(get_query_var('posts_per_page'))>0) ? intval(get_query_var('posts_per_page')) : 10;
+							$post_per_page =  (intval(get_query_var('posts_per_page'))>0) ? intval(get_query_var('posts_per_page')) : PER_PAGE_RECORDS;
 							$offset =  ($paged - 1)*$post_per_page;
 							// query normal post
 							$most_active_expert_query =  "SELECT COUNT(*) reply, post_author FROM {$wpdb->posts} INNER JOIN {$wpdb->users} ON {$wpdb->posts}.post_author={$wpdb->users}.ID WHERE {$wpdb->posts}.post_type LIKE '%reply%' AND {$wpdb->posts}.post_author NOT IN (1) GROUP BY post_author ORDER BY reply DESC ";
