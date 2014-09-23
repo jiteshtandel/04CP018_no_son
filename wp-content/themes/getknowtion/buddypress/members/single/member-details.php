@@ -131,7 +131,7 @@
                                                     <div class="height10"></div>
                                                     <div class="pull-right" style="margin-left: 18px;"><input type="button" name="message" onclick="myredirect('<?php echo bp_loggedin_user_domain() . bp_get_messages_slug() . '/compose/?r=' . bp_core_get_username( $userid ); ?>');" value="Message"></div>
                                             <?php if($is_friend=='is_friend'){?>                                                    
-                                                    <div class="pull-right"><input id="callbutton" type="button" name="videochat" value="Connecting.." style="background-color: #808080;"></div>
+                                                    <div class="pull-right"><input id="callbutton" type="button" name="videochat" value="Video Chat" style="background-color: #808080;"></div>
                                             <?php }?>                                                                                                       
                                                 </div>
                                             </td>
