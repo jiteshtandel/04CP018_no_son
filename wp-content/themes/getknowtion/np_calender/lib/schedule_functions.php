@@ -4,10 +4,24 @@ require_once( dirname(__FILE__) . '/../../../../../wp-load.php' );
 //require_once( dirname(__FILE__) . '/custom_functions.php');
 
 $schedule_table = 'wp_schedule';
+$schedule_master = 'wp_schedule_master';
 $schedule_time_batch_table = 'wp_schedule_time';
 $schedule_request_table = 'wp_schedule_request';
 
+/**
+ * return master time schedules (time batch in 12 hours format)
+ * @return bool
+ */
+function get_master_time_schedules(){
+    global $wpdb, $schedule_master;
+    $result = $wpdb->get_results('select * from '.$schedule_master);
+    //echo $wpdb->last_query ."\n";echo '<pre>';print_r($result);echo '</pre>';
 
+    if(!empty($result))
+        return $result;
+
+    return false;
+}
 /*
  * Get all the records for busy dates
  */
@@ -353,6 +367,24 @@ function get_sent_request($requester_id){
     //echo $wpdb->last_query."\n";
     if(!empty($result) && isset($result[0]))
         return $result;
+
+    return false;
+}
+
+/**
+ * Check if user has any request for the provided time_batch
+ * @param $user_id
+ * @param $batch_id
+ * @param $time_id
+ * @return bool
+ */
+function check_time_requested_from_anyone($user_id, $batch_id, $time_id){
+    global $wpdb, $schedule_request_table;
+    $result = $wpdb->get_results('select * from '.$schedule_request_table.' WHERE host_user_id = '.$user_id.' AND batch_id = "'. $batch_id .'" AND schedule_time_id="' .$time_id.'"');
+
+    //echo $wpdb->last_query."\n";
+    if(!empty($result) && isset($result[0]))
+        return true;
 
     return false;
 }

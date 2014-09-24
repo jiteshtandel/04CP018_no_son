@@ -133,7 +133,7 @@ var first_half = 1;
     var load_time_slot = function($date){
         showLoader();
         clearMessage();
-        $(".timer_schedule").prop('checked',false);
+        $(".timer_schedule").prop('checked',false).prop('disabled','');
 
         $.ajax({
             type       : "GET",
@@ -145,6 +145,9 @@ var first_half = 1;
                     var times = data.times;
                     $.each(times, function(key, value){
                         $("#timer_"+value.time_id).prop('checked',true);
+                        if(value.disable == 1){
+                            $("#timer_"+value.time_id).prop('disabled','disabled');
+                        }
                     });
                     $("#first_half_" + data.first_half_action).prop('checked', true);
 
