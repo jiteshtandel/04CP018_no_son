@@ -16,7 +16,7 @@
 
 <table width="100%" cellspacing="0" cellpadding="0" border="0" id="topic-<?php bbp_topic_id(); ?>-replies">
     <tr>
-        <td valign="middle" align="left" class="topic-title">Topic: <?php bbp_topic_title(); ?></td>
+        <td valign="middle" align="left" class="topic-title"><?php _e( 'Topic: ', 'knowtion' ); ?><?php bbp_topic_title(); ?></td>
     </tr>
 </table>
 <table width="100%" cellspacing="0" cellpadding="0" border="0" class="forum-border-lr">

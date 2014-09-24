@@ -46,7 +46,7 @@
 			<?php } ?>					
                     <div class="recent-post clearboth">
                         <div class="padding-bottom5"><a class="bbp-forum-title" href="<?php bbp_topic_permalink($topic_id); ?>" title="<?php bbp_topic_title($topic_id); ?>"><?php bbp_topic_title($topic_id); ?></a></div>
-                        <div><a class="greentext12" href="<?php bbp_topic_permalink($topic_id); ?>" ><?php _e( 'Show Comments', 'knowtion' ); ?> (<?php echo bbp_update_topic_reply_count($topic_id); ?>)</a></div>
+                        <div><a class="greentext12" href="<?php bbp_topic_permalink($topic_id); ?>" ><?php _e( 'Show Comments', 'bbpress' ); ?> (<?php echo bbp_update_topic_reply_count($topic_id); ?>)</a></div>
                     </div>
                 </div>
         </div>
