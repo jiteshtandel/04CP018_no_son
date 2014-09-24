@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
-"POT-Creation-Date: 2014-09-24 23:19+0530\n"
-"PO-Revision-Date: 2014-09-24 23:38+0530\n"
+"POT-Creation-Date: 2014-09-25 00:56+0530\n"
+"PO-Revision-Date: 2014-09-25 01:00+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -691,6 +691,7 @@ msgid "Reset My Password"
 msgstr "重设密码"
 
 #: ../bbpress/form-user-register.php:14
+#: ../buddypress/members/index-register.php:9
 msgid "Create an Account"
 msgstr "创建一个帐户"
 
@@ -1618,7 +1619,7 @@ msgstr "最新注册"
 #: ../buddypress/members/index-register.php:16
 #: ../buddypress/members/register.php:9
 msgid "User registration is currently not allowed."
-msgstr ""
+msgstr "用户注册目前不允许的。"
 
 #: ../buddypress/members/index-register.php:25
 #: ../buddypress/members/register.php:18
@@ -1626,6 +1627,8 @@ msgid ""
 "Registering for this site is easy. Just fill in the fields below, and we'll "
 "get a new account set up for you in no time."
 msgstr ""
+"注册这个网站是很容易。只需填写下面的字段中，我们会得到一个新的帐户，在任何时"
+"间为您设置。"
 
 #: ../buddypress/members/index-register.php:33
 #: ../buddypress/members/register.php:26
@@ -1642,9 +1645,8 @@ msgstr "帐户明细"
 #: ../buddypress/members/register.php:36 ../buddypress/members/register.php:40
 #: ../buddypress/members/register.php:128
 #: ../buddypress/members/register.php:137
-#, fuzzy
 msgid "(required)"
-msgstr "姓名（必填） ："
+msgstr "(要求)"
 
 #: ../buddypress/members/index-register.php:39
 #: ../buddypress/members/register.php:32
@@ -1668,9 +1670,8 @@ msgstr "详细资料"
 
 #: ../buddypress/members/index-register.php:109
 #: ../buddypress/members/register.php:122
-#, fuzzy
 msgid "Blog Details"
-msgstr "帐户明细"
+msgstr "博客详细"
 
 #: ../buddypress/members/index-register.php:111
 #: ../buddypress/members/register.php:124
@@ -1704,6 +1705,10 @@ msgstr "是的"
 msgid "No"
 msgstr "无"
 
+#: ../buddypress/members/index-register.php:147
+msgid "Complete Sign Up"
+msgstr "完成注册"
+
 #: ../buddypress/members/index-register.php:162
 #: ../buddypress/members/register.php:175
 msgid ""
@@ -1711,13 +1716,15 @@ msgid ""
 "will need to activate your account via the email we have just sent to your "
 "address."
 msgstr ""
+"您已成功创建您的帐户！要开始使用这个网站，您将需要通过我们刚寄到的邮件来激活"
+"您的帐户。"
 
 #: ../buddypress/members/index-register.php:164
 #: ../buddypress/members/register.php:177
 msgid ""
 "You have successfully created your account! Please log in using the username "
 "and password you have just created."
-msgstr ""
+msgstr "您已成功创建您的帐户！请登录使用你刚才创建的用户名和密码。"
 
 #: ../buddypress/members/members-loop.php:235
 #, fuzzy
@@ -1955,19 +1962,19 @@ msgstr ""
 msgid "Visibility"
 msgstr "能见度"
 
-#: ../footer-prelogin.php:10
+#: ../footer-prelogin.php:10 ../footer.php:3
 msgid "ABOUT"
 msgstr "关于"
 
-#: ../footer-prelogin.php:11
+#: ../footer-prelogin.php:11 ../footer.php:4
 msgid "HELP"
 msgstr "帮助"
 
-#: ../footer-prelogin.php:12
+#: ../footer-prelogin.php:12 ../footer.php:5
 msgid "FAQ"
 msgstr "常问问题"
 
-#: ../footer-prelogin.php:13
+#: ../footer-prelogin.php:13 ../footer.php:6
 msgid "CONTACT US"
 msgstr "联系我们"
 

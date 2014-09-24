@@ -6,14 +6,14 @@
                         <div id="buddypress">
                                 <?php do_action( 'bp_before_register_page' ); ?>
                                 <div id="page">
-                                    <h3>Create an Account</h3>
+                                    <h3><?php _e('Create an Account','knowtion');?></h3>
                                     <form action="" name="signup_form" id="signup_form" class="standard-form" method="post" enctype="multipart/form-data">
 
                                     <?php if ( 'registration-disabled' == bp_get_current_signup_step() ) : ?>
                                             <?php do_action( 'template_notices' ); ?>
                                             <?php do_action( 'bp_before_registration_disabled' ); ?>
 
-                                                    <p><?php _e( 'User registration is currently not allowed.', 'buddypress' ); ?></p>
+                                                    <p><?php _e( 'User registration is currently not allowed.', 'knowtion' ); ?></p>
 
                                             <?php do_action( 'bp_after_registration_disabled' ); ?>
                                     <?php endif; // registration-disabled signup setp ?>
@@ -22,7 +22,7 @@
 
                                             <?php do_action( 'template_notices' ); ?>
 
-                                            <p style="margin:10px 0px 10px 0px;font-size: 15px;"><?php _e( 'Registering for this site is easy. Just fill in the fields below, and we\'ll get a new account set up for you in no time.', 'buddypress' ); ?></p>
+                                            <p style="margin:10px 0px 10px 0px;font-size: 15px;"><?php _e( 'Registering for this site is easy. Just fill in the fields below, and we\'ll get a new account set up for you in no time.', 'knowtion' ); ?></p>
                                             
                                             <?php do_action( 'bp_before_account_details_fields' ); ?>
 
@@ -30,7 +30,7 @@
 
                                                     <?php /***** Basic Account Details ******/ ?>
 
-                                                    <h4><?php _e( 'Account Details', 'buddypress' ); ?></h4>
+                                                    <h4><?php _e( 'Account Details', 'knowtion' ); ?></h4>
 
                                                     <label for="signup_username"><?php _e( 'Username', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
                                                     <?php do_action( 'bp_signup_username_errors' ); ?>
@@ -62,7 +62,7 @@
 
                                                     <div class="register-section" id="profile-details-section">
 
-                                                            <h4><?php _e( 'Profile Details', 'buddypress' ); ?></h4>
+                                                            <h4><?php _e( 'Profile Details', 'knowtion' ); ?></h4>
 
                                                             <?php /* Use the profile field loop to render input fields for the 'base' profile field group */ ?>
                                                             <?php if ( bp_is_active( 'xprofile' ) ) : if ( bp_has_profile( array( 'profile_group_id' => 1, 'fetch_field_data' => false ) ) ) : while ( bp_profile_groups() ) : bp_the_profile_group(); ?>
@@ -144,7 +144,7 @@
                                             <?php do_action( 'bp_before_registration_submit_buttons' ); ?>
 
                                             <div class="submit">
-                                                    <input type="submit" name="signup_submit" id="signup_submit" value="<?php esc_attr_e( 'Complete Sign Up', 'buddypress' ); ?>" />
+                                                    <input type="submit" name="signup_submit" id="signup_submit" value="<?php _e( 'Complete Sign Up', 'knowtion' ); ?>" />
                                             </div>
 
                                             <?php do_action( 'bp_after_registration_submit_buttons' ); ?>
@@ -159,9 +159,9 @@
                                             <?php do_action( 'bp_before_registration_confirmed' ); ?>
                                             <p class="mark-success">
                                             <?php if ( bp_registration_needs_activation() ) : ?>
-                                                    <span ><?php _e( 'You have successfully created your account! To begin using this site you will need to activate your account via the email we have just sent to your address.', 'buddypress' ); ?></span>
+                                                    <span ><?php _e( 'You have successfully created your account! To begin using this site you will need to activate your account via the email we have just sent to your address.', 'knowtion' ); ?></span>
                                             <?php else : ?>
-                                                    <?php _e( 'You have successfully created your account! Please log in using the username and password you have just created.', 'buddypress' ); ?>
+                                                    <?php _e( 'You have successfully created your account! Please log in using the username and password you have just created.', 'knowtion' ); ?>
                                             <?php endif; ?>
                                             </p>
                                             <?php do_action( 'bp_after_registration_confirmed' ); ?>
