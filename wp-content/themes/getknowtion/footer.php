@@ -10,20 +10,6 @@
     </table>
 </div>
 <?php wp_footer();?>
-<!-- end container --> 
-<!--
-<div id="outgoingcallpopup" style="display:none;border:5px solid black;width:200px;height:100px;background-color: gray;position:absolute;">
-    <img src="" width="32" height="32" border="0"/>
-    <input type="button" id="callcancel" value="End" style="display:block;"/>
-</div>
--->
-<!--
-<div id="incomingcallpopup" style="display:none;border:5px solid black;width:200px;height:100px;background-color: gray;position:absolute;">
-    <img src="" width="32" height="32" border="0"/>
-    <input type="button" id="callacceptbutton" value="Accept" style="display:block;"/>
-    <input type="button" id="rejectcallbutton" value="Reject" style="display:block;"/>
-</div>
--->
 <div id="outgoingcallpopup" class="call-box">
     <div style="padding:35px;">
             <table cellspacing="0" cellpadding="0" border="0">

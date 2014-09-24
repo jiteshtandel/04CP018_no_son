@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
-"POT-Creation-Date: 2014-09-24 01:25+0530\n"
-"PO-Revision-Date: 2014-09-25 00:17+0530\n"
+"POT-Creation-Date: 2014-09-25 01:56+0530\n"
+"PO-Revision-Date: 2014-09-25 02:12+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -777,6 +777,10 @@ msgstr "用户在线！"
 msgid "There are no users currently online"
 msgstr "有没有用户在线"
 
+#: ../bbpress/loop-replies.php:19 ../bbpress/loop-search-topic.php:26
+msgid "Topic: "
+msgstr "主题："
+
 #: ../bbpress/loop-search-forum.php:16
 #, php-format
 msgid "Last updated %s"
@@ -789,10 +793,6 @@ msgstr "论坛："
 #: ../bbpress/loop-search-reply.php:24
 msgid "In reply to: "
 msgstr "在回答："
-
-#: ../bbpress/loop-search-topic.php:26
-msgid "Topic: "
-msgstr "主题："
 
 #: ../bbpress/loop-search-topic.php:33
 msgid "in group forum "
@@ -1590,7 +1590,7 @@ msgstr ""
 msgid ""
 "Your account was activated successfully! Your account details have been sent "
 "to you in a separate email."
-msgstr ""
+msgstr "您的帐户已成功激活。在一个单独的电子邮件帐户信息已经发送给您。"
 
 #: ../buddypress/members/activate.php:16
 #: ../buddypress/members/index-activate.php:15
@@ -1599,16 +1599,22 @@ msgid ""
 "Your account was activated successfully! You can now <a href=\"%s\">log in</"
 "a> with the username and password you provided when you signed up."
 msgstr ""
+"您的账户已成功激活.现在，您可以<a href=\"%s\">登录</a>的用户名和你注册时您所"
+"提供的密码。"
 
 #: ../buddypress/members/activate.php:20
 #: ../buddypress/members/index-activate.php:19
 msgid "Please provide a valid activation key."
-msgstr ""
+msgstr "请提供一个有效的激活密钥。"
 
 #: ../buddypress/members/activate.php:23
 #: ../buddypress/members/index-activate.php:22
 msgid "Activation Key:"
-msgstr ""
+msgstr "激活码"
+
+#: ../buddypress/members/index-activate.php:25
+msgid "Activate"
+msgstr "激活"
 
 #: ../buddypress/members/index-directory.php:114
 #: ../buddypress/members/index.php:38
@@ -2008,6 +2014,25 @@ msgstr ""
 #: ../page-templates/forgot-password-reset.php:95
 msgid "To reset your password, visit the following address:"
 msgstr ""
+
+#: ../page-templates/forgot-password-reset.php:118
+msgid "Forgot Password"
+msgstr "忘记密码"
+
+#: ../page-templates/forgot-password-reset.php:123
+msgid ""
+"Please enter your username or email address. You will receive a link to "
+"create a new password via email."
+msgstr ""
+"请输入您的用户名或电子邮件地址。您将收到一个链接，创建通过电子邮件新的密码。"
+
+#: ../page-templates/forgot-password-reset.php:126
+msgid "Username or Email:"
+msgstr "用户名或电子邮件:"
+
+#: ../page-templates/forgot-password-reset.php:131
+msgid "Reset Password"
+msgstr "重设密码"
 
 #: ../page-templates/forgot-password-reset.php:169
 msgid "Not Found"

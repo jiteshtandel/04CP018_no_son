@@ -19,7 +19,7 @@
 <?php wp_footer();?>
     </body>
 </html>
+<div id="popupmodel"></div>
 <div id="loader" align="center">
-    <img src="<?php echo THEME_DIR;?>/images/loader.gif" width="32" height="32" />
-    <label>Please wait...</label>
+        <img src="<?php echo THEME_DIR . '/images/loader.png';?>" height="32" width="110" border="0"/>
 </div>

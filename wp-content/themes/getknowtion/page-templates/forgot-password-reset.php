@@ -115,20 +115,20 @@ if (!$user_ID) { //block logged in users
                     <?php while ( have_posts() ) : the_post(); ?>
                         <article>
                             <header class="entry-header">
-                                <h3 class="entry-title"><?php the_title(); ?></h3>
+                                <h3 class="entry-title"><?php _e('Forgot Password','knowtion');?></h3>
                             </header><!-- .entry-header -->
                             <div class="entry-content">
                                     <div id="buddypress">
                                         <div id="activate-page" class="page">
-                                            <p>Please enter your username or email address. You will receive a link to create a new password via email.</p>
+                                            <p><?php _e('Please enter your username or email address. You will receive a link to create a new password via email.','knowtion');?></p>
                                             <div id="notification" style="margin:10px 0px 0px 0px;"></div>
                                             <form id="wp_pass_reset" class="standard-form" action="" method="post">
-                                                <label for="key">Username or E-mail:</label>
+                                                <label for="key"><?php _e('Username or Email:','knowtion');?></label>
                                                 <input type="text" class="text" id="user_input" name="user_input" value="" /><br />
                                                 <input type="hidden" name="action" value="tg_pwd_reset" />
                                                 <input type="hidden" name="tg_pwd_nonce" value="<?php echo wp_create_nonce("tg_pwd_nonce"); ?>" />
                                                 <p class="submit">
-                                                    <input type="submit" id="submitbtn" class="reset_password" name="submit" value="Reset Password" />					
+                                                    <input type="submit" id="submitbtn" class="reset_password" name="submit" value="<?php _e('Reset Password','knowtion');?>" />					
                                                 </p>                                                    
                                             </form>
                                             <div id="result"></div> <!-- To hold validation results -->
@@ -152,7 +152,7 @@ if (!$user_ID) { //block logged in users
                                                         });
                                                      }
                                                      else{
-                                                        jQuery("#notification").notification({caption: "Please enter your Username or E-mail address",type:"warning",sticky:true});
+                                                        jQuery("#notification").notification({caption: "Please enter your Username or E-mail address.",type:"warning",sticky:true});
                                                      }   
                                                     return false;
                                                 });
