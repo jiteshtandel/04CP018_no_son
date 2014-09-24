@@ -16,11 +16,11 @@
 
 			<li id="members-order-select" class="last filter">
 
-				<label for="members-friends"><?php _e( 'Order By:', 'buddypress' ); ?></label>
+				<label for="members-friends"><?php _e( 'Order By:', 'knowtion' ); ?></label>
 				<select id="members-friends">
-					<option value="active"><?php _e( 'Last Active', 'buddypress' ); ?></option>
-					<option value="newest"><?php _e( 'Newest Registered', 'buddypress' ); ?></option>
-					<option value="alphabetical"><?php _e( 'Alphabetical', 'buddypress' ); ?></option>
+					<option value="active"><?php _e( 'Last Active', 'knowtion' ); ?></option>
+					<option value="newest"><?php _e( 'Newest Registered', 'knowtion' ); ?></option>
+					<option value="alphabetical"><?php _e( 'Alphabetical', 'knowtion' ); ?></option>
 
 					<?php do_action( 'bp_member_friends_order_options' ); ?>
 

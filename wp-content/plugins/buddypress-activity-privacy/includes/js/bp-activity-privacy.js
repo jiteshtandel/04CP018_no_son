@@ -124,9 +124,10 @@ jq(document).ready( function() {
 
 		if (typeof bp_get_cookies == 'function')
 			var cookie = bp_get_cookies();
-    	else 
-    		var cookie = encodeURIComponent(document.cookie);
-
+                else 
+                    var cookie = encodeURIComponent(document.cookie);
+                
+                showLoader();    
 		jq.post( ajaxurl, {
 			action: 'post_update',
 			'cookie': cookie,
@@ -138,62 +139,11 @@ jq(document).ready( function() {
 			'_bp_as_nonce': jq('#_bp_as_nonce').val() || ''
 		},
 		function(response) {
-
-			form.children().each( function() {
-				if ( jq.nodeName(this, "textarea") || jq.nodeName(this, "input") ) {
-					jq(this).prop( 'disabled', false );
-				}
-			});
-
-			/* Check for errors and append if found. */
-			if ( response[0] + response[1] == '-1' ) {
-				form.prepend( response.substr( 2, response.length ) );
-				jq( 'form#' + form.attr('id') + ' div.error').hide().fadeIn( 200 );
-			} else {
-				if ( 0 == jq("ul.activity-list").length ) {
-					jq("div.error").slideUp(100).remove();
-					jq("div#message").slideUp(100).remove();
-					jq("div.activity").append( '<ul id="activity-stream" class="activity-list item-list">' );
-				}
-
-				jq("ul#activity-stream").prepend(response);
-				jq("ul#activity-stream li:first").addClass('new-update');
-
-				if ( 0 != jq("#latest-update").length ) {
-					var l = jq("ul#activity-stream li.new-update .activity-content .activity-inner p").html();
-					var v = jq("ul#activity-stream li.new-update .activity-content .activity-header p a.view").attr('href');
-
-					var ltext = jq("ul#activity-stream li.new-update .activity-content .activity-inner p").text();
-
-					var u = '';
-					if ( ltext != '' )
-						u = l + ' ';
-
-					u += '<a href="' + v + '" rel="nofollow">' + BP_DTheme.view + '</a>';
-
-					jq("#latest-update").slideUp(300,function(){
-						jq("#latest-update").html( u );
-						jq("#latest-update").slideDown(300);
-					});
-				}
-
-				jq("li.new-update").hide().slideDown( 300 );
-				jq("li.new-update").removeClass( 'new-update' );
-				jq("textarea#whats-new").val('');
-			}
-
-			jq("#whats-new-options").animate({
-				height:'0px'
-			});
-			jq("form#whats-new-form textarea").animate({
-				height:'20px'
-			});
-			jq("#aw-whats-new-submit").prop("disabled", true).removeClass('loading');
-
-			//reset the privacy selection
-			jq("select#activity-privacy option[selected]").prop('selected', true).trigger('change');
-
-			jq('select.bp-ap-selectbox').customStyle('2');
+                        hideLoader();
+                        //Reload page due to show and hide problem
+                        var loggedin_user_domain=jq("#homelink").attr("href");
+                        window.location.href=loggedin_user_domain;
+                        
 		});
 
 		return false;

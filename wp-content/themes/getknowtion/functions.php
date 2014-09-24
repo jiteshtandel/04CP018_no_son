@@ -28,7 +28,7 @@
  */
 define("THEME_DIR", get_template_directory_uri());
 define("HOME_URL", home_url());
-define("PER_PAGE_RECORDS", 2);
+define("PER_PAGE_RECORDS", 10);
 define("MEMBERS_PER_PAGE", 20);
 /*--- REMOVE GENERATOR META TAG ---*/
 remove_action('wp_head', 'wp_generator');

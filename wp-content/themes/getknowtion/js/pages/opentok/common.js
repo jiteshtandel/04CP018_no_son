@@ -14,7 +14,9 @@ session.addEventListener("streamCreated", streamCreatedHandler);
 session.addEventListener("connectionCreated", connectionCreatedHandler);
 
 function exceptionHandler(event) {
-    alert("Exception: " + event.code + "::" + event.message);
+    //alert("Exception: " + event.code + "::" + event.message);
+	jQuery("#callbutton").val("Video Chat");
+	console.log("Exception: " + event.code + "::" + event.message);
 }
 
 function connectionCreatedHandler(event){
@@ -30,11 +32,14 @@ function connectionCreatedHandler(event){
 			*/
 			//if(jQuery("#callbutton")){
 				jQuery("#callbutton").css("backgroundColor", "#006738");
+				//jQuery("#callbutton").val("Video Chat");
 				jQuery("#callbutton").click(sendSignalUserCalling);
 			//}
             userconnectionid = event.connections[0];
         }
     }
+	
+	jQuery("#callbutton").val("Video Chat");
 }
 
 function sessionConnectedHandler(event){
@@ -63,6 +68,8 @@ function sessionConnectedHandler(event){
             console.log(userconnectionid);
         }
     }
+	
+	jQuery("#callbutton").val("Video Chat");
     
     if(!stateManager){
         stateManager = session.getStateManager();
@@ -159,7 +166,14 @@ console.log(usertocall);
 
 function connect(){
 	console.log("in connect here");
-    session.connect(apiKey, token); 
+    session.connect(apiKey, token);
+	console.log("connected");	
+	
+	setTimeout(noConnectionAvailable, 40000);
+}
+
+function noConnectionAvailable(){
+	jQuery("#callbutton").val("Video Chat");
 }
 
 function publish(){
