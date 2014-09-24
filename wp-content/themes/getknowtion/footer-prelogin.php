@@ -7,10 +7,10 @@
 ?>
             <tr>
                 <td valign="middle" align="left" id="footer">
-                    <div class="about"><a class="footer-white-link" href="<?php echo site_url() . "/about-us";?>">ABOUT</a></div>
-                    <div class="help"><a class="footer-white-link" href="<?php echo site_url() . "/help";?>">HELP</a></div>
-                    <div class="faq"><a class="footer-white-link" href="<?php echo site_url() . "/faqs";?>">FAQ</a></div>
-                    <div class="contactus"><a class="footer-white-link" href="<?php echo site_url() . "/contact-us";?>">CONTACT US</a></div>
+                    <div class="about"><a class="footer-white-link" href="<?php echo HOME_URL . "/about-us";?>"><?php _e('ABOUT','knowtion');?></a></div>
+                    <div class="help"><a class="footer-white-link" href="<?php echo HOME_URL . "/help";?>"><?php _e('HELP','knowtion');?></a></div>
+                    <div class="faq"><a class="footer-white-link" href="<?php echo HOME_URL . "/faqs";?>"><?php _e('FAQ','knowtion');?></a></div>
+                    <div class="contactus"><a class="footer-white-link" href="<?php echo HOME_URL . "/contact-us";?>"><?php _e('CONTACT US','knowtion');?></a></div>
                     <div class="copyright">Knowtion &copy; 2013</div>
                 </td>
             </tr>

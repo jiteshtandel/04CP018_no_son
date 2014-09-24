@@ -12,10 +12,10 @@
 
             <tr>
                 <td valign="middle" align="left" id="footer">
-                    <div class="about">ABOUT</div>
-                    <div class="help">HELP</div>
-                    <div class="faq">FAQ</div>
-                    <div class="contactus">CONTACT US</div>
+                    <div class="about"><?php _e('ABOUT','knowtion');?></div>
+                    <div class="help"><?php _e('HELP','knowtion');?></div>
+                    <div class="faq"><?php _e('FAQ','knowtion');?></div>
+                    <div class="contactus"><?php _e('CONTACT US','knowtion');?></div>
                     <div class="copyright">Knowtion &copy; 2013</div>
                 </td>
             </tr>

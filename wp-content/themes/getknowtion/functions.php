@@ -417,11 +417,15 @@ add_filter('show_admin_bar', '__return_false');
 add_filter('bbp_before_get_breadcrumb_parse_args', 'mycustom_breadcrumb_options');
 
 // video call constants
-/*OLD*/
+/*OLD Opentok config*/ 
 //define("API_KEY", "44942912");
 //define("API_SECRET", "9ea1ba41c7232eac5ebc68323876ec9d2a8b90f2");
-/*NEW*/ 
+/*NEW Opentok config*/ 
 define("API_KEY","44983012");
 define("API_SECRET","c10f770b5b0a0d4398b824c4430609e8bf55f8a7");
 //Please change Sessionid on main.css page also 
 define("SESSIONID","1_MX40NDk4MzAxMn5-U2F0IFNlcCAxMyAwMTo0ODoxNiBQRFQgMjAxNH4wLjk0MjA5NH5-");
+/* 
+ * use only on live
+2_MX40NDk4MzAxMn5-MTQxMTU4MDU3NzAyNX5jalZyd3kwM0pMV0ZqS3VTMXJteHpoMDV-fg 
+ */
