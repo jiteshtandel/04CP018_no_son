@@ -105,7 +105,7 @@
                                                 <div class="dropdown">
                                                     <div class="user">
                                                         <div class="header-account-text">
-                                                            My Account
+                                                            <?php _e( 'My Account', 'knowtion' ); ?>
                                                             <?php if($totalnotifications>0){?>
                                                                 <div class="notification-count-main"><?php echo $totalnotifications;?></div>
                                                             <?php }?>
@@ -121,10 +121,10 @@
                                                             <tr>
                                                                 <td colspan="3" class="popover-border-bottom popover-border-right popover-border-left popover-bg">
                                                                     <ul class="root">
-                                                                    <li><a href="<?php echo $homepagepath . 'profile';?>">My Account</a></li>
+                                                                    <li><a href="<?php echo $homepagepath . 'profile';?>"><?php _e( 'My Account', 'knowtion' ); ?></a></li>
                                                                         <li>
                                                                             <a href="<?php echo $homepagepath . 'messages';?>">
-                                                                                Messages
+                                                                                <?php _e( 'Messages', 'knowtion' ); ?>
                                                                                 <?php if($totalunreadmessages>0){?>
                                                                                     <div class="notification-count-main"><?php echo $totalunreadmessages; ?></div>
                                                                                 <?php }?>
@@ -132,15 +132,15 @@
                                                                         </li>
                                                                         <li>
                                                                             <a href="<?php echo $homepagepath . 'friends';?>">
-                                                                                Friends
+                                                                                <?php _e( 'Friends', 'knowtion' ); ?>
                                                                                 <?php if($totalfriendsrequest>0){?>
                                                                                     <div class="notification-count-main"><?php echo $totalfriendsrequest; ?></div>
                                                                                 <?php }?>
                                                                                 
                                                                             </a>
                                                                         </li>
-                                                                        <li><a href="<?php echo $homepagepath . 'settings';?>">Settings</a></li>
-                                                                        <li><a href="<?php echo wp_logout_url(home_url()); ?> ">Sign Out</a></li>
+                                                                        <li><a href="<?php echo $homepagepath . 'settings';?>"><?php _e( 'Settings', 'knowtion' ); ?></a></li>
+                                                                        <li><a href="<?php echo wp_logout_url(home_url()); ?> "><?php _e( 'Sign Out', 'knowtion' ); ?></a></li>
                                                                     </ul>                                                    
                                                                 </td>
                                                             </tr>

@@ -43,7 +43,7 @@
     }
 ?>
 <div>
-    <h6 class="suggested-knowtions">who to know</h6>
+    <h6 class="suggested-knowtions"><?php _e( 'who to know', 'knowtion' ); ?></h6>
     <div style="margin:15px 0px 0px 5px">
 <?php if ( bp_has_members(bp_ajax_querystring('members').'&per_page=8&type=random&exclude=1,' . $current_loggedin_userid . $has_arg)) : ?>        
         <table border="0" cellpadding="0" cellspacing="0">
@@ -69,7 +69,7 @@
         </table>
 <?php else: ?>
 	<div>
-		<p>Sorry, no any matching profile found related to your profile.</p>
+		<p><?php _e( 'Sorry, no any matching profile found related to your profile.', 'knowtion' ); ?></p>
 	</div>
 <?php endif; ?>        
     </div>

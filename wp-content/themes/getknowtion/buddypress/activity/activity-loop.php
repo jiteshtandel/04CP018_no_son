@@ -32,7 +32,7 @@
 	<?php if ( bp_activity_has_more_items() ) : ?>
 
 		<li class="load-more">
-			<a href="#more"><?php _e( 'Load More', 'buddypress' ); ?></a>
+			<a href="#more"><?php _e( 'Load More', 'knowtion' ); ?></a>
 		</li>
 
 	<?php endif; ?>
@@ -50,7 +50,7 @@
 
 	<div id="message" class="box-round-border info clearboth ">
             <div class="member-post">
-		<?php _e( 'Sorry, there was no activity found.', 'buddypress' ); ?>
+		<?php _e( 'Sorry, there was no activity found.', 'knowtion' ); ?>
             </div>
 	</div>
 

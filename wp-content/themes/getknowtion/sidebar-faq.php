@@ -4,7 +4,7 @@
  */
 ?>
 <div style="padding:15px 0 25px 5px;">
-    <div class="sub-title-15">FAQ</div>
+    <div class="sub-title-15"><?php _e( 'FAQ', 'knowtion' ); ?></div>
 <?php
         $args = array( 'posts_per_page' => 3, 'orderby' => 'rand','cat'=>4,'post_status' => 'publish' );
         $rand_posts = get_posts( $args );        

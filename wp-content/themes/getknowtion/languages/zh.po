@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
-"POT-Creation-Date: 2014-09-25 01:56+0530\n"
-"PO-Revision-Date: 2014-09-25 02:12+0530\n"
+"POT-Creation-Date: 2014-09-26 00:38+0530\n"
+"PO-Revision-Date: 2014-09-26 00:39+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -75,7 +75,7 @@ msgid "Registered Users"
 msgstr "注册用户"
 
 #: ../bbpress/content-statistics.php:22
-#, fuzzy
+#: ../buddypress/members/single/user-home.php:29
 msgid "Forums"
 msgstr "论坛"
 
@@ -1000,6 +1000,10 @@ msgid "Comment ( <span>%s</span>)"
 msgstr "评论 ( <span>%s</span>)"
 
 #: ../buddypress/activity/entry.php:66
+msgid "Post"
+msgstr "发表"
+
+#: ../buddypress/activity/entry.php:66
 #: ../buddypress/activity/member-entry.php:59
 #: ../buddypress/activity/test.php:36
 msgid "Cancel"
@@ -1104,6 +1108,10 @@ msgstr ""
 #, php-format
 msgid "What's new, %s?"
 msgstr ""
+
+#: ../buddypress/activity/post-form.php:35
+msgid "Post Update"
+msgstr "帖子更新"
 
 #: ../buddypress/activity/post-form.php:42
 msgid "Post in"
@@ -1586,14 +1594,12 @@ msgid "There are no pending membership requests."
 msgstr ""
 
 #: ../buddypress/members/activate.php:14
-#: ../buddypress/members/index-activate.php:13
 msgid ""
 "Your account was activated successfully! Your account details have been sent "
 "to you in a separate email."
 msgstr "您的帐户已成功激活。在一个单独的电子邮件帐户信息已经发送给您。"
 
 #: ../buddypress/members/activate.php:16
-#: ../buddypress/members/index-activate.php:15
 #, php-format
 msgid ""
 "Your account was activated successfully! You can now <a href=\"%s\">log in</"
@@ -1611,6 +1617,22 @@ msgstr "请提供一个有效的激活密钥。"
 #: ../buddypress/members/index-activate.php:22
 msgid "Activation Key:"
 msgstr "激活码"
+
+#: ../buddypress/members/index-activate.php:13
+#, fuzzy
+msgid ""
+"Your account was activated successfully. Your account details have been sent "
+"to you in a separate email."
+msgstr "您的帐户已成功激活。在一个单独的电子邮件帐户信息已经发送给您。"
+
+#: ../buddypress/members/index-activate.php:15
+#, fuzzy, php-format
+msgid ""
+"Your account was activated successfully. You can now <a href=\"%s\">log in</"
+"a> with the username and password you provided when you signed up."
+msgstr ""
+"您的账户已成功激活.现在，您可以<a href=\"%s\">登录</a>的用户名和你注册时您所"
+"提供的密码。"
 
 #: ../buddypress/members/index-activate.php:25
 msgid "Activate"
@@ -1968,6 +1990,66 @@ msgstr ""
 msgid "Visibility"
 msgstr "能见度"
 
+#: ../buddypress/members/single/user-home.php:14
+msgid "Edit Profile"
+msgstr "编辑个人资料"
+
+#: ../buddypress/members/single/user-home.php:20
+msgid "Home"
+msgstr "首页"
+
+#: ../buddypress/members/single/user-home.php:23
+msgid "Manage my calendar"
+msgstr "管理我的日历"
+
+#: ../buddypress/members/single/user-home.php:26
+msgid "Schedule a lesson"
+msgstr "附表一课"
+
+#: ../buddypress/members/single/user-home.php:38
+msgid "Get to Know"
+msgstr "可以认识"
+
+#: ../buddypress/members/single/user-home.php:40
+msgid "Browse Language Partners"
+msgstr "浏览语言伙伴"
+
+#: ../buddypress/members/single/user-home.php:41
+msgid "Search for language partners in your target languages."
+msgstr "寻找语言伙伴在目标语言。"
+
+#: ../buddypress/members/single/user-home.php:43
+msgid "Schedule a Lesson"
+msgstr "安排课程"
+
+#: ../buddypress/members/single/user-home.php:44
+msgid "Set a time for your first online language lesson."
+msgstr "设定一个时间，你的第一个网上语文课。"
+
+#: ../buddypress/members/single/user-home.php:46
+msgid "Visit a Forum"
+msgstr "访问论坛"
+
+#: ../buddypress/members/single/user-home.php:47
+msgid "Now that you've had a lesson, give feedback on your teacher."
+msgstr "现在你已经有一个教训，给你的老师的反馈。"
+
+#: ../buddypress/members/single/user-home.php:51
+msgid "Update Your Status"
+msgstr "更新您的状态"
+
+#: ../buddypress/members/single/user-home.php:66
+msgid "Personal"
+msgstr "个人"
+
+#: ../buddypress/members/single/user-home.php:67 ../header.php:135
+msgid "Friends"
+msgstr "朋友"
+
+#: ../buddypress/members/single/user-home.php:78
+msgid "Suggested"
+msgstr "建议"
+
 #: ../footer-prelogin.php:10 ../footer.php:3
 msgid "ABOUT"
 msgstr "关于"
@@ -1976,13 +2058,29 @@ msgstr "关于"
 msgid "HELP"
 msgstr "帮助"
 
-#: ../footer-prelogin.php:12 ../footer.php:5
+#: ../footer-prelogin.php:12 ../footer.php:5 ../sidebar-faq.php:7
 msgid "FAQ"
 msgstr "常问问题"
 
 #: ../footer-prelogin.php:13 ../footer.php:6
 msgid "CONTACT US"
 msgstr "联系我们"
+
+#: ../header.php:108 ../header.php:124
+msgid "My Account"
+msgstr "我的账户"
+
+#: ../header.php:127
+msgid "Messages"
+msgstr "消息"
+
+#: ../header.php:142
+msgid "Settings"
+msgstr "设置"
+
+#: ../header.php:143
+msgid "Sign Out"
+msgstr "登出"
 
 #: ../page-templates/forgot-password-reset.php:33
 msgid "Your new password for the account at:"
@@ -2090,6 +2188,18 @@ msgstr "类别"
 #: ../sidebar-forums.php:48
 msgid "More"
 msgstr "更多"
+
+#: ../sidebar-suggestedknowtion.php:65
+msgid "Sorry, no any suggested matching profile found related to your profile."
+msgstr "对不起，没有任何提示找到与您的个人资料匹配的配置。"
+
+#: ../sidebar-whotoknow.php:46
+msgid "who to know"
+msgstr "谁知道"
+
+#: ../sidebar-whotoknow.php:72
+msgid "Sorry, no any matching profile found related to your profile."
+msgstr "对不起，没有任何匹配的配置文件中发现有关您的个人资料。"
 
 #, fuzzy
 #~ msgid "saving open changes\n"

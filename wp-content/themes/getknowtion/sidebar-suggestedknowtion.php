@@ -62,7 +62,7 @@
     <div class="about-user"><?php echo ellipses($about_user,200); ?></div>
     <div align="right"><input class="green-button" type="button" name="viewprofile" value="View Profile" onclick="location.href='<?php echo $suggested_userdomain;?>';" /></div>	
 <?php }else{?>
-    <div><p>Sorry, no any suggested matching profile found related to your profile.</p></div>
+    <div><p><?php _e( 'Sorry, no any suggested matching profile found related to your profile.', 'knowtion' ); ?></p></div>
 <?php }?> 
     <div class="clearboth"></div>
 </div>
