@@ -36,9 +36,19 @@ function get_schedule_requests($user_id){
 /*
  * Get all the records above or equal today
  */
-function get_future_schedule_requests($user_id){
+function get_future_schedule_requests($user_id, $search_year){
     global $wpdb;
-    $requests = $wpdb->get_results('select * from wp_schedule WHERE user_id = '.$user_id .' AND schedule_date >="'. date('Y-m-d') .'" ORDER BY schedule_date ASC');
+
+    if(empty($search_year) || $search_year == 0){
+        $q ='select * from wp_schedule WHERE user_id = '.$user_id .' AND schedule_date >="'. date('Y-m-d') .'" ORDER BY schedule_date ASC';
+    } else {
+        if($search_year == date("Y"))
+            $q ='select * from wp_schedule WHERE user_id = '.$user_id .' AND schedule_date >="'. date('Y-m-d') .'" AND schedule_date <="'. $search_year .'-12-31 23:59:59" ORDER BY schedule_date ASC';
+        else
+            $q ='select * from wp_schedule WHERE user_id = '.$user_id .' AND schedule_date >="'. $search_year .'-01-01 00:00:00" AND schedule_date <="'. $search_year .'-12-31 23:59:59" ORDER BY schedule_date ASC';
+    }
+
+    $requests = $wpdb->get_results($q);
     //echo $wpdb->last_query ."\n";
 
     return $requests;
@@ -100,9 +110,18 @@ function get_schedule_free_times($user_id, $batch_id, $schedule_date){
     return false;
 }
 
-function get_approved_schedules($user_id){
+function get_approved_schedules($user_id, $search_year){
     global $wpdb, $schedule_time_batch_table;
-    $result = $wpdb->get_results('select * from '.$schedule_time_batch_table.' WHERE (user_id = '.$user_id.' OR booked_user_id='. $user_id .') AND booked=1 ORDER BY schedule_date ASC');
+
+    if(empty($search_year) || $search_year == 0){
+        $q = 'select * from '.$schedule_time_batch_table.' WHERE (user_id = '.$user_id.' OR booked_user_id='. $user_id .') AND booked=1 ORDER BY schedule_date ASC';
+    } else {
+        if($search_year == date("Y"))
+            $q = 'select * from '.$schedule_time_batch_table.' WHERE (user_id = '.$user_id.' OR booked_user_id='. $user_id .') AND booked=1 AND schedule_date >="'. date('Y-m-d') .'" AND schedule_date <="'. $search_year .'-12-31 23:59:59" ORDER BY schedule_date ASC';
+        else
+            $q = 'select * from '.$schedule_time_batch_table.' WHERE (user_id = '.$user_id.' OR booked_user_id='. $user_id .') AND booked=1 AND schedule_date >="'. $search_year .'-01-01 00:00:00" AND schedule_date <="'. $search_year .'-12-31 23:59:59" ORDER BY schedule_date ASC';
+    }
+    $result = $wpdb->get_results($q);
     //echo $wpdb->last_query."\n";
 
     if(!empty($result))
@@ -360,10 +379,21 @@ function get_time_batch($schedule_id){
     return false;
 }
 
-function get_sent_request($requester_id){
+function get_sent_request($requester_id, $search_year){
     global $wpdb, $schedule_request_table;
-    $result = $wpdb->get_results('select * from '.$schedule_request_table.' WHERE requester_id = '.$requester_id .' AND approved = 0 AND schedule_date >= "' . date('Y-m-d') .'"');
 
+    if(empty($search_year) || $search_year == 0){
+        $q = 'select * from '.$schedule_request_table.' WHERE requester_id = '.$requester_id .' AND approved = 0 AND schedule_date >= "' . date('Y-m-d') .'" ORDER BY schedule_date ASC';
+    } else {
+        if($search_year == date("Y"))
+            $q = 'select * from '.$schedule_request_table.' WHERE requester_id = '.$requester_id .' AND approved = 0 AND schedule_date >= "' . date('Y-m-d') .'" AND schedule_date <="'. $search_year .'-12-31 23:59:59" ORDER BY schedule_date ASC';
+        else
+            $q = 'select * from '.$schedule_request_table.' WHERE requester_id = '.$requester_id .' AND approved = 0 AND schedule_date >= "'. $search_year .'-01-01 00:00:00" AND schedule_date <="'. $search_year .'-12-31 23:59:59" ORDER BY schedule_date ASC';
+    }
+    $result = $wpdb->get_results($q);
+
+
+    //$result = $wpdb->get_results('select * from '.$schedule_request_table.' WHERE requester_id = '.$requester_id .' AND approved = 0 AND schedule_date >= "' . date('Y-m-d') .'"');
     //echo $wpdb->last_query."\n";
     if(!empty($result) && isset($result[0]))
         return $result;

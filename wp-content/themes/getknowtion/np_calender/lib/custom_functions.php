@@ -55,30 +55,22 @@ function get_email_body($user_name, $email, $requests) {
 
 function np_year_search_form() {
 
-    $default_search_value = bp_get_search_default_text( 'messages' );
-    $search_value         = !empty( $_REQUEST['s'] ) ? stripslashes( $_REQUEST['s'] ) : $default_search_value; ?>
+    $search_year = (!empty($_REQUEST['sy']))?stripslashes($_REQUEST['sy']):0;
+?>
 
-    <?php /*
-    <form action="" method="get" id="search-message-form">
-        <label><input type="text" name="s" id="messages_search" <?php if ( $search_value === $default_search_value ) : ?>placeholder="<?php echo esc_html( $search_value ); ?>"<?php endif; ?> <?php if ( $search_value !== $default_search_value ) : ?>value="<?php echo esc_html( $search_value ); ?>"<?php endif; ?> /></label>
-        <input type="submit" id="messages_search_submit" name="messages_search_submit" value="<?php esc_attr_e( 'Search', 'buddypress' ) ?>" />
-    </form>
-    */ ?>
 
     <form id="search-requst-form" method="post" action="">
-        <select name="start_year">
-            <option value="0" selected="selected">Start Year</option>
-            <option value="2012">2012</option>
-            <option value="2013">2013</option>
-            <option value="2014">2014</option>
+        <select name="sy">
+            <option value="0">Select year</option>
+            <?php for($i = 0; $i <=3; $i++ ): ?>
+            <?php
+                $year = date("Y", strtotime('+'.$i.' year'));
+                $selected = ($search_year == $year)?'selected="selected"':'';
+            ?>
+            <option value="<?php echo $year ?>" <?php echo $selected; ?>><?php echo $year; ?></option>
+            <?php endfor; ?>
         </select>
-        <select name="end_year">
-            <option value="0" selected="selected">End Year</option>
-            <option value="2012">2012</option>
-            <option value="2013">2013</option>
-            <option value="2014">2014</option>
-        </select>
-        <input type="submit" value="Search" name="messages_search_submit" id="messages_search_submit">
+        <input type="submit" value="Search" name="schedule_search_submit" id="messages_search_submit">
     </form>
 
 <?php
