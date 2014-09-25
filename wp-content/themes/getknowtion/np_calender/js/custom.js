@@ -323,7 +323,7 @@ var first_half = 1;
         if(typeof selected_date == "undefined"){
             return false;
         }
-        var txt_date = days[selected_date.getDay()] + " " + months[selected_date.getMonth()] +" "+ selected_date.getDate();
+        var txt_date = days[selected_date.getDay()] + " " + months[selected_date.getMonth()] +" "+ selected_date.getDate() +", "+ selected_date.getFullYear();
         //$(".current_date").html(txt_date);
         $(dt_placeholder).html(txt_date);
     }

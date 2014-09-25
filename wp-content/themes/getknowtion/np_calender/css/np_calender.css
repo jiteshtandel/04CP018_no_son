@@ -168,7 +168,7 @@
 
 /* Time selection model*/
 #time_picker .selected_date{
-    width: 170px;
+    width: 200px;
     margin: 0 auto;
 }
 #time_picker{
@@ -186,12 +186,18 @@
     margin-right: 10px;
 }
 
+#time_picker .time_listing{
+    max-height: 300px;
+    overflow: scroll;
+    width: 100%;
+}
+
 #time_picker .times-placeholder ul li{
-    float: left;
     float: left;
     list-style: none outside none;
     margin: 10px 0;
-    width: 200px;
+    width: 260px;
+    height: 80px;
 }
 #time_picker #action_btns{
     float: right;

@@ -9,7 +9,7 @@ global $bp;
 //echo $bp->displayed_user->id;
 
 $user_id = get_current_user_id();
-$user_timezone = 'GMT';
+$user_timezone = getusertimezonename($user_id);
 
 $requester_id = $_REQUEST['requester_id'];
 $batch_id = $_REQUEST['batch_id'];
@@ -32,6 +32,13 @@ if($status == 1) {
 
             //approve the selected request
             $approved_id = approve_schedule_request($requester_id, $user_id, $batch_id, $schedule_time_id);
+
+            $requester_info = get_user_info($requester_id);
+            $host_info = get_user_info($user_id);
+
+            $request = get_specific_request($requester_id, $user_id, $batch_id, $schedule_time_id, $approved = 1);
+
+            @send_approval_email($requester_info, $host_info, $request);
 
             echo json_encode(array('status' => 'success', 'message' => 'Request approved', 'approved_id' => $approved_id));
             exit;

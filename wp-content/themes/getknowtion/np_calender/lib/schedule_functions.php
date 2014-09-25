@@ -198,7 +198,7 @@ function update_first_half_action($user_id, $batch_id, $first_half_action){
 }
 
 
-function request_time_schedule($requester_id, $user_id, $schedule_date, $batch_id, $time_batches){
+function request_time_schedule($requester_id, $user_id, $schedule_date, $batch_id, $time_batches, $requester_timezone, $host_timezone){
     global $wpdb, $schedule_table, $schedule_request_table, $schedule_time_batch_table;
 
     //check if host has any open free dates for request
@@ -219,18 +219,35 @@ function request_time_schedule($requester_id, $user_id, $schedule_date, $batch_i
             //get the start-time and end-time for the batch
             $schedule_time_batch = $wpdb->get_results('select * from '.$schedule_time_batch_table.' WHERE batch_id="'. $batch_id .'" AND time_id=' . $time_batch);
 
+            if($host_timezone != $requester_timezone){
+                $start_time = converToTz($schedule_date.' '.$schedule_time_batch[0]->start_time, $requester_timezone, $host_timezone);
+                $end_time = converToTz($schedule_date.' '.$schedule_time_batch[0]->end_time, $requester_timezone, $host_timezone);
+                $requester_schedule_date = date("Y-m-d", strtotime($start_time) );
+                $requester_start_time = date("g:i A", strtotime($start_time) );
+                $requester_end_time = date("g:i A", strtotime($end_time) );
+            } else {
+                $requester_schedule_date = $schedule_date;
+                $requester_start_time = $schedule_time_batch[0]->start_time;
+                $requester_end_time = $schedule_time_batch[0]->end_time;
+            }
+
             $wpdb->insert($schedule_request_table,
                 array(
                     'requester_id'=>$requester_id,
                     'host_user_id'=>$user_id,
+                    'host_timezone'=>$host_timezone,
                     'schedule_date'=>$schedule_date,
                     'batch_id'=>$batch_id,
                     'schedule_time_id'=>$time_batch,
                     'start_time'=>$schedule_time_batch[0]->start_time,
                     'end_time' => $schedule_time_batch[0]->end_time,
+                    'requester_timezone' => $requester_timezone,
+                    'requester_schedule_date' => $requester_schedule_date,
+                    'requester_start_time' => $requester_start_time,
+                    'requester_end_time' => $requester_end_time,
                     'approved' => 0,
                     'requested_on' => date('Y-m-d H:i:s'),
-                ),array('%d','%d','%s','%s','%d','%s','%s','%d','%s'));
+                ),array('%d','%d','%s','%s','%s','%d','%s','%s','%s','%s','%s','%s','%d','%s'));
                 //echo $wpdb->last_query."\n";
 
             $inserted_ids[] = $wpdb->insert_id;
@@ -415,6 +432,17 @@ function check_time_requested_from_anyone($user_id, $batch_id, $time_id){
     //echo $wpdb->last_query."\n";
     if(!empty($result) && isset($result[0]))
         return true;
+
+    return false;
+}
+
+function get_specific_request($requester_id, $host_id, $batch_id, $schedule_time_id, $approved = 1){
+    global $wpdb, $schedule_request_table;
+    $result = $wpdb->get_results('select * from '.$schedule_request_table.' WHERE requester_id ="'. $requester_id .'" AND host_user_id = "'.$host_id.'" AND batch_id = "'. $batch_id .'" AND schedule_time_id="' .$schedule_time_id.'" AND approved='.$approved);
+
+    //echo $wpdb->last_query."\n";
+    if(!empty($result) && isset($result[0]))
+        return $result[0];
 
     return false;
 }

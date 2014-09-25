@@ -5,12 +5,17 @@ require_once('../lib/custom_functions.php');
 require_once('../lib/schedule_functions.php');
 
 $requester_id = get_current_user_id();
+$requester_timezone = getusertimezonename($requester_id);
+//$requester_timezone = 'Europe/Berlin';
+
 $member_id = $_REQUEST['user_id'];
+$member_timezone = getusertimezonename($member_id);
+
 $request_date = $_REQUEST['request_date'];
 $batch_id = $_REQUEST['batch_id'];
 $time_batches = $_REQUEST['time_batches'];
 
-$inserted_ids = request_time_schedule($requester_id, $member_id, $request_date, $batch_id, $time_batches);
+$inserted_ids = request_time_schedule($requester_id, $member_id, $request_date, $batch_id, $time_batches, $requester_timezone, $member_timezone);
 
 if(! empty($inserted_ids)){
     $requester_info = get_user_info($requester_id);
