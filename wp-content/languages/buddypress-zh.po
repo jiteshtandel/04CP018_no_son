@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-09-26 00:24+0530\n"
+"PO-Revision-Date: 2014-09-26 23:37+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "X-Generator: Poedit 1.6.9\n"
@@ -2530,7 +2530,7 @@ msgstr ""
 #: bp-themes/bp-default/members/single/profile/profile-wp.php:8
 #: bp-xprofile/bp-xprofile-loader.php:309
 msgid "My Profile"
-msgstr ""
+msgstr "我的个人资料"
 
 #: bp-core/deprecated/1.5.php:149 bp-members/admin/bp-members-classes.php:128
 #: bp-members/admin/bp-members-classes.php:446
@@ -3533,7 +3533,7 @@ msgstr ""
 #: bp-themes/bp-default/members/single/settings/notifications.php:61
 #: bp-xprofile/bp-xprofile-classes.php:460
 msgid "Save Changes"
-msgstr ""
+msgstr "保存更改"
 
 #: bp-groups/bp-groups-admin.php:935
 msgid "&laquo;"
@@ -4801,7 +4801,7 @@ msgstr ""
 
 #: bp-members/bp-members-adminbar.php:38
 msgid "Edit My Profile"
-msgstr ""
+msgstr "编辑我的个人资料"
 
 #: bp-members/bp-members-adminbar.php:52
 msgid "Log in"
@@ -5275,7 +5275,7 @@ msgstr ""
 #: bp-themes/bp-default/registration/register.php:173
 #: bp-xprofile/bp-xprofile-admin.php:736
 msgid "Close"
-msgstr ""
+msgstr "关闭"
 
 #: bp-messages/bp-messages-template.php:754
 msgid "Send a private message to this user."
@@ -6392,7 +6392,7 @@ msgstr "详细资料"
 #: bp-themes/bp-default/registration/register.php:178
 msgid ""
 "This field can be seen by: <span class=\"current-visibility-level\">%s</span>"
-msgstr ""
+msgstr "此字段可以看到：<span class=\"current-visibility-level\">%s</span>"
 
 #: bp-templates/bp-legacy/buddypress/members/register.php:79
 #: bp-themes/bp-default/registration/register.php:163
@@ -6406,7 +6406,7 @@ msgstr ""
 #: bp-themes/bp-default/registration/register.php:168
 #: bp-xprofile/bp-xprofile-admin.php:733
 msgid "Who can see this field?"
-msgstr ""
+msgstr "谁可以看到这个领域？"
 
 #: bp-templates/bp-legacy/buddypress/members/register.php:126
 #: bp-themes/bp-default/registration/register.php:210
@@ -6637,7 +6637,7 @@ msgstr ""
 #: bp-themes/bp-default/members/single/profile/edit.php:120
 #: bp-xprofile/bp-xprofile-admin.php:726
 msgid "Change"
-msgstr ""
+msgstr "更改"
 
 #: bp-templates/bp-legacy/buddypress/members/single/profile/profile-wp.php:8
 #: bp-themes/bp-default/members/single/profile/profile-wp.php:8
@@ -7526,7 +7526,7 @@ msgstr ""
 
 #: bp-xprofile/bp-xprofile-screens.php:140
 msgid "Changes saved."
-msgstr ""
+msgstr "改变保存。"
 
 #: bp-xprofile/bp-xprofile-screens.php:208
 msgid "There was a problem cropping your avatar."
@@ -7569,5 +7569,3 @@ msgstr ""
 #: tests/testcases/groups/activity.php:47
 msgid "%s joined the group %s"
 msgstr ""
-
-
