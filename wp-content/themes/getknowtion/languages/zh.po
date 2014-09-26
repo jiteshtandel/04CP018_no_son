@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
-"POT-Creation-Date: 2014-09-26 00:38+0530\n"
-"PO-Revision-Date: 2014-09-26 00:39+0530\n"
+"POT-Creation-Date: 2014-09-26 23:11+0530\n"
+"PO-Revision-Date: 2014-09-26 23:18+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -806,7 +806,7 @@ msgstr "在论坛"
 msgid "Author"
 msgstr "作者"
 
-#: ../bbpress/loop-search.php:22
+#: ../bbpress/loop-search.php:22 ../buddypress/members/index-directory.php:18
 msgid "Search Results"
 msgstr "搜索结果"
 
@@ -1638,6 +1638,51 @@ msgstr ""
 msgid "Activate"
 msgstr "激活"
 
+#: ../buddypress/members/index-directory.php:26
+msgid "Filter Results"
+msgstr "筛选结果"
+
+#: ../buddypress/members/index-directory.php:34
+msgid "Languages Spoken"
+msgstr "语言能力"
+
+#: ../buddypress/members/index-directory.php:41
+msgid "Languages Learning"
+msgstr "语言学习"
+
+#: ../buddypress/members/index-directory.php:51
+msgid "Age"
+msgstr "年龄"
+
+#: ../buddypress/members/index-directory.php:55
+msgid "Select Age"
+msgstr "选择年龄"
+
+#: ../buddypress/members/index-directory.php:66
+msgid "Gender"
+msgstr "性别"
+
+#: ../buddypress/members/index-directory.php:70
+msgid "Select Gender"
+msgstr "选择性别"
+
+#: ../buddypress/members/index-directory.php:71
+msgid "Male"
+msgstr ""
+
+#: ../buddypress/members/index-directory.php:72
+msgid "Female"
+msgstr ""
+
+#: ../buddypress/members/index-directory.php:78
+#: ../buddypress/members/index-directory.php:92
+msgid "Search"
+msgstr "搜索"
+
+#: ../buddypress/members/index-directory.php:88
+msgid "Native Speaker"
+msgstr "母语"
+
 #: ../buddypress/members/index-directory.php:114
 #: ../buddypress/members/index.php:38
 #: ../buddypress/members/single/friends.php:22
@@ -1754,10 +1799,48 @@ msgid ""
 "and password you have just created."
 msgstr "您已成功创建您的帐户！请登录使用你刚才创建的用户名和密码。"
 
+#: ../buddypress/members/members-loop.php:166
+msgid "Native Languages"
+msgstr "母语"
+
+#: ../buddypress/members/members-loop.php:167
+msgid "Learning"
+msgstr "学习"
+
+#: ../buddypress/members/members-loop.php:168
+msgid "From"
+msgstr "从"
+
+#: ../buddypress/members/members-loop.php:169
+msgid "Lives in"
+msgstr "住在"
+
+#: ../buddypress/members/members-loop.php:173
+msgid "Connect"
+msgstr "连接"
+
+#: ../buddypress/members/members-loop.php:185
+#: ../buddypress/members/members-loop.php:187
+#: ../buddypress/members/single/messages/compose.php:21
+msgid "Message"
+msgstr "消息"
+
+#: ../buddypress/members/members-loop.php:191
+#: ../buddypress/members/members-loop.php:193
+msgid "Video Chat"
+msgstr "视频聊天"
+
+#: ../buddypress/members/members-loop.php:196
+msgid "View Profile"
+msgstr "查看资料"
+
+#: ../buddypress/members/members-loop.php:197
+msgid "View Connections"
+msgstr "查看连接"
+
 #: ../buddypress/members/members-loop.php:235
-#, fuzzy
 msgid "Sorry, no members were found."
-msgstr "对不起，没有找到相关的信息。"
+msgstr "对不起，没有找到相关人员。"
 
 #: ../buddypress/members/register.php:75 ../buddypress/members/register.php:90
 #: ../buddypress/members/single/profile/edit.php:28
@@ -1804,10 +1887,6 @@ msgstr "该用户还没有回答任何主题。"
 #, fuzzy
 msgid "Subject"
 msgstr "拒绝"
-
-#: ../buddypress/members/single/messages/compose.php:21
-msgid "Message"
-msgstr ""
 
 #: ../buddypress/members/single/messages/messages-loop.php:34
 msgid "From:"
