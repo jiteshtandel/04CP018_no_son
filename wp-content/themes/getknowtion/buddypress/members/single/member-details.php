@@ -117,21 +117,21 @@
                                             <?php if(strlen($introductiontext)>0){?>                                                    
                                                     <div class="member-profile-aboutme"><?php echo $introductiontext;?></div>
                                             <?php }?>                                                    
-                                                    <div>Native Languages: <?php echo strconcat(array($languagespoken1,$languagespoken2,$languagespoken3),', ');?></div>
+                                                    <div><?php _e( 'Native Languages', 'knowtion' ); ?>: <?php echo strconcat(array($languagespoken1,$languagespoken2,$languagespoken3),', ');?></div>
                                                     <div class="height2"><!-- --></div>
-                                                    <div>Learning: <?php echo strconcat(array($languagelearning1,$languagelearning2,$languagelearning3),', ');?></div>
+                                                    <div><?php _e( 'Learning', 'knowtion' ); ?>: <?php echo strconcat(array($languagelearning1,$languagelearning2,$languagelearning3),', ');?></div>
                                                     <div class="height2"><!-- --></div>
-                                                    <div>Age: <?php echo $age;?></div>
+                                                    <div><?php _e( 'Age', 'knowtion' ); ?>: <?php echo $age;?></div>
                                                     <div class="height2"><!-- --></div>
-                                                    <div>Sex: <?php echo $gender;?></div>
+                                                    <div><?php _e( 'Sex', 'knowtion' ); ?>: <?php echo $gender;?></div>
                                                     <div class="height2"><!-- --></div>
-                                                    <div>From: <?php echo strconcat(array(xprofile_get_field_data('Native State',$userid),xprofile_get_field_data('Native Country',$userid)),', ');?></div>
+                                                    <div><?php _e( 'From', 'knowtion' ); ?>: <?php echo strconcat(array(xprofile_get_field_data('Native State',$userid),xprofile_get_field_data('Native Country',$userid)),', ');?></div>
                                                     <div class="height2"><!-- --></div>
-                                                    <div>Current Location: <?php echo strconcat(array(xprofile_get_field_data('Current State',$userid),xprofile_get_field_data('Current Country',$userid)),', ');?></div>
+                                                    <div><?php _e( 'Current Location', 'knowtion' ); ?>: <?php echo strconcat(array(xprofile_get_field_data('Current State',$userid),xprofile_get_field_data('Current Country',$userid)),', ');?></div>
                                                     <div class="height10"></div>
                                                     <div class="pull-right" style="margin-left: 18px;"><input type="button" name="message" onclick="myredirect('<?php echo bp_loggedin_user_domain() . bp_get_messages_slug() . '/compose/?r=' . bp_core_get_username( $userid ); ?>');" value="Message"></div>
                                             <?php if($is_friend=='is_friend'){?>                                                    
-                                                    <div class="pull-right"><input id="callbutton" type="button" name="videochat" value="Connecting.." style="background-color: #808080;"></div>
+                                                    <div class="pull-right"><input id="callbutton" type="button" name="videochat" value="<?php _e( 'Connecting..', 'knowtion' ); ?>" style="background-color: #808080;"></div>
                                             <?php }?>                                                                                                       
                                                 </div>
                                             </td>

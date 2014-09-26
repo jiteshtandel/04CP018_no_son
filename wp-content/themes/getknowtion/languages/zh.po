@@ -4,13 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2014-09-26 23:26+0530\n"
-"PO-Revision-Date: 2014-09-26 23:30+0530\n"
-=======
 "POT-Creation-Date: 2014-09-26 23:11+0530\n"
-"PO-Revision-Date: 2014-09-26 23:18+0530\n"
->>>>>>> e8247babe8243092121d0dfe13ff4ada20ec3c2a
+"PO-Revision-Date: 2014-09-27 00:08+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -1852,7 +1847,7 @@ msgstr "对不起，没有找到相关人员。"
 #, php-format
 msgid ""
 "This field can be seen by: <span class=\"current-visibility-level\">%s</span>"
-msgstr "此字段可以看到：<span class=\"current-visibility-level\">%s</span>"
+msgstr ""
 
 #: ../buddypress/members/register.php:80
 #: ../buddypress/members/single/profile/edit.php:33
@@ -2284,12 +2279,6 @@ msgstr "谁知道"
 #: ../sidebar-whotoknow.php:72
 msgid "Sorry, no any matching profile found related to your profile."
 msgstr "对不起，没有任何匹配的配置文件中发现有关您的个人资料。"
-
-#~ msgid "Gender"
-#~ msgstr "性别"
-
-#~ msgid "Birthday"
-#~ msgstr "生日"
 
 #, fuzzy
 #~ msgid "saving open changes\n"
