@@ -129,7 +129,7 @@
                 $languagelearning2=$languagelearning2 .' (' . $languagelearninglevel2 . ')';
             }
             else{
-                $languagelearning1='';
+                $languagelearning2='';
             }
 
             $languagelearning3 = xprofile_get_field_data( 'Language Learning 3', $userid);
@@ -163,14 +163,14 @@
                                 <div class="<?php echo ($isonline) ? 'greentext13' : 'greytext';?>"><?php echo ($isonline)? 'Online' : 'Offline';?></div>
                             </td>
                             <td valign="top" align="left" style="padding-right: 10px;">
-                                <div>Native Languages: <?php echo strconcat(array($languagespoken1,$languagespoken2,$languagespoken3),', ');?></div>
-                                <div>Learning: <?php echo strconcat(array($languagelearning1,$languagelearning2,$languagelearning3),', ');?></div>
-                                <div>From <?php echo strconcat(array(xprofile_get_field_data('Native State',$userid),xprofile_get_field_data('Native Country',$userid)),', ');?></div>
-                                <div>Lives in <?php echo strconcat(array(xprofile_get_field_data('Current State',$userid),xprofile_get_field_data('Current Country',$userid)),', ');?></div>    
+                                <div><?php _e( 'Native Languages', 'knowtion' ); ?>: <?php echo strconcat(array($languagespoken1,$languagespoken2,$languagespoken3),', ');?></div>
+                                <div><?php _e( 'Learning', 'knowtion' ); ?>: <?php echo strconcat(array($languagelearning1,$languagelearning2,$languagelearning3),', ');?></div>
+                                <div><?php _e( 'From', 'knowtion' ); ?> <?php echo strconcat(array(xprofile_get_field_data('Native State',$userid),xprofile_get_field_data('Native Country',$userid)),', ');?></div>
+                                <div><?php _e( 'Lives in', 'knowtion' ); ?> <?php echo strconcat(array(xprofile_get_field_data('Current State',$userid),xprofile_get_field_data('Current Country',$userid)),', ');?></div>    
                             </td>
                             <td valign="top" align="left" style="width: 120px;">
                                 <div class="dropdown">
-                                    <input  id="connect" name="connect" class="connect-arrow-btn" value="Connect" type="button"  />
+                                    <input  id="connect" name="connect" class="connect-arrow-btn" value="<?php _e( 'Connect', 'knowtion' ); ?>" type="button"  />
                                     <div class="submenu">
                                         <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
                                             <tr>
@@ -182,19 +182,19 @@
                                                 <td colspan="3" class="popover-border-bottom popover-border-right popover-border-left popover-bg">
                                                     <ul class="root">
                                                 <?php if($userid!=$current_loggedin_userid){?>                                                         
-                                                        <li><a href="<?php echo bp_loggedin_user_domain() . bp_get_messages_slug() . '/compose/?r=' . bp_core_get_username( $userid ); ?>">Message</a></li>
+                                                        <li><a href="<?php echo bp_loggedin_user_domain() . bp_get_messages_slug() . '/compose/?r=' . bp_core_get_username( $userid ); ?>"><?php _e( 'Message', 'knowtion' ); ?></a></li>
                                                 <?php } else { ?>
-                                                        <li class="optiondisabled">Message</li>
+                                                        <li class="optiondisabled"><?php _e( 'Message', 'knowtion' ); ?></li>
                                                 <?php } ?>                                                         
                                                 
                                                 <?php if($is_friend=='is_friend'){?>                                                         
-                                                        <li><a href="<?php echo $member_user_domain; ?>">Video Chat</a></li>
+                                                        <li><a href="<?php echo $member_user_domain; ?>"><?php _e( 'Video Chat', 'knowtion' ); ?></a></li>
                                                 <?php } else { ?>
-                                                        <li class="optiondisabled">Video Chat</li>
+                                                        <li class="optiondisabled"><?php _e( 'Video Chat', 'knowtion' ); ?></li>
                                                 <?php } ?>                                                         
                                                         
-                                                        <li><a href="<?php echo $member_user_domain; ?>">View Profile</a></li>
-                                                        <li><a href="<?php echo $member_user_domain . bp_get_friends_slug(); ?>">View Connections</a></li>
+                                                        <li><a href="<?php echo $member_user_domain; ?>"><?php _e( 'View Profile', 'knowtion' ); ?></a></li>
+                                                        <li><a href="<?php echo $member_user_domain . bp_get_friends_slug(); ?>"><?php _e( 'View Connections', 'knowtion' ); ?></a></li>
                                                     </ul>                                                    
                                                 </td>
                                             </tr>
@@ -232,7 +232,7 @@
 <?php else: ?>
 
 	<div id="message" class="info">
-		<p><?php _e( "Sorry, no members were found.", 'buddypress' ); ?></p>
+		<p><?php _e( "Sorry, no members were found.", 'knowtion' ); ?></p>
 	</div>
 
 <?php endif; ?>
