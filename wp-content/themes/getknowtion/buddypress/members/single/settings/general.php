@@ -1,4 +1,4 @@
-<h4>General Account Settings</h4>
+<h4><?php _e( 'General Account Settings', 'buddypress' ); ?></h4>
 <?php do_action( 'bp_before_member_settings_template' ); ?>
 <?php do_action( 'template_notices' ); ?>
 <form action="<?php echo bp_displayed_user_domain() . bp_get_settings_slug() . '/general'; ?>" method="post" class="standard-form" id="settings-form">
