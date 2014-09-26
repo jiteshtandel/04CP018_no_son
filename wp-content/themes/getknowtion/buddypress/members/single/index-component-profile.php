@@ -14,7 +14,7 @@
 <tr> 
     <td valign="top" align="left" id="container">
         <div id="buddypress">
-            <h4 class="greenbigheading">My Profile</h4>  
+            <h4 class="greenbigheading"><?php _e( 'My Profile', 'buddypress' ) ?></h4>  
             <div class="height5"><!-- --></div>
             <div class="myprofileedittable">
                 <div class="myprofileeditrow">
@@ -25,9 +25,9 @@
                             <div class="clearboth"></div>
                         </div>
                         <ul id="settings-edit">
-                            <li class="view-profile-icon<?php echo (!bp_is_profile_edit() && !bp_is_change_avatar()) ? " selected" : "";?>"><a href="<?php echo $bp->displayed_user->domain . 'profile/';?>">View Profile</a></li>
-                            <li class="edit-profile-icon<?php echo (bp_is_profile_edit()) ? " selected" : "";?>"><a href="<?php echo $bp->displayed_user->domain . 'profile/edit/';?>">Edit Profile</a></li>
-                            <li class="change-avatar-icon<?php echo (bp_is_change_avatar()) ? " selected" : "";?>"><a href="<?php echo $bp->displayed_user->domain . 'profile/change-avatar';?>">Change Picture</a></li>
+                            <li class="view-profile-icon<?php echo (!bp_is_profile_edit() && !bp_is_change_avatar()) ? " selected" : "";?>"><a href="<?php echo $bp->displayed_user->domain . 'profile/';?>"><?php _e( 'View Profile', 'buddypress' ) ?></a></li>
+                            <li class="edit-profile-icon<?php echo (bp_is_profile_edit()) ? " selected" : "";?>"><a href="<?php echo $bp->displayed_user->domain . 'profile/edit/';?>"><?php _e( 'Edit Profile', 'buddypress' ) ?></a></li>
+                            <li class="change-avatar-icon<?php echo (bp_is_change_avatar()) ? " selected" : "";?>"><a href="<?php echo $bp->displayed_user->domain . 'profile/change-avatar';?>"><?php _e( 'Change Picture', 'buddypress' ) ?></a></li>
                         </ul>
                     </div>
                     <div style="display: table-cell;padding: 0px 0px 35px 25px;vertical-align: top;">
