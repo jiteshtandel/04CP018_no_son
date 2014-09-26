@@ -2296,3 +2296,9 @@ msgstr "对不起，没有任何匹配的配置文件中发现有关您的个人
 
 #~ msgid "Forum"
 #~ msgstr "论坛"
+
+msgid "Gender"
+msgstr "性别"
+
+msgid "Birthday"
+msgstr "生日"
