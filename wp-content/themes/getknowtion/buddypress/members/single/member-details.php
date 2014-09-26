@@ -109,7 +109,7 @@
                                             <td valign="top" align="left" style="width: 182px;">
                                                 <div style="padding-left: 20px;">
                                                     <div class="member-profile-pic"><?php bp_displayed_user_avatar( 'type=full' );?></div>
-                                                    <div align="center">Time: <?php echo $dateobj->format('M d H:i (T)');?></div>
+                                                    <div align="center"><?php _e( 'Time', 'knowtion' ); ?>: <?php echo $dateobj->format('M d H:i (T)');?></div>
                                                 </div>       
                                             </td>
                                             <td valign="top" align="left">
@@ -129,9 +129,9 @@
                                                     <div class="height2"><!-- --></div>
                                                     <div><?php _e( 'Current Location', 'knowtion' ); ?>: <?php echo strconcat(array(xprofile_get_field_data('Current State',$userid),xprofile_get_field_data('Current Country',$userid)),', ');?></div>
                                                     <div class="height10"></div>
-                                                    <div class="pull-right" style="margin-left: 18px;"><input type="button" name="message" onclick="myredirect('<?php echo bp_loggedin_user_domain() . bp_get_messages_slug() . '/compose/?r=' . bp_core_get_username( $userid ); ?>');" value="Message"></div>
+                                                    <div class="pull-right" style="margin-left: 18px;"><input type="button" name="message" onclick="myredirect('<?php echo bp_loggedin_user_domain() . bp_get_messages_slug() . '/compose/?r=' . bp_core_get_username( $userid ); ?>');" value="<?php _e( 'Message', 'knowtion' ); ?>"></div>
                                             <?php if($is_friend=='is_friend'){?>                                                    
-                                                    <div class="pull-right"><input id="callbutton" type="button" name="videochat" value="<?php _e( 'Connecting..', 'knowtion' ); ?>" style="background-color: #808080;"></div>
+                                                    <div class="pull-right"><input id="callbutton" type="button" name="videochat" value="Connecting.." style="background-color: #808080;"></div>
                                             <?php }?>                                                                                                       
                                                 </div>
                                             </td>
@@ -146,19 +146,19 @@
                             <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;height: 100%;">
                                 <tr>
                                 <?php if($is_friend=='not_friends'){?>                                    
-                                    <td valign="middle" align="center">Connect with <?php echo $firstname;?> to schedule a video chat & see what they shares</td>
+                                    <td valign="middle" align="center"><?php printf( __( 'Connect with %s to schedule a video chat & see what they shares', 'knowtion' ), $firstname ); ?></td>
                                     <td valign="top" align="right" style="width: 170px;"><a href="<?php echo $friendshiplink;?>"><img style="position: relative;right:-1px;top:13px;" src="<?php echo THEME_DIR.'/images/add-connection.jpg'?>" border="0"></a></td>   
                                 <?php 
                                     } 
                                     if($is_friend=='pending'){ 
                                 ?>
-                                    <td valign="middle" align="center">You have already sent request to <?php echo $firstname;?></td>
+                                    <td valign="middle" align="center"><?php printf( __( 'You have already sent request to %s', 'knowtion' ), $firstname ); ?></td>
                                     <td valign="top" align="right" style="width: 170px;"><img style="position: relative;right:-1px;top:13px;" src="<?php echo THEME_DIR.'/images/request-sent.jpg'?>" border="0"></td>   
                                 <?php 
                                     } 
                                     if($is_friend=='awaiting_response'){ 
                                 ?>
-                                    <td valign="middle" align="center">User has already sent you a request</td>
+                                    <td valign="middle" align="center"><?php _e( 'User has already sent you a request', 'knowtion' ); ?></td>
                                     <td valign="top" align="right" style="width: 170px;"><img style="position: relative;right:-1px;top:13px;" src="<?php echo THEME_DIR.'/images/request-received.jpg'?>" border="0"></td>   
                                 <?php 
                                     } 
@@ -172,7 +172,7 @@
                             <table class="full-width" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                     <td valign="top" align="left" id="leftbar">
-                                        <div class="member-myschedule-box">My Schedule</div>
+                                        <div class="member-myschedule-box"><?php _e( 'My Schedule', 'knowtion' ); ?></div>
                                         <div>
                                             <div id="datepicker_member"></div>
                                         </div>
@@ -180,8 +180,8 @@
                                         <div class="height15"<!-- --></div>
                                         <div class="box-round-border">
                                             <div class="member-myconnection-box">
-                                                <div class="pull-left">Connections</div>
-                                                <div class="pull-right"><a class="footer-white-link small-font-11" href="<?php echo $member_user_domain . bp_get_friends_slug(); ?>">View all</a></div>
+                                                <div class="pull-left"><?php _e( 'Connections', 'knowtion' ); ?></div>
+                                                <div class="pull-right"><a class="footer-white-link small-font-11" href="<?php echo $member_user_domain . bp_get_friends_slug(); ?>"><?php _e( 'View all', 'knowtion' ); ?></a></div>
                                             </div>
                                 
                                             <div class="member-connnection-list" align="left">
@@ -194,8 +194,8 @@
                                     </td>
                                     <td valign="top" align="left" id="memberprofile">
                                         <div class="member-posts-title-main">
-                                            <div class="pull-left"><a href="<?php echo $member_user_domain;?>"><div class="member-posts-title <?php echo ($viewtype=="posts") ? 'meber-posts-selected' : "";?>">Posts</div></a></div>
-                                            <div class="pull-left"><a href="<?php echo $member_user_domain .'?view=reviews';?>"><div class="member-posts-title <?php echo ($viewtype=="reviews") ? 'meber-posts-selected' : "";?>">Reviews</div></a></div>
+                                            <div class="pull-left"><a href="<?php echo $member_user_domain;?>"><div class="member-posts-title <?php echo ($viewtype=="posts") ? 'meber-posts-selected' : "";?>"><?php _e( 'Posts', 'knowtion' ); ?></div></a></div>
+                                            <div class="pull-left"><a href="<?php echo $member_user_domain .'?view=reviews';?>"><div class="member-posts-title <?php echo ($viewtype=="reviews") ? 'meber-posts-selected' : "";?>"><?php _e( 'Reviews', 'knowtion' ); ?></div></a></div>
                                         </div>
                                         <div class="clearboth"><!-- --></div>
                                         <div  class="activity" role="main">
@@ -217,7 +217,7 @@
                     <div>
                 </td>
                 <td valign="top" align="left" id="rightbar">
-                    <h6 class="suggested-knowtions">Suggested</h6>
+                    <h6 class="suggested-knowtions"><?php _e( 'Suggested', 'knowtion' ); ?></h6>
                     <div class="height15"><!-- --></div>
                     <?php get_sidebar('suggestedknowtion');?>
                     <div class="height20"><!-- --></div>
