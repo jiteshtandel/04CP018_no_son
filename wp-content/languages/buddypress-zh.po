@@ -7570,14 +7570,4 @@ msgstr ""
 msgid "%s joined the group %s"
 msgstr ""
 
-msgid "First Name"
-msgstr "名字"
 
-msgid "Last Name"
-msgstr "姓"
-
-msgid "Gender"
-msgstr "性别"
-
-msgid "Birthday"
-msgstr "生日"
