@@ -16,7 +16,7 @@
 
                     <?php if ( bp_get_activity_type() == 'activity_comment' ) : ?>
 
-                            <a href="<?php bp_activity_thread_permalink(); ?>" class="button view bp-secondary-action" title="<?php esc_attr_e( 'View Conversation', 'buddypress' ); ?>"><?php _e( 'View Conversation', 'buddypress' ); ?></a>
+                            <a href="<?php bp_activity_thread_permalink(); ?>" class="button view bp-secondary-action" title="<?php esc_attr_e( 'View Conversation', 'knowtion' ); ?>"><?php _e( 'View Conversation', 'knowtion' ); ?></a>
 
                     <?php endif; ?>
 
@@ -24,7 +24,7 @@
 
                             <?php if ( bp_activity_can_comment() ) : ?>
 
-                                    <a href="<?php bp_activity_comment_link(); ?>" class="button acomment-reply bp-primary-action" id="acomment-comment-<?php bp_activity_id(); ?>"><?php printf( __( 'Comment ( <span>%s</span>)', 'buddypress' ), bp_activity_get_comment_count() ); ?></a>
+                                    <a href="<?php bp_activity_comment_link(); ?>" class="button acomment-reply bp-primary-action" id="acomment-comment-<?php bp_activity_id(); ?>"><?php printf( __( 'Comment ( <span>%s</span>)', 'knowtion' ), bp_activity_get_comment_count() ); ?></a>
 
                             <?php endif; ?>
 
@@ -56,7 +56,7 @@
                                             <div class="ac-textarea">
                                                     <textarea id="ac-input-<?php bp_activity_id(); ?>" class="ac-input" name="ac_input_<?php bp_activity_id(); ?>"></textarea>
                                             </div>
-                                            <input type="submit" name="ac_form_submit" value="<?php esc_attr_e( 'Post', 'buddypress' ); ?>" /> &nbsp; <a href="#" class="ac-reply-cancel"><?php _e( 'Cancel', 'buddypress' ); ?></a>
+                                            <input type="submit" name="ac_form_submit" value="<?php esc_attr_e( 'Post', 'knowtion' ); ?>" /> &nbsp; <a href="#" class="ac-reply-cancel"><?php _e( 'Cancel', 'knowtion' ); ?></a>
                                             <input type="hidden" name="comment_form_id" value="<?php bp_activity_id(); ?>" />
                                     </div>
 
