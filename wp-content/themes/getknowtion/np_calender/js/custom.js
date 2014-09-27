@@ -165,6 +165,7 @@ var first_half = 1;
     }
 
     var save_dates = function(date, time_batches){
+
         clearMessage();
         if(time_batches.length <= 0){
             showMessage('error',"No time schedule selected.");
@@ -183,6 +184,7 @@ var first_half = 1;
                     if(data.status == true){
                         $("#calender .ui-state-active").parent('td').addClass('highlight');
                         showMessage('success',"Record saved !");
+                        dates.push(selected_date);
                     }
                 }
             },
@@ -318,7 +320,7 @@ var first_half = 1;
     });
 
     function update_selected_date(dom, dt_placeholder){
-        var selected_date = $(dom).datepicker( "getDate" );
+        selected_date = $(dom).datepicker( "getDate" );
         console.log(selected_date);
         if(typeof selected_date == "undefined"){
             return false;
