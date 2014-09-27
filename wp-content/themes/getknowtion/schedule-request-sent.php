@@ -3,7 +3,10 @@
     global $bp;
     $current_loggedin_userid=get_current_user_id();
     require_once get_template_directory() . '/np_calender/calender.php';
-    $sent_requests = get_sent_request($current_loggedin_userid);
+
+    //check if search filter has any year request
+    $search_year = !empty( $_REQUEST['sy'] ) ? stripslashes( $_REQUEST['sy'] ) : 0;
+    $sent_requests = get_sent_request($current_loggedin_userid, $search_year);
     $homepagepath=$bp->loggedin_user->domain;
     $userimage=bp_core_fetch_avatar(array('item_id' => $current_loggedin_userid,'html' => false, 'type'=>'thumb','width'=>BP_AVATAR_THUMB_WIDTH,'height' => BP_AVATAR_THUMB_HEIGHT));
 ?>
@@ -54,10 +57,14 @@
                                                 <li id="friends-my-friends-personal-li"><a href="<?php echo  home_url(); ?>/schedule-request/" id="friends-my-friends">Requests</a></li>
                                                 <li id="requests-personal-li"><a href="<?php echo  home_url(); ?>/schedule-request-accepted/" id="requests">Accepted</a></li>
                                                 <li class="current selected" id="requests-personal-li"><a href="<?php echo  home_url(); ?>/sent-requests/" id="sent_requests">Request Sent</a></li>
+                                                <li id="requests-personal-li">
+                                                    <div style="width: 265px;text-align: right">
+                                                        <?php //np_year_search_form(); ?>
+                                                    </div>
+                                                </li>
                                             </ul>
                                         </div>
 
-                                        <div id="np_message"></div>
                                         <?php if(!empty($sent_requests)): ?>
 
                                         <?php

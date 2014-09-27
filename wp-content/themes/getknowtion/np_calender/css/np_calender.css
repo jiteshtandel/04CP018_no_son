@@ -77,25 +77,6 @@
     margin-right: 10px;
 }
 
-#np_message{
-    display: none;
-    float: left;
-    line-height: 40px;
-    /*margin-left: 100px;*/
-    min-width: 360px;
-    padding-left: 40px;
-}
-#np_message.success{
-    background: url("../../images/notifications/icon-success.png") no-repeat scroll 9px 9px #efc;
-    border: 1px solid #591;
-    color: #250;
-}
-#np_message.error{
-    background: url("../../images/notifications/icon-warning.png") no-repeat scroll 9px 9px #fdc;
-    border: 1px solid #800;
-    color: #800;
-}
-
 #schedule_requests a.button{
     background: none repeat scroll 0 0 #006738;
     border: 0 none;
@@ -106,6 +87,16 @@
     padding: 5px 10px;
     text-align: center;
     text-decoration: none;
+}
+
+.popup_notify{
+    display: block;
+    min-height:25px;
+    margin: 10px
+}
+
+ul#schedule_requests li div.action{
+    top: 35px !important;
 }
 
 /*jQuery UI Specific modifications*/
@@ -181,7 +172,7 @@
 
 /* Time selection model*/
 #time_picker .selected_date{
-    width: 170px;
+    width: 200px;
     margin: 0 auto;
 }
 #time_picker{
@@ -199,12 +190,18 @@
     margin-right: 10px;
 }
 
+#time_picker .time_listing{
+    max-height: 300px;
+    overflow: scroll;
+    width: 100%;
+}
+
 #time_picker .times-placeholder ul li{
-    float: left;
     float: left;
     list-style: none outside none;
     margin: 10px 0;
-    width: 200px;
+    width: 260px;
+    height: 80px;
 }
 #time_picker #action_btns{
     float: right;

@@ -9,7 +9,8 @@ global $bp;
 //echo $bp->displayed_user->id;
 
 $user_id = get_current_user_id();
-$user_timezone = 'GMT';
+//$user_timezone = 'GMT';
+$user_timezone = getusertimezonename($user_id);
 $schedule_date = $_REQUEST['date'];
 $batch_id = generateRandomString();
 $first_half_action = $_REQUEST['first_half'];

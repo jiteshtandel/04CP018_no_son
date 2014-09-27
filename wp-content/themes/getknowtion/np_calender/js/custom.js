@@ -115,7 +115,7 @@ var first_half = 1;
         $('.fancybox').fancybox({
             fitToView	: false,
             width		: 710,
-            height		: 510,
+            height		: 520,
             autoSize	: false,
             closeClick	: false,
             openEffect	: 'none',
@@ -133,7 +133,7 @@ var first_half = 1;
     var load_time_slot = function($date){
         showLoader();
         clearMessage();
-        $(".timer_schedule").prop('checked',false);
+        $(".timer_schedule").prop('checked',false).prop('disabled','');
 
         $.ajax({
             type       : "GET",
@@ -145,6 +145,9 @@ var first_half = 1;
                     var times = data.times;
                     $.each(times, function(key, value){
                         $("#timer_"+value.time_id).prop('checked',true);
+                        if(value.disable == 1){
+                            $("#timer_"+value.time_id).prop('disabled','disabled');
+                        }
                     });
                     $("#first_half_" + data.first_half_action).prop('checked', true);
 
@@ -162,6 +165,7 @@ var first_half = 1;
     }
 
     var save_dates = function(date, time_batches){
+
         clearMessage();
         if(time_batches.length <= 0){
             showMessage('error',"No time schedule selected.");
@@ -180,6 +184,7 @@ var first_half = 1;
                     if(data.status == true){
                         $("#calender .ui-state-active").parent('td').addClass('highlight');
                         showMessage('success',"Record saved !");
+                        dates.push(selected_date);
                     }
                 }
             },
@@ -315,12 +320,12 @@ var first_half = 1;
     });
 
     function update_selected_date(dom, dt_placeholder){
-        var selected_date = $(dom).datepicker( "getDate" );
+        selected_date = $(dom).datepicker( "getDate" );
         console.log(selected_date);
         if(typeof selected_date == "undefined"){
             return false;
         }
-        var txt_date = days[selected_date.getDay()] + " " + months[selected_date.getMonth()] +" "+ selected_date.getDate();
+        var txt_date = days[selected_date.getDay()] + " " + months[selected_date.getMonth()] +" "+ selected_date.getDate() +", "+ selected_date.getFullYear();
         //$(".current_date").html(txt_date);
         $(dt_placeholder).html(txt_date);
     }

@@ -9,16 +9,20 @@
     wp_enqueue_script( 'fancybox', THEME_DIR.'/np_calender/js/fancybox/jquery.fancybox.pack.js', array('jquery'),'', true);
 
     require_once('lib/schedule_functions.php');
+    require_once('lib/custom_functions.php');
+
+    $master_times = get_master_time_schedules();
+    //echo '<pre>';print_r($master_times);exit;
 
     $dates = get_busy_dates(get_current_user_id());
-    $mdates = get_busy_dates(bp_displayed_user_id());
+    $mdates = get_busy_dates(bp_displayed_user_id(), $user_type='member');
 
 ?>
 
 <div id="hidden_divs" style="display: none">
     <div id="calender-container">
 
-        <div class="popup_notify" style="display: block;min-height:25px"></div>
+        <div class="popup_notify"></div>
         <div class="clear"></div>
         <div id="calender">
             <p style="float: left;margin-bottom: 24px">Select date and time for your video chat</p>
@@ -30,27 +34,19 @@
                 <p class="current_date">Wednesday January 16</p>
                 <div class="times">
                     <div class="times-container">
-                        <?php
-                        $h = 0;
-                        $i=1;
-                        $suffix = ' AM';
-                        for($hours=0; $hours<24; $hours++){
-                            $timestamp1 = strtotime($h.':00');
-                            $start_time = date('H:i', $timestamp1) . $suffix;
-                            $timestamp2 = $timestamp1 + 60*60;
-                            $end_time = date('H:i', $timestamp2) . $suffix;
-
-                            echo '<div class="chkbox"><label><input id="timer_'.$i.'" class="timer_schedule" type="checkbox" name="time_batch" value="'. $i .','. $start_time.','. $end_time .'">'. $start_time.' - '. $end_time .'</label></div>';
-                            $h++;
-                            $i++;
-                            if($h == 12){
-                                $suffix = ' PM';
-                            } else if($h > 12){
-                                $h = 0;
-                                $suffix = ' PM';
-                            }
-                        }
-                        ?>
+                        <?php foreach($master_times as $time_batch): ?>
+                            <div class="chkbox">
+                                <label>
+                                    <input
+                                        id="timer_<?php echo $time_batch->id; ?>"
+                                        class="timer_schedule"
+                                        type="checkbox"
+                                        name="time_batch"
+                                        value="<?php echo $time_batch->id; ?>,<?php echo $time_batch->start_time.' ' .$time_batch->start_time_abbr; ?>,<?php echo $time_batch->end_time.' ' .$time_batch->end_time_abbr; ?>">
+                                        <?php echo $time_batch->start_time.' ' .$time_batch->start_time_abbr; ?> - <?php echo $time_batch->end_time.' ' .$time_batch->end_time_abbr; ?>
+                                </label>
+                            </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
 
@@ -80,7 +76,7 @@
     </div>
 
     <div id="time_picker">
-        <div class="popup_notify" style="display: block;min-height:25px"></div>
+        <div class="popup_notify"></div>
         <p class="selected_date">Wednesday January 16</p>
         <p>Select time for your video chat :</p>
 
