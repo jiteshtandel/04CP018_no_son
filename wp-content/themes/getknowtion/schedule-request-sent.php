@@ -59,7 +59,7 @@
                                                 <li class="current selected" id="requests-personal-li"><a href="<?php echo  home_url(); ?>/sent-requests/" id="sent_requests">Request Sent</a></li>
                                                 <li id="requests-personal-li">
                                                     <div style="width: 265px;text-align: right">
-                                                        <?php np_year_search_form(); ?>
+                                                        <?php //np_year_search_form(); ?>
                                                     </div>
                                                 </li>
                                             </ul>
