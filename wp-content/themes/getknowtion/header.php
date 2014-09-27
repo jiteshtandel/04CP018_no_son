@@ -95,7 +95,7 @@
                                                 <input type="hidden" id="searchsubmit" value="Search" />
                                                 <table cellpadding="0" cellspacing="0" align="right">
                                                 <tr>
-                                                    <td><input type="text" class="searchtextbox" value="Search" name="searchterm" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}" /></td>
+                                                    <td><input type="text" class="searchtextbox" name="searchterm" placeholder="<?php _e( 'Search', 'knowtion' ); ?>"/></td>
                                                     <td style="vertical-align:middle;"><input type="image" id="searchsubmit" src="<?php echo THEME_DIR; ?>/images/search-green.png" class="searchbutton" /></td>
                                                   </tr>
                                               </table>
