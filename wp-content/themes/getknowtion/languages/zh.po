@@ -4,13 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2014-09-26 23:11+0530\n"
-"PO-Revision-Date: 2014-09-27 01:19+0530\n"
-=======
-"POT-Creation-Date: 2014-09-27 00:57+0530\n"
-"PO-Revision-Date: 2014-09-27 01:04+0530\n"
->>>>>>> bd814aea8d0612768dd7832dc9321ef4fc02310f
+"POT-Creation-Date: 2014-09-27 16:21+0530\n"
+"PO-Revision-Date: 2014-09-27 16:22+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -1063,7 +1058,7 @@ msgstr "更新"
 
 #: ../buddypress/activity/index.php:83 ../buddypress/forums/forums-loop.php:40
 #: ../buddypress/members/single/activity.php:28
-#: ../buddypress/members/single/member-details.php:197
+#: ../buddypress/members/single/member-details.php:198
 msgid "Posts"
 msgstr "帖子"
 
@@ -1658,7 +1653,7 @@ msgid "Languages Learning"
 msgstr "语言学习"
 
 #: ../buddypress/members/index-directory.php:51
-#: ../buddypress/members/single/member-details.php:124
+#: ../buddypress/members/single/member-details.php:125
 msgid "Age"
 msgstr "年龄"
 
@@ -1808,17 +1803,17 @@ msgid ""
 msgstr "您已成功创建您的帐户！请登录使用你刚才创建的用户名和密码。"
 
 #: ../buddypress/members/members-loop.php:166
-#: ../buddypress/members/single/member-details.php:120
+#: ../buddypress/members/single/member-details.php:121
 msgid "Native Languages"
 msgstr "母语"
 
 #: ../buddypress/members/members-loop.php:167
-#: ../buddypress/members/single/member-details.php:122
+#: ../buddypress/members/single/member-details.php:123
 msgid "Learning"
 msgstr "学习"
 
 #: ../buddypress/members/members-loop.php:168
-#: ../buddypress/members/single/member-details.php:128
+#: ../buddypress/members/single/member-details.php:129
 msgid "From"
 msgstr "从"
 
@@ -1832,7 +1827,7 @@ msgstr "连接"
 
 #: ../buddypress/members/members-loop.php:185
 #: ../buddypress/members/members-loop.php:187
-#: ../buddypress/members/single/member-details.php:132
+#: ../buddypress/members/single/member-details.php:133
 #: ../buddypress/members/single/messages/compose.php:21
 msgid "Message"
 msgstr "消息"
@@ -1892,49 +1887,70 @@ msgstr "编辑个人资料"
 msgid "Change Picture"
 msgstr "修改头像"
 
-#: ../buddypress/members/single/member-details.php:112
+#: ../buddypress/members/single/index-component-settings.php:17
+#: ../header.php:142
+msgid "Settings"
+msgstr "设置"
+
+#: ../buddypress/members/single/index-component-settings.php:23
+msgid "General"
+msgstr ""
+
+#: ../buddypress/members/single/index-component-settings.php:24
+#: ../buddypress/members/single/notifications/notifications-loop.php:5
+msgid "Notification"
+msgstr "通知"
+
+#: ../buddypress/members/single/index-component-settings.php:25
+#, fuzzy
+msgid "Delete Account"
+msgstr "创建一个帐户"
+
+#: ../buddypress/members/single/member-details.php:113
 msgid "Time"
-msgstr "时间"
+msgstr ""
 
-#: ../buddypress/members/single/member-details.php:126
+#: ../buddypress/members/single/member-details.php:127
 msgid "Sex"
-msgstr "性爱"
+msgstr ""
 
-#: ../buddypress/members/single/member-details.php:130
+#: ../buddypress/members/single/member-details.php:131
 msgid "Current Location"
-msgstr "您现在的位置"
+msgstr ""
 
-#: ../buddypress/members/single/member-details.php:149
+#: ../buddypress/members/single/member-details.php:150
 #, php-format
 msgid "Connect with %s to schedule a video chat & see what they shares"
-msgstr "跟%s安排视频聊天和看他们分享什么"
+msgstr ""
 
-#: ../buddypress/members/single/member-details.php:155
+#: ../buddypress/members/single/member-details.php:156
 #, php-format
 msgid "You have already sent request to %s"
-msgstr "你已经发送请求到 %s"
+msgstr ""
 
-#: ../buddypress/members/single/member-details.php:161
+#: ../buddypress/members/single/member-details.php:162
 msgid "User has already sent you a request"
 msgstr ""
 
-#: ../buddypress/members/single/member-details.php:175
+#: ../buddypress/members/single/member-details.php:176
 msgid "My Schedule"
-msgstr "我的日程安排"
-
-#: ../buddypress/members/single/member-details.php:183
-msgid "Connections"
-msgstr "连接"
+msgstr ""
 
 #: ../buddypress/members/single/member-details.php:184
+#, fuzzy
+msgid "Connections"
+msgstr "查看连接"
+
+#: ../buddypress/members/single/member-details.php:185
+#, fuzzy
 msgid "View all"
-msgstr "查看全部"
+msgstr "查看资料"
 
-#: ../buddypress/members/single/member-details.php:198
+#: ../buddypress/members/single/member-details.php:199
 msgid "Reviews"
-msgstr "评论"
+msgstr ""
 
-#: ../buddypress/members/single/member-details.php:220
+#: ../buddypress/members/single/member-details.php:221
 #: ../buddypress/members/single/user-home.php:78
 msgid "Suggested"
 msgstr "建议"
@@ -2013,10 +2029,6 @@ msgstr "您没有未读通知。"
 #, fuzzy
 msgid "This member has no notifications."
 msgstr "您没有未读通知。"
-
-#: ../buddypress/members/single/notifications/notifications-loop.php:5
-msgid "Notification"
-msgstr "通知"
 
 #: ../buddypress/members/single/notifications/notifications-loop.php:6
 msgid "Date Received"
@@ -2111,6 +2123,11 @@ msgstr ""
 msgid "I understand the consequences."
 msgstr ""
 
+#: ../buddypress/members/single/settings/general.php:1
+#, fuzzy
+msgid "General Account Settings"
+msgstr "帐户明细"
+
 #: ../buddypress/members/single/settings/general.php:8
 msgid ""
 "Current Password <span>(required to update email or change current "
@@ -2130,6 +2147,11 @@ msgstr "当前密码 <span>（需要更新电子邮件或更改当前密码）</
 #: ../buddypress/members/single/settings/general.php:18
 msgid "Repeat New Password"
 msgstr "重复新密码"
+
+#: ../buddypress/members/single/settings/notifications.php:1
+#, fuzzy
+msgid "Notification Settings"
+msgstr "通知"
 
 #: ../buddypress/members/single/settings/notifications.php:6
 msgid "Send an email notice when:"
@@ -2214,10 +2236,6 @@ msgstr "我的账户"
 #: ../header.php:127
 msgid "Messages"
 msgstr "消息"
-
-#: ../header.php:142
-msgid "Settings"
-msgstr "设置"
 
 #: ../header.php:143
 msgid "Sign Out"
@@ -2341,9 +2359,6 @@ msgstr "谁知道"
 #: ../sidebar-whotoknow.php:72
 msgid "Sorry, no any matching profile found related to your profile."
 msgstr "对不起，没有任何匹配的配置文件中发现有关您的个人资料。"
-
-#~ msgid "Connecting.."
-#~ msgstr "连接.."
 
 #, fuzzy
 #~ msgid "saving open changes\n"
