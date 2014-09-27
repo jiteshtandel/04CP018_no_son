@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
-"POT-Creation-Date: 2014-09-27 23:03+0530\n"
-"PO-Revision-Date: 2014-09-28 00:48+0530\n"
+"POT-Creation-Date: 2014-09-28 01:07+0530\n"
+"PO-Revision-Date: 2014-09-28 01:07+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -1697,7 +1697,7 @@ msgid "Female"
 msgstr "女"
 
 #: ../buddypress/members/index-directory.php:78
-#: ../buddypress/members/index-directory.php:92
+#: ../buddypress/members/index-directory.php:92 ../header.php:98
 msgid "Search"
 msgstr "搜索"
 

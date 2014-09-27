@@ -8,7 +8,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+<<<<<<< HEAD
 "PO-Revision-Date: 2014-09-28 01:14+0530\n"
+=======
+"PO-Revision-Date: 2014-09-28 01:00+0530\n"
+>>>>>>> 8966c275b0dfdf964e1f4b35f6697f082b744d05
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "X-Generator: Poedit 1.6.9\n"
