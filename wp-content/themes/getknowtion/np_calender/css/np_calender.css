@@ -99,6 +99,11 @@ ul#schedule_requests li div.action{
     top: 35px !important;
 }
 
+.txtMsg{
+    display: inline-block;
+    margin-top: 15px;
+}
+
 /*jQuery UI Specific modifications*/
 #datepicker .ui-datepicker{
     height: 100%;

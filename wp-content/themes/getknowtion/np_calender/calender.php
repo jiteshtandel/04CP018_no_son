@@ -83,6 +83,7 @@
         <div class="times-placeholder">
             <div class="time_listing"></div>
             <div class="clear"></div>
+            <div class="txtMsg">Time schedules are converted according to your timezone.</div>
             <div id="action_btns">
                 <a id="make_request" href="#" class="round_button active">Make Request</a>
                 <a href="#" class="round_button close_btn">Cancel</a>
