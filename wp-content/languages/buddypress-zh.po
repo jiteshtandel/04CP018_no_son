@@ -8,9 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-"PO-Revision-Date: 2014-09-28 00:28+0530\n"
-
+"PO-Revision-Date: 2014-09-28 01:14+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "X-Generator: Poedit 1.6.9\n"
@@ -2901,49 +2899,49 @@ msgstr ""
 
 #: bp-friends/bp-friends-actions.php:38
 msgid "Friendship could not be requested."
-msgstr ""
+msgstr "友谊不能请求。"
 
 #: bp-friends/bp-friends-actions.php:40
 msgid "Friendship requested"
-msgstr ""
+msgstr "友谊要求"
 
 #: bp-friends/bp-friends-actions.php:44
 msgid "You are already friends with this user"
-msgstr ""
+msgstr "您已经是朋友了该用户"
 
 #: bp-friends/bp-friends-actions.php:46
 msgid "You already have a pending friendship request with this user"
-msgstr ""
+msgstr "你已经有这个用户挂起的好友请求"
 
 #: bp-friends/bp-friends-actions.php:76
 #: bp-templates/bp-legacy/buddypress-functions.php:1080
 #: bp-themes/bp-default/_inc/ajax.php:646
 msgid "Friendship could not be canceled."
-msgstr ""
+msgstr "友谊不能被取消。"
 
 #: bp-friends/bp-friends-actions.php:78
 msgid "Friendship canceled"
-msgstr ""
+msgstr "友谊取消"
 
 #: bp-friends/bp-friends-actions.php:82
 msgid "You are not yet friends with this user"
-msgstr ""
+msgstr "你还没有朋友该用户"
 
 #: bp-friends/bp-friends-actions.php:84
 msgid "You have a pending friendship request with this user"
-msgstr ""
+msgstr "你有这个用户挂起的好友请求"
 
 #: bp-friends/bp-friends-activity.php:98
 msgid "Friendships accepted"
-msgstr ""
+msgstr "接受友谊"
 
 #: bp-friends/bp-friends-activity.php:105
 msgid "New friendships"
-msgstr ""
+msgstr "新的友谊"
 
 #: bp-friends/bp-friends-activity.php:110
 msgid "New friendship created"
-msgstr ""
+msgstr "新建立的友谊"
 
 #: bp-friends/bp-friends-activity.php:128
 #: bp-friends/bp-friends-activity.php:154
@@ -2954,7 +2952,7 @@ msgstr ""
 
 #: bp-friends/bp-friends-loader.php:92
 msgid "Search Friends..."
-msgstr ""
+msgstr "搜索好友..."
 
 #: bp-friends/bp-friends-loader.php:119
 msgid "Friends <span class=\"%s\">%s</span>"
@@ -2983,11 +2981,11 @@ msgstr ""
 
 #: bp-friends/bp-friends-loader.php:189
 msgid "No Pending Requests"
-msgstr ""
+msgstr "没有挂起的申请"
 
 #: bp-friends/bp-friends-notifications.php:43
 msgid "New friendship request from %s"
-msgstr ""
+msgstr "新好友请求 %s"
 
 #: bp-friends/bp-friends-notifications.php:44
 msgid ""
@@ -3003,7 +3001,7 @@ msgstr ""
 #: bp-friends/bp-friends-notifications.php:94
 #: bp-friends/bp-friends-notifications.php:144
 msgid "%s accepted your friendship request"
-msgstr ""
+msgstr "％s 的接受你的好友请求"
 
 #: bp-friends/bp-friends-notifications.php:95
 msgid ""
@@ -3016,31 +3014,31 @@ msgstr ""
 
 #: bp-friends/bp-friends-notifications.php:141
 msgid "%d friends accepted your friendship requests"
-msgstr ""
+msgstr "％d 个朋友接受你的友谊请求"
 
 #: bp-friends/bp-friends-notifications.php:155
 msgid "You have %d pending friendship requests"
-msgstr ""
+msgstr "您有 ％d 个未决请求的友谊"
 
 #: bp-friends/bp-friends-notifications.php:158
 msgid "You have a friendship request from %s"
-msgstr ""
+msgstr "你从好友请求 %s"
 
 #: bp-friends/bp-friends-screens.php:36
 msgid "Friendship accepted"
-msgstr ""
+msgstr "友谊接受"
 
 #: bp-friends/bp-friends-screens.php:38
 msgid "Friendship could not be accepted"
-msgstr ""
+msgstr "友谊不能被接受"
 
 #: bp-friends/bp-friends-screens.php:47
 msgid "Friendship rejected"
-msgstr ""
+msgstr "友谊驳回"
 
 #: bp-friends/bp-friends-screens.php:49
 msgid "Friendship could not be rejected"
-msgstr ""
+msgstr "友谊不能拒绝"
 
 #: bp-friends/bp-friends-screens.php:58
 msgid "Friendship request withdrawn"
@@ -4369,8 +4367,7 @@ msgstr ""
 #: bp-groups/bp-groups-template.php:3236
 msgid "Viewing requests %1$s to %2$s (of %3$s request)"
 msgid_plural "Viewing request %1$s to %2$s (of %3$s requests)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "查看请求 %1$s 以 %2$s (的 %3$s 请求)"
 
 #: bp-groups/bp-groups-template.php:3531
 msgid "Viewing invitation %1$s to %2$s (of %3$s invitation)"
@@ -5067,7 +5064,7 @@ msgstr ""
 #: bp-templates/bp-legacy/buddypress-functions.php:1370
 #: bp-themes/bp-default/_inc/ajax.php:927
 msgid "Messages deleted."
-msgstr ""
+msgstr "消息删除。"
 
 #: bp-messages/bp-messages-classes.php:466
 msgid "%s Recipients"
@@ -6516,7 +6513,7 @@ msgstr ""
 #: bp-templates/bp-legacy/buddypress/members/single/messages/messages-loop.php:69
 #: bp-themes/bp-default/members/single/messages/messages-loop.php:69
 msgid "Sorry, no messages were found."
-msgstr ""
+msgstr "对不起，没有找到相关的信息。"
 
 #: bp-templates/bp-legacy/buddypress/members/single/messages/notices-loop.php:36
 #: bp-themes/bp-default/members/single/messages/notices-loop.php:36
