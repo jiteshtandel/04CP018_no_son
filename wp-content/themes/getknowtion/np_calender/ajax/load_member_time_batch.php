@@ -63,5 +63,5 @@ if(isset($schedule) && isset($schedule->batch_id)):
     <?php endif; ?>
 
 <?php else: ?>
-    <p style="text-align: center">Error, Please try again.</p>
+    <?php echo ''; exit;?>
 <?php endif; ?>
