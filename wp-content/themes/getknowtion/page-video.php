@@ -25,7 +25,7 @@
    <tr>
    		<td>
         	<div class="vedio-top-bg">
-					<link type="text/css" rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()."/css/popup.css";?>"/>
+                    <link type="text/css" rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()."/css/popup.css";?>"/>
                     <script src="<?php echo THEME_DIR."/js/jquery/jquery.runner.js"; ?>" type="text/javascript" charset="utf-8"></script>
                     <script type="text/javascript" charset="utf-8">
                         useroncallname = "<?php echo $firstname;?>";
@@ -42,11 +42,11 @@
                     <tr>
                         
                         <td align="left" valign="middle" style="width:100%;height:39px;">
-                            <div class="fonttime">&nbsp&nbsp;<span id="waitingmessage">Waiting for your conversation partner to join..</span></div>
+                            <div class="fonttime">&nbsp&nbsp;<span id="waitingmessage"><?php _e( 'Waiting for your conversation partner to join..', 'knowtion' ); ?></span></div>
                         </td>
                         <td align="right" valign="middle" style="width:154px;padding:0px 12px 0px 10px;">
                             <div id="endcall" class="btnbg" style="display:none;width:100px;">
-                            	<input type="button" class="btn-on-off" value="End Call" style="padding-left:40px;"/>
+                            	<input type="button" class="btn-on-off" value="<?php _e( 'End Call', 'knowtion' ); ?>" style="padding-left:40px;"/>
                             </div>                           
                         </td>
                     </tr>                                   
@@ -54,30 +54,6 @@
             </div>
             <div class="chat-container">
             	<table border="0" cellpadding="0" cellspacing="0">
-                    <!--
-                    <tr>
-                            <td align="left" valign="top">
-                                    <table border="0" cellpadding="0" cellspacing="0">
-                                    <tr>
-                                       <td align="left" valign="top">
-                                            <div align="center" class="box-languabe">en</div>
-                                       </td>
-                                       <td style="width:5px;"></td>
-                                       <td align="left" valign="top">
-                                            <div align="center" class="box-languabe">en</div>
-                                       </td>
-                                        <td style="width:20px;"><div style="width:20px;">&nbsp;</div></td>
-                                       <td align="left" valign="middle">
-                                            <div align="center" class="font-english"> i m able to speak english</div>
-                                       </td>
-                                    </tr>                                                                                           
-                                </table>
-                            </td>
-                    </tr>
-                    <tr>
-                        <td style="height:20px;"><div style="height:20px;">&nbsp;</div></td>
-                    </tr
-                    -->
                     <tr>
                     	<td>
                         	<table border="0" cellpadding="0" cellspacing="0">
@@ -101,7 +77,7 @@
                                         	
                                         </div>
                                         <div style="height:15px;">&nbsp;</div> 
-                                        <div align="left" class="font-chat">YOUR CHAT</div>
+                                        <div align="left" class="font-chat"><?php _e( 'YOUR CHAT', 'knowtion' ); ?></div>
                                         <div style="height:12px;">&nbsp;</div> 
                                         <div class="chat-massage-container">
                                         	<div id="messagecollector" class="massagebox"></div>
@@ -109,13 +85,13 @@
                                             	<div class="input_chat_left">
                                                 	<div class="input_chat_right">
                                                             <div class="input_chat_mid" style="padding-top:2px;">
-                                                                <input id="messagebox" placeholder="Type your message here" type="text" name="chatmassage" class="input_chat" style="background:none;border:none;color:#858585;line-height:21px;width:95%;"/>                                                        	
+                                                                <input id="messagebox" placeholder="<?php _e( 'Type your message here', 'knowtion' ); ?>" type="text" name="chatmassage" class="input_chat" style="background:none;border:none;color:#858585;line-height:21px;width:95%;"/>                                                        	
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div style="padding:5px;float:left;">
-                                                <div class="btn-send"><input id="chatsendbutton" type="button" value="Send" style="width:70px;height:35px;background-color: #808080;"/></div>
+                                                <div class="btn-send"><input id="chatsendbutton" type="button" value="<?php _e( 'Send', 'knowtion' ); ?>" style="width:70px;height:35px;background-color: #808080;"/></div>
                                            </div>
                                            <div style="clear:both;"></div>
                                         </div>                                         
@@ -134,7 +110,7 @@
 <div id="reviewbox">
     <div class="displaytable full-width">
         <div class="tablerow">
-            <div align="left" id="popup_dragheader" class="tablecell" style="vertical-align: middle;"><div class="fonttime">Submit a Review</div></div>
+            <div align="left" id="popup_dragheader" class="tablecell" style="vertical-align: middle;"><div class="fonttime"><?php _e( 'Submit a Review', 'knowtion' ); ?></div></div>
             <div align="right" class="tablecell"><img src="<?php echo THEME_DIR.'/images/icons/popup-close.png';?>" onClick="hideReviewPopup();" style="cursor: pointer;"/></div>
         </div>
     </div>
@@ -154,7 +130,7 @@
                     <div align="left" class="tablecell">
                         <div class="star_rating"></div>
                     </div>
-                    <div align="right" class="tablecell"><input type="submit" name="reviewsubmit" id="submitreview" value="Submit"></div>
+                    <div align="right" class="tablecell"><input type="submit" name="reviewsubmit" id="submitreview" value="<?php _e( 'Submit', 'knowtion' ); ?>"></div>
                 </div>
             </div>
         </form>
