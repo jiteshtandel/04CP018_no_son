@@ -95,6 +95,10 @@
     margin: 10px
 }
 
+ul#schedule_requests li div.action{
+    top: 35px !important;
+}
+
 /*jQuery UI Specific modifications*/
 #datepicker .ui-datepicker{
     height: 100%;
