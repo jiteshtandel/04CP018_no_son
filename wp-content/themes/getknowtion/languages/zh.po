@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
-"POT-Creation-Date: 2014-09-27 17:06+0530\n"
-"PO-Revision-Date: 2014-09-27 17:06+0530\n"
+"POT-Creation-Date: 2014-09-27 23:03+0530\n"
+"PO-Revision-Date: 2014-09-27 23:13+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -1973,7 +1973,7 @@ msgstr "很抱歉，没有找到活动。"
 
 #: ../buddypress/members/single/messages/compose.php:5
 msgid "Send To (Username or Friend's Name)"
-msgstr ""
+msgstr "发送到（用户名或朋友的名字）"
 
 #: ../buddypress/members/single/messages/compose.php:15
 #, fuzzy
@@ -1981,18 +1981,29 @@ msgid "This is a notice to all users."
 msgstr "该用户还没有回答任何主题。"
 
 #: ../buddypress/members/single/messages/compose.php:18
-#, fuzzy
 msgid "Subject"
-msgstr "拒绝"
+msgstr "主题"
+
+#: ../buddypress/members/single/messages/compose.php:29
+msgid "Send Message"
+msgstr "发送留言"
 
 #: ../buddypress/members/single/messages/messages-loop.php:34
 msgid "From:"
-msgstr ""
+msgstr "来自："
 
 #: ../buddypress/members/single/messages/messages-loop.php:39
-#, fuzzy
 msgid "To:"
-msgstr "主题："
+msgstr "于："
+
+#: ../buddypress/members/single/messages/messages-loop.php:45
+msgid "View Message"
+msgstr "查看留言"
+
+#: ../buddypress/members/single/messages/messages-loop.php:53
+#: ../buddypress/members/single/messages/single.php:24
+msgid "Delete Message"
+msgstr "删除信息"
 
 #: ../buddypress/members/single/messages/messages-loop.php:69
 msgid "Sorry, no messages were found."
@@ -2008,19 +2019,21 @@ msgid "Sorry, no notices were found."
 msgstr "对不起，没有找到相关的通知。"
 
 #: ../buddypress/members/single/messages/single.php:14
-#, fuzzy
 msgid "You are alone in this conversation."
-msgstr "您没有未读通知。"
+msgstr "你是独自一人在这次谈话。"
 
 #: ../buddypress/members/single/messages/single.php:18
 #, php-format
 msgid "Conversation between %s and you."
-msgstr ""
+msgstr "%s 和你们之间的谈话。"
 
 #: ../buddypress/members/single/messages/single.php:86
-#, fuzzy
 msgid "Send a Reply"
-msgstr "新回复"
+msgstr "发送回复"
+
+#: ../buddypress/members/single/messages/single.php:102
+msgid "Send Reply"
+msgstr "发送回复"
 
 #: ../buddypress/members/single/notifications/feedback-no-notifications.php:7
 msgid "You have no unread notifications."
