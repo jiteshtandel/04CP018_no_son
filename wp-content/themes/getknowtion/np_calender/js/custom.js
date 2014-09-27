@@ -209,7 +209,7 @@ var first_half = 1;
             url        : templateDir + "/np_calender/ajax/load_member_time_batch.php",
             dataType   : "html",
             success    : function(data){
-                if(typeof data != "undefined" && data != ''){
+                if(typeof data != "undefined" && $.trim(data) != ''){
                     update_selected_date("#datepicker_member",".selected_date");
                     $("#time_picker .time_listing").html(data);
 

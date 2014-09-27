@@ -63,7 +63,7 @@ function get_busy_dates($user_id, $user_type='owner'){
     //show only free dates to other members. if user have time_schedules for any specific dates,
     //and all the schedules are booked, don't show that date to other memebers
     if($user_type == 'member')
-        $q = 'SELECT DISTINCT schedule_date FROM wp_schedule_request WHERE host_user_id='.$user_id.' AND approved = 0';
+        $q = 'SELECT DISTINCT schedule_date FROM wp_schedule_time WHERE user_id='.$user_id.' AND booked = 0';
     else
         $q = 'select schedule_date from wp_schedule WHERE user_id = '.$user_id;
 
