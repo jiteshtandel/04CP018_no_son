@@ -119,15 +119,15 @@ function get_schedule_free_times($user_id, $batch_id, $schedule_date){
 }
 
 function get_approved_schedules($user_id, $search_year){
-    global $wpdb, $schedule_time_batch_table;
+    global $wpdb, $schedule_time_batch_table, $schedule_request_table;
 
     if(empty($search_year) || $search_year == 0){
-        $q = 'select * from '.$schedule_time_batch_table.' WHERE (user_id = '.$user_id.' OR booked_user_id='. $user_id .') AND booked=1 ORDER BY schedule_date DESC';
+        $q = 'select * from '.$schedule_request_table.' WHERE (requester_id = '.$user_id.' OR host_user_id='. $user_id .') AND approved=1 ORDER BY schedule_date DESC';
     } else {
         if($search_year == date("Y"))
-            $q = 'select * from '.$schedule_time_batch_table.' WHERE (user_id = '.$user_id.' OR booked_user_id='. $user_id .') AND booked=1 AND schedule_date >="'. date('Y-m-d') .'" AND schedule_date <="'. $search_year .'-12-31 23:59:59" ORDER BY schedule_date DESC';
+            $q = 'select * from '.$schedule_request_table.' WHERE (requester_id = '.$user_id.' OR host_user_id='. $user_id .') AND approved=1 AND schedule_date >="'. date('Y-m-d') .'" AND schedule_date <="'. $search_year .'-12-31 23:59:59" ORDER BY schedule_date DESC';
         else
-            $q = 'select * from '.$schedule_time_batch_table.' WHERE (user_id = '.$user_id.' OR booked_user_id='. $user_id .') AND booked=1 AND schedule_date >="'. $search_year .'-01-01 00:00:00" AND schedule_date <="'. $search_year .'-12-31 23:59:59" ORDER BY schedule_date DESC';
+            $q = 'select * from '.$schedule_request_table.' WHERE (requester_id = '.$user_id.' OR host_user_id='. $user_id .') AND approved=1 AND schedule_date >="'. $search_year .'-01-01 00:00:00" AND schedule_date <="'. $search_year .'-12-31 23:59:59" ORDER BY schedule_date DESC';
     }
     $result = $wpdb->get_results($q);
     //echo $wpdb->last_query."\n";

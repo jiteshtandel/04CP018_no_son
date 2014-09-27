@@ -7,6 +7,7 @@
     //check if search filter has any year request
     $search_year = !empty( $_REQUEST['sy'] ) ? stripslashes( $_REQUEST['sy'] ) : 0;
     $sent_requests = get_sent_request($current_loggedin_userid, $search_year);
+    //echo '<pre>';print_r($sent_requests);exit;
     $homepagepath=$bp->loggedin_user->domain;
     $userimage=bp_core_fetch_avatar(array('item_id' => $current_loggedin_userid,'html' => false, 'type'=>'thumb','width'=>BP_AVATAR_THUMB_WIDTH,'height' => BP_AVATAR_THUMB_HEIGHT));
 ?>
@@ -87,7 +88,11 @@
                                                 <div class="item">
                                                     <div class="item-title"><a href="<?php echo  home_url(); ?>/members/<?php echo $host->display_name; ?>/"><?php echo $host->display_name; ?></a></div>
                                                     <div class="item-meta"><span class="activity"><?php echo $request->schedule_date; ?></span></div>
-                                                    <div class="item-meta"><span class="activity"><?php echo $request->start_time; ?> - <?php echo $request->end_time; ?> <?php echo $host->user_timezone; ?></span></div>
+                                                    <div class="item-meta"><span class="activity"><?php echo $request->start_time; ?> - <?php echo $request->end_time; ?> <?php echo $request->host_timezone; ?></span></div>
+
+                                                    <?php if($request->host_timezone != $request->requester_timezone):?>
+                                                        <div class="item-meta" style="margin-left: 65px"><span class="activity"><?php echo $request->requester_start_time; ?> - <?php echo $request->requester_end_time; ?> <?php echo $request->requester_timezone; ?></span></div>
+                                                    <?php endif; ?>
                                                 </div>
                                             </li>
 

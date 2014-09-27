@@ -95,7 +95,11 @@
                                                 <div class="item">
                                                     <div class="item-title"><a href="<?php echo  home_url(); ?>/members/<?php echo $requester->user_nicename; ?>/"><?php echo $requester->display_name; ?></a></div>
                                                     <div class="item-meta"><span class="activity"><?php echo $busy_date->schedule_date; ?></span></div>
-                                                    <div class="item-meta"><span class="activity"><?php echo $batch->start_time; ?> - <?php echo $batch->end_time; ?> <?php echo $busy_date->user_timezone; ?></span></div>
+                                                    <div class="item-meta"><span class="activity"><?php echo $batch->start_time; ?> - <?php echo $batch->end_time; ?> <?php echo $batch->host_timezone; ?></span></div>
+
+                                                    <?php if($batch->host_timezone != $batch->requester_timezone):?>
+                                                    <div class="item-meta" style="margin-left: 65px"><span class="activity"><?php echo $batch->requester_start_time; ?> - <?php echo $batch->requester_end_time; ?> <?php echo $batch->requester_timezone; ?></span></div>
+                                                    <?php endif; ?>
                                                 </div>
 
                                                 <div class="action">
