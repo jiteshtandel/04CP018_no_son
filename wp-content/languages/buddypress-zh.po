@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-09-27 01:17+0530\n"
+"PO-Revision-Date: 2014-09-27 17:10+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "X-Generator: Poedit 1.6.9\n"
@@ -699,7 +699,7 @@ msgstr ""
 #: bp-activity/bp-activity-loader.php:303 bp-friends/bp-friends-loader.php:188
 #: bp-friends/bp-friends-screens.php:85
 msgid "Friends"
-msgstr "友"
+msgstr ""
 
 #: bp-activity/bp-activity-loader.php:213
 #: bp-activity/bp-activity-loader.php:313 bp-core/bp-core-template.php:389
@@ -2965,11 +2965,11 @@ msgstr ""
 #: bp-themes/bp-default/activity/index.php:124
 #: bp-themes/bp-default/members/single/activity.php:35
 msgid "Friendships"
-msgstr ""
+msgstr "友谊"
 
 #: bp-friends/bp-friends-loader.php:150 bp-groups/bp-groups-template.php:1524
 msgid "Requests"
-msgstr ""
+msgstr "请求"
 
 #: bp-friends/bp-friends-loader.php:185
 msgid "Friends <span class=\"count\">%s</span>"
@@ -4295,8 +4295,7 @@ msgstr ""
 #: bp-members/bp-members-template.php:353
 msgid "Viewing member %1$s to %2$s (of %3$s member)"
 msgid_plural "Viewing members %1$s to %2$s (of %3$s members)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "查看会员 %1$s 以 %2$s (of %3$s 成员)"
 
 #: bp-groups/bp-groups-template.php:2415
 #: bp-notifications/bp-notifications-template.php:940

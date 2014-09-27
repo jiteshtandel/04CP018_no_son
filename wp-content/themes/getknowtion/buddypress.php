@@ -17,23 +17,24 @@
                     <div class="userinfo">
                         <a href="<?php echo $bp->displayed_user->domain . 'profile/';?>"><?php bp_displayed_user_avatar( 'type=thumb' );?></a>
                         <a href="<?php echo $bp->displayed_user->domain . 'profile/';?>" class="username"><?php echo $bp->loggedin_user->fullname;?></a></br>
-                        <a href="<?php echo $bp->displayed_user->domain . 'profile/edit';?>" class="edit-profile">Edit Profile</a>
+                        <a href="<?php echo $homepagepath . 'profile/edit';?>" class="edit-profile"><?php _e( 'Edit Profile', 'knowtion' ); ?></a>
                         <div class="clearboth"></div>
                     </div>    
                     <div class="left-site-menu">
                         <ul class="menu-items">
                             <li class="page-item">
-                                <a href="<?php echo $homepagepath;?>">Home</a>
+                                <a id="homelink" href="<?php echo $homepagepath;?>"><?php _e( 'Home', 'knowtion' ); ?></a>
                             </li>
                             <li class="page-item">
-                                <a href="#calender-container" class="manage_calender fancybox">Manage my calender</a>
+                                <a href="#calender-container" class="manage_calender fancybox"><?php _e( 'Manage my calendar', 'knowtion' ); ?></a>
                             </li>
                              <li class="page-item">
-                                <a href="<?php echo HOME_URL; ?>/schedule-request">Schedule a lesson</a>
+                                <a href="<?php echo HOME_URL; ?>/schedule-request"><?php _e( 'Schedule a lesson', 'knowtion' ); ?></a>
                             </li>
                              <li class="page-item">
-                                 <a href="<?php echo HOME_URL; ?>/forums">Forums</a>
+                                 <a href="<?php echo HOME_URL; ?>/forums"><?php _e( 'Forums', 'knowtion' );?></a>
                             </li>
+                            
                         </ul>
                     </div>
                     <div class="gray-border-bottom">&nbsp;</div>

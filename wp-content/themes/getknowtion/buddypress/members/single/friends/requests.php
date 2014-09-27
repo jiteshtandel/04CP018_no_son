@@ -35,8 +35,8 @@
 				<?php do_action( 'bp_friend_requests_item' ); ?>
 
 				<div class="action">
-					<a class="button accept" href="<?php bp_friend_accept_request_link(); ?>"><?php _e( 'Accept', 'buddypress' ); ?></a> &nbsp;
-					<a class="button reject" href="<?php bp_friend_reject_request_link(); ?>"><?php _e( 'Reject', 'buddypress' ); ?></a>
+					<a class="button accept" href="<?php bp_friend_accept_request_link(); ?>"><?php _e( 'Accept', 'knowtion' ); ?></a> &nbsp;
+					<a class="button reject" href="<?php bp_friend_reject_request_link(); ?>"><?php _e( 'Reject', 'knowtion' ); ?></a>
 
 					<?php do_action( 'bp_friend_requests_item_action' ); ?>
 				</div>
@@ -68,7 +68,7 @@
 <?php else: ?>
 
 	<div id="message" class="info">
-		<p><?php _e( 'You have no pending friendship requests.', 'buddypress' ); ?></p>
+		<p><?php _e( 'You have no pending friendship requests.', 'knowtion' ); ?></p>
 	</div>
 
 <?php endif;?>

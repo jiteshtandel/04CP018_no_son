@@ -47,7 +47,7 @@
         $languagelearning3='';
     }
     
-    $timezoneName=getusertimezonename($userid);
+    echo $timezoneName=getusertimezonename($userid);
     $dateobj=settimezone($timezoneName);
     
     $from=new DateTime(xprofile_get_field_data( 'Birthday', $userid));
