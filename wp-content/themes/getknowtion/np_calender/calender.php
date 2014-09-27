@@ -15,7 +15,7 @@
     //echo '<pre>';print_r($master_times);exit;
 
     $dates = get_busy_dates(get_current_user_id());
-    $mdates = get_busy_dates(bp_displayed_user_id());
+    $mdates = get_busy_dates(bp_displayed_user_id(), $user_type='member');
 
 ?>
 

@@ -57,9 +57,17 @@ function get_future_schedule_requests($user_id, $search_year){
 /*
  * Get all the busy dates only of the user
  */
-function get_busy_dates($user_id){
+function get_busy_dates($user_id, $user_type='owner'){
     global $wpdb, $schedule_table;
-    $result = $wpdb->get_results('select schedule_date from wp_schedule WHERE user_id = '.$user_id);
+
+    //show only free dates to other members. if user have time_schedules for any specific dates,
+    //and all the schedules are booked, don't show that date to other memebers
+    if($user_type == 'member')
+        $q = 'SELECT DISTINCT schedule_date FROM wp_schedule_request WHERE host_user_id='.$user_id.' AND approved = 0';
+    else
+        $q = 'select schedule_date from wp_schedule WHERE user_id = '.$user_id;
+
+    $result = $wpdb->get_results($q);
     //echo $wpdb->last_query ."\n";echo '<pre>';print_r($result);echo '</pre>';
 
     if(!empty($result))
