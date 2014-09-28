@@ -7,6 +7,9 @@
     //check if search filter has any year request
     $search_year = !empty( $_REQUEST['sy'] ) ? stripslashes( $_REQUEST['sy'] ) : 0;
     $approved_schedules = get_approved_schedules($current_loggedin_userid, $search_year);
+
+    //echo '<pre>';print_r($approved_schedules);exit;
+
     $homepagepath=$bp->loggedin_user->domain;
     $userimage=bp_core_fetch_avatar(array('item_id' => $current_loggedin_userid,'html' => false, 'type'=>'thumb','width'=>BP_AVATAR_THUMB_WIDTH,'height' => BP_AVATAR_THUMB_HEIGHT));
 ?>
@@ -69,7 +72,12 @@
 
                                         <?php
                                             foreach($approved_schedules as $schedule) :
-                                                $requester = get_user_info($schedule->booked_user_id);
+
+                                                $viewer_user_id = $schedule->requester_id;
+                                                if($current_loggedin_userid == $schedule->requester_id)
+                                                    $viewer_user_id = $schedule->host_user_id;
+
+                                                $requester = get_user_info($viewer_user_id);
                                                 $time_batch  = get_schedule($schedule->user_id, $schedule->schedule_date)
                                         ?>
 
@@ -86,7 +94,11 @@
                                                 <div class="item">
                                                     <div class="item-title"><a href="<?php echo  home_url(); ?>/members/<?php echo $requester->user_nicename; ?>/"><?php echo $requester->display_name; ?></a></div>
                                                     <div class="item-meta"><span class="activity"><?php echo $schedule->schedule_date; ?></span></div>
-                                                    <div class="item-meta"><span class="activity"><?php echo $schedule->start_time; ?> - <?php echo $schedule->end_time; ?> <?php echo $time_batch->user_timezone; ?></span></div>
+                                                    <div class="item-meta"><span class="activity"><?php echo $schedule->start_time; ?> - <?php echo $schedule->end_time; ?> <?php echo $schedule->host_timezone; ?></span></div>
+
+                                                    <?php if($schedule->host_timezone != $schedule->requester_timezone):?>
+                                                        <div class="item-meta" style="margin-left: 65px"><span class="activity"><?php echo $schedule->requester_start_time; ?> - <?php echo $schedule->requester_end_time; ?> <?php echo $schedule->requester_timezone; ?></span></div>
+                                                    <?php endif; ?>
                                                 </div>
                                             </li>
 
