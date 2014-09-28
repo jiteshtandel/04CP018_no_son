@@ -54,7 +54,7 @@
     $to=new DateTime('today');
     $age=$from->diff($to)->y;
     $gender=xprofile_get_field_data( 'Gender', $userid);
-    $isonline=is_user_online($userid,10);
+    $isonline=is_user_online($userid,5);
     $is_friend = bp_is_friend($userid);
     $friendshiptext="";
     $friendshiplink="";

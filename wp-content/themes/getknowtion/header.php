@@ -140,7 +140,7 @@
                                                                             </a>
                                                                         </li>
                                                                         <li><a href="<?php echo $homepagepath . 'settings';?>"><?php _e( 'Settings', 'knowtion' ); ?></a></li>
-                                                                        <li><a href="<?php echo wp_logout_url(home_url()); ?> "><?php _e( 'Sign Out', 'knowtion' ); ?></a></li>
+                                                                        <li><a href="javascript:void(0);" onclick="MemberLogout('<?php echo wp_logout_url(HOME_URL); ?>');"><?php _e( 'Sign Out', 'knowtion' ); ?></a></li>
                                                                     </ul>                                                    
                                                                 </td>
                                                             </tr>

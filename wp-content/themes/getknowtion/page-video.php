@@ -19,7 +19,7 @@
     
     $firstname=xprofile_get_field_data('First Name', $useroncall);
     $current_loggedin_userid=bp_loggedin_user_id();
-    $isonline=is_user_online($useroncall,10);
+    $isonline=is_user_online($useroncall,5);
     $useroncall_domain=bp_core_get_user_domain($useroncall);
 ?>   
    <tr>
