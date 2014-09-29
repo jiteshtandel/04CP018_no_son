@@ -147,6 +147,8 @@
             $to=new DateTime('today');
             $isonline=is_user_online($userid,10);
             $ratingarr=getratingoverall($userid);
+			$isMaleGender = xprofile_get_field_data( 'Gender', $userid);
+			
         ?>
             <li style="width: 100%;border-top:1px solid #939598;">
                 <table cellpadding="0" cellspacing="0" border="0" style="width:100%;padding: 15px 0px 15px 0px;" id="search_reasult_content" align="left">
@@ -158,9 +160,9 @@
                                 <div><a href="<?php echo $member_user_domain; ?>"><?php echo strconcat(array(xprofile_get_field_data('First Name', $userid),xprofile_get_field_data('Last Name', $userid)),' '); ?></a></div>
                                 <div class="height2"><!-- ---></div>
                                 <div class="star_rating_small" overallrating="<?php echo $ratingarr['avgrating'];?>"><!-- --></div>
-                                <div><?php bp_member_profile_data('field=Gender');?>,&nbsp;<?php echo $from->diff($to)->y;?></div>
+                                <div><?php echo ($isMaleGender=='Male')?  __( 'Male', 'knowtion' ) :  __( 'Female', 'knowtion' );?>,&nbsp;<?php echo $from->diff($to)->y;?></div>
                                 <div></div>
-                                <div class="<?php echo ($isonline) ? 'greentext13' : 'greytext';?>"><?php echo ($isonline)? 'Online' : 'Offline';?></div>
+                                <div class="<?php echo ($isonline) ? 'greentext13' : 'greytext';?>"><?php echo ($isonline)?  __( 'Online', 'knowtion' ) :  __( 'Offline', 'knowtion' );?></div>
                             </td>
                             <td valign="top" align="left" style="padding-right: 10px;">
                                 <div><?php _e( 'Native Languages', 'knowtion' ); ?>: <?php echo strconcat(array($languagespoken1,$languagespoken2,$languagespoken3),', ');?></div>
