@@ -152,7 +152,7 @@ if (!$user_ID) { //block logged in users
                                                         });
                                                      }
                                                      else{
-                                                        jQuery("#notification").notification({caption: "Please enter your Username or E-mail address.",type:"warning",sticky:true});
+                                                        jQuery("#notification").notification({caption: "<?php _e('Please enter your Username or Email address.', 'knowtion' ); ?>",type:"warning",sticky:true});
                                                      }   
                                                     return false;
                                                 });
