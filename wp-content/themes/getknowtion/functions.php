@@ -362,6 +362,11 @@ function my_theme_setup(){
     //load_theme_textdomain('knowtion', THEME_DIR . '/languages');
 }
 
+/*function myplugin_internationalization(){
+    load_plugin_textdomain('bp-activity-privacy', dirname(plugin_basename(__FILE__). '/languages'));
+}
+add_action('init', 'myplugin_internationalization');
+*/
 
 // Numbered Pagination
 if ( !function_exists( 'wpex_pagination' ) ) {
