@@ -1,5 +1,3 @@
-var session;
-var logouturl;
 function showPopupLoader() {
     relocateModelAreas();
     jQuery("#popupmodel").css("opacity", 0.7);
@@ -105,13 +103,3 @@ function myredirect(location){
     window.location.href=location;
 }
 
-function MemberLogout(redirecturl){
-    logouturl=redirecturl;
-    session = TB.initSession(sessionId);
-    session.addEventListener("sessionDisconnected", connectionDisconnectedHandler);
-    session.disconnect();
-    //myredirect(redirecturl);
-}
-function connectionDisconnectedHandler(event){
-    myredirect(logouturl);
-}

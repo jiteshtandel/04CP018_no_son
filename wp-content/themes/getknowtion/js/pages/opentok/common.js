@@ -1,10 +1,14 @@
 //var PUBLISHER_WIDTH = 220;
 //var PUBLISHER_HEIGHT = 165;
-var stateManager;  
-var session; var publisher;
+var stateManager;
+var session; 
+var publisher;
 var userconnectionid;
-var callstatus = 0; var oncallwith;
+var callstatus = 0; 
+var oncallwith;
+var logouturl;
 var suppressStatemanagerEvent = true;
+var sessionConnected=false;
 
 TB.addEventListener("exception", exceptionHandler);
 session = TB.initSession(sessionId);
@@ -12,6 +16,21 @@ session.addEventListener("sessionConnected", sessionConnectedHandler);
 session.addEventListener("streamCreated", streamCreatedHandler);
 //session.addEventListener("signalReceived", signalEventHandler);
 session.addEventListener("connectionCreated", connectionCreatedHandler);
+session.addEventListener("sessionDisconnected", connectionDisconnectedHandler);
+
+function MemberLogout(redirecturl){
+    if(sessionConnected){
+        logouturl=redirecturl;
+        session.disconnect();
+    }
+    else{
+        myredirect(redirecturl);
+    }
+}
+
+function connectionDisconnectedHandler(event){
+    myredirect(logouturl);
+}
 
 function exceptionHandler(event) {
     //alert("Exception: " + event.code + "::" + event.message);
@@ -44,10 +63,10 @@ function connectionCreatedHandler(event){
 
 function sessionConnectedHandler(event){
     console.log("in sessionConnectedHandler:: " + usertocall);   
-	console.log("callstatus: " + callstatus);
+    console.log("callstatus: " + callstatus);
     console.log(event);
     //tempstream = event;
-
+    sessionConnected=true;
     for (var i = 0; i < event.connections.length; i++) {
         console.log(event.connections[i].data);
         //if(event.connections[i].data == usertocall){
