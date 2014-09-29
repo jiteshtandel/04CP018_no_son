@@ -33,7 +33,7 @@
                                             'form_id' => 'loginform',
                                             'label_username' => __( 'Username', 'knowtion' ),
                                             'label_password' => __( 'Password', 'knowtion' ),
-                                            'label_remember' => __( 'REMEMBER ME', 'knowtion'),
+                                            'label_remember' => __( 'Remember Me','knowtion'),
                                             'label_log_in' => __( 'Log In', 'knowtion' ),
                                             'id_username' => 'user_login',
                                             'id_password' => 'user_pass',

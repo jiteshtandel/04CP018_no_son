@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
-"POT-Creation-Date: 2014-09-28 01:07+0530\n"
-"PO-Revision-Date: 2014-09-29 00:23+0530\n"
+"POT-Creation-Date: 2014-09-29 22:36+0530\n"
+"PO-Revision-Date: 2014-09-29 22:37+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -1821,6 +1821,14 @@ msgid ""
 "and password you have just created."
 msgstr "您已成功创建您的帐户！请登录使用你刚才创建的用户名和密码。"
 
+#: ../buddypress/members/members-loop.php:163
+msgid "Online"
+msgstr "在线"
+
+#: ../buddypress/members/members-loop.php:163
+msgid "Offline"
+msgstr "当前离线"
+
 #: ../buddypress/members/members-loop.php:166
 #: ../buddypress/members/single/member-details.php:121
 msgid "Native Languages"
@@ -2313,8 +2321,7 @@ msgid "//unlock how you learn"
 msgstr "//解开你如何学习"
 
 #: ../page-templates/login.php:36
-#, fuzzy
-msgid "REMEMBER ME"
+msgid "Remember Me"
 msgstr "记得我"
 
 #: ../page-templates/login.php:66
@@ -2396,6 +2403,10 @@ msgstr "谁知道"
 #: ../sidebar-whotoknow.php:72
 msgid "Sorry, no any matching profile found related to your profile."
 msgstr "对不起，没有任何匹配的配置文件中发现有关您的个人资料。"
+
+#, fuzzy
+#~ msgid "REMEMBER ME"
+#~ msgstr "记得我"
 
 #~ msgid "Connecting.."
 #~ msgstr "连接.."
