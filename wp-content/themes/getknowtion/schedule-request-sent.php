@@ -16,29 +16,7 @@
         <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
             <tr>
                 <td valign="top" align="left" id="leftbar">
-                    <div class="userinfo">
-                        <a href="<?php echo  $homepagepath . 'profile/';?>"><img src="<?php echo $userimage;?>" border="0"/></a>
-                        <a href="<?php echo $homepagepath . 'profile/';?>" class="username"><?php echo $bp->loggedin_user->fullname;?></a></br>
-                        <a href="<?php echo $homepagepath . 'profile/edit';?>" class="edit-profile">Edit Profile</a>
-                        <div class="clearboth"></div>
-                    </div>
-                    <div class="left-site-menu">
-                        <ul class="menu-items">
-                            <li class="page-item">
-                                <a href="<?php echo $homepagepath;?>">Home</a>
-                            </li>
-                            <li class="page-item">
-                                <a href="#calender-container" class="manage_calender fancybox">Manage my calender</a>
-                            </li>
-                             <li class="page-item">
-                                <a href="<?php echo HOME_URL; ?>/schedule-request">Schedule a lesson</a>
-                            </li>
-                             <li class="page-item">
-                                 <a href="<?php echo HOME_URL; ?>/forums">Forums</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="gray-border-bottom">&nbsp;</div>
+                    <?php get_sidebar('usermenu');?>
                     <?php get_sidebar('faq');?>
                 </td>
                 <td valign="top" align="left" id="content">
@@ -48,7 +26,7 @@
                             <div class="entry-content">
                                 <div id="buddypress">
                                     <div id="item-header">
-                                        <h4> Schedule a lesson</h4>
+                                        <h4>Schedule a lesson</h4>
                                     </div><!-- #item-header -->
                                     <div class="height5"><!-- --></div>
                                     <div role="main" id="item-body">
