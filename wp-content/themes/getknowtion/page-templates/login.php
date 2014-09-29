@@ -48,7 +48,7 @@
                                     ?>
                                         <div id="notification" style="margin:0px 0px 10px 60px;"></div>
                                         <script type="text/javascript" language="javascript">
-                                            jQuery("#notification").notification({caption: "Invalid credentials. Please try again.",type:"warning",sticky:true});
+                                            jQuery("#notification").notification({caption: "<?php _e('Invalid credentials. Please try again.', 'knowtion' ); ?>",type:"warning",sticky:true});
                                         </script>
                                     <?php
                                         }										

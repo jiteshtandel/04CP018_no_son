@@ -152,7 +152,7 @@ if (!$user_ID) { //block logged in users
                                                         });
                                                      }
                                                      else{
-                                                        jQuery("#notification").notification({caption: "Please enter your Username or E-mail address.",type:"warning",sticky:true});
+                                                        jQuery("#notification").notification({caption: "<?php _e('Please enter your Username or Email address.', 'knowtion' ); ?>",type:"warning",sticky:true});
                                                      }   
                                                     return false;
                                                 });
@@ -166,7 +166,7 @@ if (!$user_ID) { //block logged in users
 
             <?php else : ?>
 
-                            <h2><?php _e('Not Found'); ?></h1>
+                            <h2><?php _e('Not Found','knowtion'); ?></h1>
 
             <?php endif; ?>
 

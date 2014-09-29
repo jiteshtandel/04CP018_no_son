@@ -4,8 +4,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2014-09-29 22:47+0530\n"
 "PO-Revision-Date: 2014-09-30 00:28+0530\n"
+=======
+"POT-Creation-Date: 2014-09-30 00:04+0530\n"
+"PO-Revision-Date: 2014-09-30 00:16+0530\n"
+>>>>>>> 07d198cf9061ab14caabec9d5ea72739fd2de755
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -1954,7 +1959,7 @@ msgstr "你已经发送请求到 %s"
 
 #: ../buddypress/members/single/member-details.php:162
 msgid "User has already sent you a request"
-msgstr ""
+msgstr "用户已经发送您的请求"
 
 #: ../buddypress/members/single/member-details.php:176
 msgid "My Schedule"
@@ -2314,6 +2319,10 @@ msgstr "用户名或电子邮件:"
 msgid "Reset Password"
 msgstr "重设密码"
 
+#: ../page-templates/forgot-password-reset.php:155
+msgid "Please enter your Username or Email address."
+msgstr "请输入您的用户名或电子邮件地址。"
+
 #: ../page-templates/forgot-password-reset.php:169
 msgid "Not Found"
 msgstr "未找到"
@@ -2325,6 +2334,10 @@ msgstr "//解开你如何学习"
 #: ../page-templates/login.php:36
 msgid "Remember Me"
 msgstr "记得我"
+
+#: ../page-templates/login.php:51
+msgid "Invalid credentials. Please try again."
+msgstr "无效的凭证。请重试。"
 
 #: ../page-templates/login.php:66
 msgid "Need an account"
