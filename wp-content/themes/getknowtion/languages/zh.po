@@ -4,8 +4,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2014-10-01 00:47+0530\n"
 "PO-Revision-Date: 2014-10-01 00:59+0530\n"
+=======
+"POT-Creation-Date: 2014-09-30 00:04+0530\n"
+"PO-Revision-Date: 2014-09-30 01:51+0530\n"
+>>>>>>> 8e71a9ab6971fa03834b803b6d0a49e369a1278a
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"

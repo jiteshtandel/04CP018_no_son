@@ -18,7 +18,7 @@ session.addEventListener("streamCreated", streamCreatedHandler);
 session.addEventListener("connectionCreated", connectionCreatedHandler);
 session.addEventListener("sessionDisconnected", connectionDisconnectedHandler);
 
-function MemberLogout(redirecturl){
+function MemberLogout(redirecturl){ 
     if(sessionConnected){
         logouturl=redirecturl;
         session.disconnect();

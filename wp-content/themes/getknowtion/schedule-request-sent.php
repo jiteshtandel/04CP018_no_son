@@ -16,6 +16,7 @@
         <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
             <tr>
                 <td valign="top" align="left" id="leftbar">
+<<<<<<< HEAD
                     <div class="userinfo">
                         <a href="<?php echo $bp->displayed_user->domain . 'profile/';?>"><img src="<?php echo $userimage;?>" border="0"/></a>
                         <a href="<?php echo $bp->displayed_user->domain . 'profile/';?>" class="username"><?php echo $bp->loggedin_user->fullname;?></a></br>
@@ -39,6 +40,9 @@
                         </ul>
                     </div>
                     <div class="gray-border-bottom">&nbsp;</div>
+=======
+                    <?php get_sidebar('usermenu');?>
+>>>>>>> 8e71a9ab6971fa03834b803b6d0a49e369a1278a
                     <?php get_sidebar('faq');?>
                 </td>
                 <td valign="top" align="left" id="content">
@@ -48,7 +52,11 @@
                             <div class="entry-content">
                                 <div id="buddypress">
                                     <div id="item-header">
+<<<<<<< HEAD
                                         <h4><?php _e( 'Schedule a lesson', 'knowtion' );?></h4>
+=======
+                                        <h4>Schedule a lesson</h4>
+>>>>>>> 8e71a9ab6971fa03834b803b6d0a49e369a1278a
                                     </div><!-- #item-header -->
                                     <div class="height5"><!-- --></div>
                                     <div role="main" id="item-body">
