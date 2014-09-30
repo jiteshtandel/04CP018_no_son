@@ -19,24 +19,24 @@
             <tr>
                 <td valign="top" align="left" id="leftbar">
                     <div class="userinfo">
-                        <a href="<?php echo  $homepagepath . 'profile/';?>"><img src="<?php echo $userimage;?>" border="0"/></a>
-                        <a href="<?php echo $homepagepath . 'profile/';?>" class="username"><?php echo $bp->loggedin_user->fullname;?></a></br>
-                        <a href="<?php echo $homepagepath . 'profile/edit';?>" class="edit-profile">Edit Profile</a>
+                        <a href="<?php echo $bp->displayed_user->domain . 'profile/';?>"><img src="<?php echo $userimage;?>" border="0"/></a>
+                        <a href="<?php echo $bp->displayed_user->domain . 'profile/';?>" class="username"><?php echo $bp->loggedin_user->fullname;?></a></br>
+                        <a href="<?php echo $homepagepath . 'profile/edit';?>" class="edit-profile"><?php _e( 'Edit Profile', 'knowtion' ); ?></a>
                         <div class="clearboth"></div>
                     </div>
                     <div class="left-site-menu">
                         <ul class="menu-items">
                             <li class="page-item">
-                                <a href="<?php echo $homepagepath;?>">Home</a>
+                                <a id="homelink" href="<?php echo $homepagepath;?>"><?php _e( 'Home', 'knowtion' ); ?></a>
                             </li>
                             <li class="page-item">
-                                <a href="#calender-container" class="manage_calender fancybox">Manage my calender</a>
+                                <a href="#calender-container" class="manage_calender fancybox"><?php _e( 'Manage my calendar', 'knowtion' ); ?></a>
                             </li>
                              <li class="page-item">
-                                <a href="<?php echo HOME_URL; ?>/schedule-request">Schedule a lesson</a>
+                                <a href="<?php echo HOME_URL; ?>/schedule-request"><?php _e( 'Schedule a lesson', 'knowtion' ); ?></a>
                             </li>
                              <li class="page-item">
-                                 <a href="<?php echo HOME_URL; ?>/forums">Forums</a>
+                                 <a href="<?php echo HOME_URL; ?>/forums"><?php _e( 'Forums', 'knowtion' );?></a>
                             </li>
                         </ul>
                     </div>
@@ -50,16 +50,16 @@
                             <div class="entry-content">
                                 <div id="buddypress">
                                     <div id="item-header">
-                                        <h4> Schedule a lesson</h4>
+                                        <h4><?php _e( 'Schedule a lesson', 'knowtion' );?></h4>
                                     </div><!-- #item-header -->
                                     <div class="height5"><!-- --></div>
                                     <div role="main" id="item-body">
 
                                         <div role="navigation" id="subnav" class="item-list-tabs no-ajax">
                                             <ul>
-                                                <li id="friends-my-friends-personal-li"><a href="<?php echo  home_url(); ?>/schedule-request/" id="friends-my-friends">Requests</a></li>
-                                                <li class="current selected" id="requests-personal-li"><a href="<?php echo  home_url(); ?>/schedule-request-accepted/" id="requests">Accepted</a></li>
-                                                <li id="requests-personal-li"><a href="<?php echo  home_url(); ?>/sent-requests/" id="sent_requests">Request Sent</a></li>
+                                                <li id="friends-my-friends-personal-li"><a href="<?php echo  home_url(); ?>/schedule-request/" id="friends-my-friends"><?php _e( 'Requests', 'knowtion' );?></a></li>
+                                                <li class="current selected" id="requests-personal-li"><a href="<?php echo  home_url(); ?>/schedule-request-accepted/" id="requests"><?php _e( 'Accepted', 'knowtion' );?></a></li>
+                                                <li id="requests-personal-li"><a href="<?php echo  home_url(); ?>/sent-requests/" id="sent_requests"><?php _e( 'Request Sent', 'knowtion' );?></a></li>
                                                 <li id="requests-personal-li">
                                                     <div style="width: 265px;text-align: right">
                                                         <?php //np_year_search_form(); ?>
@@ -108,7 +108,7 @@
                                         <?php else: ?>
                                             <div id="errornotify"></div>
                                             <script type="text/javascript" language="javascript">
-                                                jQuery("#errornotify").notification({caption: "Sorry, no records found.",type:"error",sticky:true});
+                                                jQuery("#errornotify").notification({caption: "<?php _e( 'Sorry, no records found.', 'knowtion' );?>",type:"error",sticky:true});
                                             </script>
                                         <?php endif; ?>
 
@@ -122,7 +122,7 @@
                     </div>
                 </td>
                 <td valign="top" align="left" id="rightbar">
-                    <h6 class="suggested-knowtions">Suggested</h6>
+                    <h6 class="suggested-knowtions"><?php _e( 'Suggested', 'knowtion' );?></h6>
                     <div class="height15"><!-- --></div>
                     <?php get_sidebar('suggestedknowtion');?>
                     <div class="height20"><!-- --></div>

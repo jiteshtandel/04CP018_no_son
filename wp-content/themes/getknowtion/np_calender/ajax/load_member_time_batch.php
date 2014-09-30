@@ -59,7 +59,7 @@ if(isset($schedule) && isset($schedule->batch_id)):
         <?php endforeach; ?>
         </ul>
     <?php else: ?>
-           <p style="text-align: center">Sorry, no free time batch found for this user.</p>
+           <p style="text-align: center"><?php _e( 'Sorry, no free time batch found for this user.', 'knowtion' );?></p>
     <?php endif; ?>
 
 <?php else: ?>

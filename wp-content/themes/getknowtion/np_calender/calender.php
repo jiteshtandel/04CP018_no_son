@@ -25,7 +25,7 @@
         <div class="popup_notify"></div>
         <div class="clear"></div>
         <div id="calender">
-            <p style="float: left;margin-bottom: 24px">Select date and time for your video chat</p>
+            <p style="float: left;margin-bottom: 24px"><?php _e( 'Select date and time for your video chat.', 'knowtion' );?></p>
             <div class="clear"></div>
             <div class="calender-placeholder">
                 <div id="datepicker"></div>
@@ -50,24 +50,24 @@
                     </div>
                 </div>
 
-                <p style="display: block">Times are in your local time zone.</p>
+                <p style="display: block"><?php _e( 'Times are in your local time zone.', 'knowtion' );?></p>
                 <div class="title">
-                    1st half in:
+                   <?php _e( ' 1st half in:', 'knowtion' );?>
                 </div>
                 <div class="options">
                     <ul>
                         <li>
-                            <label><input id="first_half_1" type="radio" name="first_half" value="1" checked="checked"> Language I am learning</label>
+                            <label><input id="first_half_1" type="radio" name="first_half" value="1" checked="checked"><?php _e( ' Language I am learning', 'knowtion' );?></label>
                         </li>
                         <li>
-                            <label><input id="first_half_2" type="radio" name="first_half" value="2"> My native language</label>
+                            <label><input id="first_half_2" type="radio" name="first_half" value="2"><?php _e( ' My native language', 'knowtion' );?></label>
                         </li>
                     </ul>
                 </div>
                 <div class="clear"></div>
                 <div style="margin-top: 10px;">
-                    <a id="schedule_button" href="#" class="round_button active">Schedule</a>
-                    <a id="close_btn" href="#" class="round_button close_btn">Cancel</a>
+                    <a id="schedule_button" href="#" class="round_button active"><?php _e( 'Schedule', 'knowtion' );?></a>
+                    <a id="close_btn" href="#" class="round_button close_btn"><?php _e( 'Cancel', 'knowtion' );?></a>
                 </div>
             </div>
             <div class="clear"></div>
