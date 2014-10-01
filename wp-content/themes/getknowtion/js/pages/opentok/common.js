@@ -390,7 +390,8 @@ function openOutgoingCallPopup(obj){
     var callerdata = obj.data.split("|||");
     jQuery("#outgoingcallpopup").css("left", (jQuery(document).width()/2) - (jQuery("#outgoingcallpopup").width() / 2));
     //jQuery("#outgoingcallpopup").css("top", (jQuery(document).height()/2) - (jQuery("#outgoingcallpopup").height() / 2));
-    jQuery("#outgoingcallpopup").css("top", jQuery("#outgoingcallpopup").height() / 2);
+    //jQuery("#outgoingcallpopup").css("top", jQuery("#outgoingcallpopup").height() / 2);
+    jQuery("#outgoingcallpopup").css("top", Math.max(0, ((jQuery(window).height() - jQuery("#outgoingcallpopup").outerHeight()) / 2) + jQuery(window).scrollTop()) + "px");
 	
     //var html = "<img src='" + callerdata[2].replace("path=", "") + "' width='32' height='32' /> " + " Calling.. " + callerdata[1].replace("name=", "");
     //jQuery("#outgoingcallpopup").html(html);
@@ -426,7 +427,8 @@ function openIncomingCallPopup(obj){
     var callerdata = obj.split("|||");
     jQuery("#incomingcallpopup").css("left", (jQuery(document).width()/2) - (jQuery("#incomingcallpopup").width() / 2));
     //jQuery("#incomingcallpopup").css("top", (jQuery(document).height()/2) - (jQuery("#incomingcallpopup").height() / 2));
-	jQuery("#incomingcallpopup").css("top", jQuery("#incomingcallpopup").height() / 2);
+    //jQuery("#incomingcallpopup").css("top", jQuery("#incomingcallpopup").height() / 2);
+    jQuery("#incomingcallpopup").css("top", Math.max(0, ((jQuery(window).height() - jQuery("#incomingcallpopup").outerHeight()) / 2) + jQuery(window).scrollTop()));
     
     //var html = "<img src='" + callerdata[2].replace("path=", "") + "' width='32' height='32' /> " + " Calling.. " + callerdata[1].replace("name=", "");
     //jQuery("#outgoingcallpopup").html(html);
