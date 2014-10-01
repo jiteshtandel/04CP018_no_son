@@ -4,13 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2014-10-01 00:47+0530\n"
-"PO-Revision-Date: 2014-10-01 00:59+0530\n"
-=======
-"POT-Creation-Date: 2014-09-30 00:04+0530\n"
-"PO-Revision-Date: 2014-09-30 01:51+0530\n"
->>>>>>> 8e71a9ab6971fa03834b803b6d0a49e369a1278a
+"POT-Creation-Date: 2014-10-01 22:39+0530\n"
+"PO-Revision-Date: 2014-10-01 22:40+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -80,9 +75,8 @@ msgid "Registered Users"
 msgstr "注册用户"
 
 #: ../bbpress/content-statistics.php:22 ../buddypress.php:35
-#: ../buddypress/members/single/user-home.php:29
-#: ../schedule-request-accepted.php:39 ../schedule-request-sent.php:37
-#: ../schedule-requests.php:40
+#: ../schedule-request-accepted.php:40 ../schedule-request-sent.php:38
+#: ../schedule-requests.php:41 ../sidebar-usermenu.php:25
 msgid "Forums"
 msgstr "论坛"
 
@@ -974,28 +968,27 @@ msgstr "该用户还没有创建任何主题。"
 
 #: ../buddypress.php:20
 #: ../buddypress/members/single/index-component-profile.php:29
-#: ../buddypress/members/single/user-home.php:14
-#: ../schedule-request-accepted.php:24 ../schedule-request-sent.php:22
-#: ../schedule-requests.php:25
+#: ../schedule-request-accepted.php:25 ../schedule-request-sent.php:23
+#: ../schedule-requests.php:26 ../sidebar-usermenu.php:10
 msgid "Edit Profile"
 msgstr "编辑个人资料"
 
-#: ../buddypress.php:26 ../buddypress/members/single/user-home.php:20
-#: ../schedule-request-accepted.php:30 ../schedule-request-sent.php:28
-#: ../schedule-requests.php:31
+#: ../buddypress.php:26 ../schedule-request-accepted.php:31
+#: ../schedule-request-sent.php:29 ../schedule-requests.php:32
+#: ../sidebar-usermenu.php:16
 msgid "Home"
 msgstr "首页"
 
-#: ../buddypress.php:29 ../buddypress/members/single/user-home.php:23
-#: ../schedule-request-accepted.php:33 ../schedule-request-sent.php:31
-#: ../schedule-requests.php:34
+#: ../buddypress.php:29 ../schedule-request-accepted.php:34
+#: ../schedule-request-sent.php:32 ../schedule-requests.php:35
+#: ../sidebar-usermenu.php:19
 msgid "Manage my calendar"
 msgstr "管理我的日历"
 
-#: ../buddypress.php:32 ../buddypress/members/single/user-home.php:26
-#: ../schedule-request-accepted.php:36 ../schedule-request-accepted.php:53
-#: ../schedule-request-sent.php:34 ../schedule-request-sent.php:51
-#: ../schedule-requests.php:37 ../schedule-requests.php:54
+#: ../buddypress.php:32 ../schedule-request-accepted.php:37
+#: ../schedule-request-accepted.php:57 ../schedule-request-sent.php:35
+#: ../schedule-request-sent.php:56 ../schedule-requests.php:38
+#: ../schedule-requests.php:58 ../sidebar-usermenu.php:22
 msgid "Schedule a lesson"
 msgstr "附表一课"
 
@@ -1617,14 +1610,14 @@ msgstr "评论（可选）"
 #: ../buddypress/groups/single/requests-loop.php:31
 #: ../buddypress/members/single/friends/requests.php:38
 #: ../buddypress/members/single/groups/invites.php:23
-#: ../schedule-requests.php:101
+#: ../schedule-requests.php:108
 msgid "Accept"
 msgstr "接受"
 
 #: ../buddypress/groups/single/requests-loop.php:33
 #: ../buddypress/members/single/friends/requests.php:39
 #: ../buddypress/members/single/groups/invites.php:24
-#: ../schedule-requests.php:102
+#: ../schedule-requests.php:109
 msgid "Reject"
 msgstr "拒绝"
 
@@ -1991,9 +1984,9 @@ msgid "Reviews"
 msgstr "评论"
 
 #: ../buddypress/members/single/member-details.php:221
-#: ../buddypress/members/single/user-home.php:78
-#: ../schedule-request-accepted.php:125 ../schedule-request-sent.php:112
-#: ../schedule-requests.php:125
+#: ../buddypress/members/single/user-home.php:56
+#: ../schedule-request-accepted.php:132 ../schedule-request-sent.php:120
+#: ../schedule-requests.php:132
 msgid "Suggested"
 msgstr "建议"
 
@@ -2216,43 +2209,43 @@ msgstr ""
 msgid "Visibility"
 msgstr "能见度"
 
-#: ../buddypress/members/single/user-home.php:38
+#: ../buddypress/members/single/user-home.php:16
 msgid "Get to Know"
 msgstr "可以认识"
 
-#: ../buddypress/members/single/user-home.php:40
+#: ../buddypress/members/single/user-home.php:18
 msgid "Browse Language Partners"
 msgstr "浏览语言伙伴"
 
-#: ../buddypress/members/single/user-home.php:41
+#: ../buddypress/members/single/user-home.php:19
 msgid "Search for language partners in your target languages."
 msgstr "寻找语言伙伴在目标语言。"
 
-#: ../buddypress/members/single/user-home.php:43
+#: ../buddypress/members/single/user-home.php:21
 msgid "Schedule a Lesson"
 msgstr "安排课程"
 
-#: ../buddypress/members/single/user-home.php:44
+#: ../buddypress/members/single/user-home.php:22
 msgid "Set a time for your first online language lesson."
 msgstr "设定一个时间，你的第一个网上语文课。"
 
-#: ../buddypress/members/single/user-home.php:46
+#: ../buddypress/members/single/user-home.php:24
 msgid "Visit a Forum"
 msgstr "访问论坛"
 
-#: ../buddypress/members/single/user-home.php:47
+#: ../buddypress/members/single/user-home.php:25
 msgid "Now that you've had a lesson, give feedback on your teacher."
 msgstr "现在你已经有一个教训，给你的老师的反馈。"
 
-#: ../buddypress/members/single/user-home.php:51
+#: ../buddypress/members/single/user-home.php:29
 msgid "Update Your Status"
 msgstr "更新您的状态"
 
-#: ../buddypress/members/single/user-home.php:66
+#: ../buddypress/members/single/user-home.php:44
 msgid "Personal"
 msgstr "个人"
 
-#: ../buddypress/members/single/user-home.php:67 ../header.php:135
+#: ../buddypress/members/single/user-home.php:45 ../header.php:135
 msgid "Friends"
 msgstr "朋友"
 
@@ -2438,23 +2431,23 @@ msgstr "发送"
 msgid "Submit a Review"
 msgstr "提交评论"
 
-#: ../schedule-request-accepted.php:60 ../schedule-request-sent.php:57
-#: ../schedule-requests.php:61
+#: ../schedule-request-accepted.php:67 ../schedule-request-sent.php:65
+#: ../schedule-requests.php:68
 msgid "Requests"
 msgstr "请求"
 
-#: ../schedule-request-accepted.php:61 ../schedule-request-sent.php:58
-#: ../schedule-requests.php:62
+#: ../schedule-request-accepted.php:68 ../schedule-request-sent.php:66
+#: ../schedule-requests.php:69
 msgid "Accepted"
 msgstr "接受"
 
-#: ../schedule-request-accepted.php:62 ../schedule-request-sent.php:59
-#: ../schedule-requests.php:63
+#: ../schedule-request-accepted.php:69 ../schedule-request-sent.php:67
+#: ../schedule-requests.php:70
 msgid "Request Sent"
 msgstr "发送请求"
 
-#: ../schedule-request-accepted.php:111 ../schedule-request-sent.php:96
-#: ../schedule-requests.php:112
+#: ../schedule-request-accepted.php:118 ../schedule-request-sent.php:104
+#: ../schedule-requests.php:119
 msgid "Sorry, no records found."
 msgstr "很抱歉，没有找到记录。"
 

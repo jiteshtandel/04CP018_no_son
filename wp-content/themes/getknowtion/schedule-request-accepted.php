@@ -18,33 +18,7 @@
         <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
             <tr>
                 <td valign="top" align="left" id="leftbar">
-<<<<<<< HEAD
-                    <div class="userinfo">
-                        <a href="<?php echo $bp->displayed_user->domain . 'profile/';?>"><img src="<?php echo $userimage;?>" border="0"/></a>
-                        <a href="<?php echo $bp->displayed_user->domain . 'profile/';?>" class="username"><?php echo $bp->loggedin_user->fullname;?></a></br>
-                        <a href="<?php echo $homepagepath . 'profile/edit';?>" class="edit-profile"><?php _e( 'Edit Profile', 'knowtion' ); ?></a>
-                        <div class="clearboth"></div>
-                    </div>
-                    <div class="left-site-menu">
-                        <ul class="menu-items">
-                            <li class="page-item">
-                                <a id="homelink" href="<?php echo $homepagepath;?>"><?php _e( 'Home', 'knowtion' ); ?></a>
-                            </li>
-                            <li class="page-item">
-                                <a href="#calender-container" class="manage_calender fancybox"><?php _e( 'Manage my calendar', 'knowtion' ); ?></a>
-                            </li>
-                             <li class="page-item">
-                                <a href="<?php echo HOME_URL; ?>/schedule-request"><?php _e( 'Schedule a lesson', 'knowtion' ); ?></a>
-                            </li>
-                             <li class="page-item">
-                                 <a href="<?php echo HOME_URL; ?>/forums"><?php _e( 'Forums', 'knowtion' );?></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="gray-border-bottom">&nbsp;</div>
-=======
                     <?php get_sidebar('usermenu');?>
->>>>>>> 8e71a9ab6971fa03834b803b6d0a49e369a1278a
                     <?php get_sidebar('faq');?>
                 </td>
                 <td valign="top" align="left" id="content">
@@ -53,15 +27,10 @@
                             <div class="entry-content">
                                 <div id="buddypress">
                                     <div id="item-header">
-<<<<<<< HEAD
                                         <h4><?php _e( 'Schedule a lesson', 'knowtion' );?></h4>
-=======
-                                        <h4>Schedule a lesson</h4>
->>>>>>> 8e71a9ab6971fa03834b803b6d0a49e369a1278a
                                     </div><!-- #item-header -->
                                     <div class="height5"><!-- --></div>
                                     <div role="main" id="item-body">
-
                                         <div role="navigation" id="subnav" class="item-list-tabs no-ajax">
                                             <ul>
                                                 <li id="friends-my-friends-personal-li"><a href="<?php echo  home_url(); ?>/schedule-request/" id="friends-my-friends"><?php _e( 'Requests', 'knowtion' );?></a></li>
@@ -74,26 +43,20 @@
                                                 </li>
                                             </ul>
                                         </div>
-
                                         <?php if(!empty($approved_schedules)): ?>
-
                                         <?php
                                             foreach($approved_schedules as $schedule) :
 
                                                 $viewer_user_id = $schedule->requester_id;
                                                 if($current_loggedin_userid == $schedule->requester_id)
                                                     $viewer_user_id = $schedule->host_user_id;
-
                                                 $requester = get_user_info($viewer_user_id);
                                                 $time_batch  = get_schedule($schedule->user_id, $schedule->schedule_date)
                                         ?>
-
                                         <ul role="main" class="item-list" id="schedule_requests">
-
                                             <li id="" class="schedule_time_<?php echo $batch->schedule_time_id;?>">
                                                 <div class="clearboth" style="width: 100%;border-top:1px solid #939598;"><!-- --></div>
                                                 <div class="height15"><!-- --></div>
-
                                                 <div class="item-avatar">
                                                     <a href="<?php echo  home_url(); ?>/members/<?php echo $requester->user_nicename; ?>"><img width="50" height="50" alt="Profile picture of <?php echo $requester->display_name; ?>" class="avatar user-9-avatar avatar- photo" src="http://gravatar.com/avatar/<?php echo md5(strtolower(trim($requester->user_email))); ?>?d=mm&amp;s=50&amp;r=G"></a>
                                                 </div>
@@ -108,9 +71,7 @@
                                                     <?php endif; ?>
                                                 </div>
                                             </li>
-
                                         </ul>
-
                                             <?php endforeach; ?>
                                         <?php else: ?>
                                             <div id="errornotify"></div>
@@ -118,11 +79,7 @@
                                                 jQuery("#errornotify").notification({caption: "<?php _e( 'Sorry, no records found.', 'knowtion' );?>",type:"error",sticky:true});
                                             </script>
                                         <?php endif; ?>
-
-
                                     </div><!-- #item-body -->
-
-
                                 </div><!-- #buddypress -->
                             </div><!-- .entry-content -->
                         </article><!-- #post -->
