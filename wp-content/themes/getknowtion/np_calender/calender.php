@@ -57,10 +57,10 @@
                 <div class="options">
                     <ul>
                         <li>
-                            <label><input id="first_half_1" type="radio" name="first_half" value="1" checked="checked"><?php _e( ' Language I am learning', 'knowtion' );?></label>
+                            <label><input id="first_half_1" type="radio" name="first_half" value="1" checked="checked"><?php _e( 'Language I am learning', 'knowtion' );?></label>
                         </li>
                         <li>
-                            <label><input id="first_half_2" type="radio" name="first_half" value="2"><?php _e( ' My native language', 'knowtion' );?></label>
+                            <label><input id="first_half_2" type="radio" name="first_half" value="2"><?php _e( 'My native language', 'knowtion' );?></label>
                         </li>
                     </ul>
                 </div>
@@ -78,15 +78,15 @@
     <div id="time_picker">
         <div class="popup_notify"></div>
         <p class="selected_date">Wednesday January 16</p>
-        <p>Select time for your video chat :</p>
+        <p><?php _e( 'Select time for your video chat :', 'knowtion' );?></p>
 
         <div class="times-placeholder">
             <div class="time_listing"></div>
             <div class="clear"></div>
-            <div class="txtMsg">Time schedules are converted according to your timezone.</div>
+            <div class="txtMsg"><?php _e( 'Time schedules are converted according to your timezone.', 'knowtion' );?></div>
             <div id="action_btns">
-                <a id="make_request" href="#" class="round_button active">Make Request</a>
-                <a href="#" class="round_button close_btn">Cancel</a>
+                <a id="make_request" href="#" class="round_button active"><?php _e( 'Make Request', 'knowtion' );?></a>
+                <a href="#" class="round_button close_btn"><?php _e( 'Cancel', 'knowtion' );?></a>
             </div>
         </div>
         <div class="clear"></div>
