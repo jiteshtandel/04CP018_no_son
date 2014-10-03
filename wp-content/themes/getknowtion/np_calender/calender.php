@@ -57,10 +57,10 @@
                 <div class="options">
                     <ul>
                         <li>
-                            <label><input id="first_half_1" type="radio" name="first_half" value="1" checked="checked"><?php _e( 'Language I am learning', 'knowtion' );?></label>
+                            <label><input id="first_half_1" type="radio" name="first_half" value="1" checked="checked"> <?php _e('Language I am learning', 'knowtion');?></label>
                         </li>
                         <li>
-                            <label><input id="first_half_2" type="radio" name="first_half" value="2"><?php _e( 'My native language', 'knowtion' );?></label>
+                            <label><input id="first_half_2" type="radio" name="first_half" value="2"> <?php _e( 'My native language ', 'knowtion');?></label>
                         </li>
                     </ul>
                 </div>

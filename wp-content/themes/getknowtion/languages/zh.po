@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
-"POT-Creation-Date: 2014-10-02 22:49+0530\n"
-"PO-Revision-Date: 2014-10-04 00:49+0530\n"
+"POT-Creation-Date: 2014-10-04 01:07+0530\n"
+"PO-Revision-Date: 2014-10-04 01:17+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Poedit 1.6.9\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
@@ -147,9 +147,9 @@ msgid "Website:"
 msgstr "网址："
 
 #: ../bbpress/form-forum.php:35 ../bbpress/form-topic.php:41
-#, fuzzy, php-format
+#, php-format
 msgid "Now Editing &ldquo;%s&rdquo;"
-msgstr "在创建新主题 &ldquo;%s&rdquo;"
+msgstr "现在编辑 &ldquo;%s&rdquo;"
 
 #: ../bbpress/form-forum.php:37
 #, php-format
@@ -268,9 +268,8 @@ msgid "<strong>WARNING:</strong> This process cannot be undone."
 msgstr ""
 
 #: ../bbpress/form-reply-move.php:85
-#, fuzzy
 msgid "You do not have the permissions to edit this reply!"
-msgstr "您没有权限浏览这个论坛。"
+msgstr "您没有权限修改此回复！"
 
 #: ../bbpress/form-reply-move.php:85
 msgid "You cannot edit this reply."
@@ -322,9 +321,8 @@ msgid "You cannot reply to this topic."
 msgstr "您无法回复此主题。"
 
 #: ../bbpress/form-reply.php:174
-#, fuzzy
 msgid "You must be logged in to reply to this topic."
-msgstr "您必须先登录创建新的论坛。"
+msgstr "您必须先登录才能回复此话题。"
 
 #: ../bbpress/form-topic-merge.php:24
 #, php-format
@@ -380,14 +378,12 @@ msgid "Merge topic tags"
 msgstr "合并的话题标签"
 
 #: ../bbpress/form-topic-merge.php:106 ../bbpress/form-topic-split.php:110
-#, fuzzy
 msgid "You do not have the permissions to edit this topic!"
-msgstr "您没有权限浏览这个论坛。"
+msgstr "您没有权限编辑这个话题！"
 
 #: ../bbpress/form-topic-merge.php:106 ../bbpress/form-topic-split.php:110
-#, fuzzy
 msgid "You cannot edit this topic."
-msgstr "您无法回复此主题。"
+msgstr "您不能编辑这个话题。"
 
 #: ../bbpress/form-topic-split.php:24
 #, php-format
@@ -435,9 +431,8 @@ msgid "Manage Tag: \"%s\""
 msgstr ""
 
 #: ../bbpress/form-topic-tag.php:22
-#, fuzzy
 msgid "Rename"
-msgstr "重命名"
+msgstr "重命名 "
 
 #: ../bbpress/form-topic-tag.php:25
 msgid "Leave the slug empty to have one automatically generated."
@@ -486,9 +481,8 @@ msgid "This does not delete your topics. Only the tag itself is deleted."
 msgstr ""
 
 #: ../bbpress/form-topic-tag.php:94
-#, fuzzy
 msgid "Deleting a tag cannot be undone."
-msgstr "标签合并在一起无法复原。"
+msgstr "删除标签不能被撤销。"
 
 #: ../bbpress/form-topic-tag.php:95
 msgid "Any links to this tag will no longer function."
@@ -511,11 +505,10 @@ msgid "Create New Topic"
 msgstr "创建新主题"
 
 #: ../bbpress/form-topic.php:53
-#, fuzzy
 msgid ""
 "This forum is marked as closed to new topics, however your posting "
 "capabilities still allow you to do so."
-msgstr "本主题被标记为关闭新回复，但您的发帖功能，还允许你这样做。"
+msgstr "该论坛被标记为关闭，新的课题，但是你的帖子的能力仍然允许你这样做。"
 
 #: ../bbpress/form-topic.php:75
 #, php-format
@@ -547,9 +540,8 @@ msgid "You cannot create new topics."
 msgstr "您无法创建新的主题。"
 
 #: ../bbpress/form-topic.php:234
-#, fuzzy
 msgid "You must be logged in to create new topics."
-msgstr "您必须先登录创建新的论坛。"
+msgstr "您必须先登录创建新的主题。"
 
 #: ../bbpress/form-user-edit.php:14 ../bbpress/form-user-edit.php:19
 #: ../buddypress/members/single/profile/profile-wp.php:15
@@ -705,9 +697,8 @@ msgid "Register"
 msgstr "注册"
 
 #: ../bbpress/form-user-roles.php:13
-#, fuzzy
 msgid "Blog Role"
-msgstr "论坛的作用"
+msgstr "博客的作用"
 
 #: ../bbpress/form-user-roles.php:20
 msgid "Forum Role"
@@ -874,23 +865,21 @@ msgid "Edit"
 msgstr "编辑"
 
 #: ../bbpress/user-favorites.php:15
-#, fuzzy
 msgid "Favorite Forum Topics"
-msgstr "论坛主题"
+msgstr "喜欢的论坛主题"
 
 #: ../bbpress/user-favorites.php:28
-#, fuzzy
 msgid "You currently have no favorite topics."
-msgstr "您尚未创建任何主题。"
+msgstr "您目前没有最喜欢的主题。"
 
 #: ../bbpress/user-favorites.php:28
 msgid "This user has no favorite topics."
 msgstr "该用户没有最喜爱的主题。"
 
 #: ../bbpress/user-profile.php:24
-#, fuzzy, php-format
+#, php-format
 msgid "Forum Role: %s"
-msgstr "论坛的作用"
+msgstr "论坛的作用：%s"
 
 #: ../bbpress/user-profile.php:25
 #, php-format
@@ -923,19 +912,16 @@ msgid "You are not currently subscribed to any forums."
 msgstr "您目前没有订阅任何论坛。"
 
 #: ../bbpress/user-subscriptions.php:28
-#, fuzzy
 msgid "This user is not currently subscribed to any forums."
-msgstr "您目前没有订阅任何论坛。"
+msgstr "此用户目前没有订阅任何论坛。"
 
 #: ../bbpress/user-subscriptions.php:34
-#, fuzzy
 msgid "Subscribed Topics"
-msgstr "订阅的论坛"
+msgstr "订阅的主题"
 
 #: ../bbpress/user-subscriptions.php:47
-#, fuzzy
 msgid "You are not currently subscribed to any topics."
-msgstr "您目前没有订阅任何论坛。"
+msgstr "您目前没有订阅任何主题。"
 
 #: ../bbpress/user-subscriptions.php:47
 msgid "This user is not currently subscribed to any topics."
@@ -1032,14 +1018,14 @@ msgid "My Friends <span>%s</span>"
 msgstr "我的朋友 <span>%s</span>"
 
 #: ../buddypress/activity/index.php:41 ../buddypress/groups/index.php:22
-#, fuzzy, php-format
+#, php-format
 msgid "My Groups <span>%s</span>"
-msgstr "法律 <span>%s</span>"
+msgstr "我的群组 <span>%s</span>"
 
 #: ../buddypress/activity/index.php:51
-#, fuzzy, php-format
+#, php-format
 msgid "My Favorites <span>%s</span>"
-msgstr "我的朋友 <span>%s</span>"
+msgstr "我的最爱 <span>%s</span>"
 
 #: ../buddypress/activity/index.php:59
 msgid "Mentions"
@@ -1099,9 +1085,8 @@ msgstr "新群组"
 #: ../buddypress/activity/index.php:98
 #: ../buddypress/groups/single/activity.php:18
 #: ../buddypress/members/single/activity.php:52
-#, fuzzy
 msgid "Group Memberships"
-msgstr "大多数会员"
+msgstr "集团成员"
 
 #: ../buddypress/activity/index.php:104
 #: ../buddypress/members/single/activity.php:36
@@ -1137,9 +1122,8 @@ msgid "My Profile"
 msgstr "我的个人资料"
 
 #: ../buddypress/blogs/blogs-loop.php:90
-#, fuzzy
 msgid "Sorry, there were no sites found."
-msgstr "很抱歉，没有发现帖子。"
+msgstr "很抱歉，没有找到站点。"
 
 #: ../buddypress/blogs/create.php:14
 msgid "Site registration is currently disabled"
@@ -1151,9 +1135,9 @@ msgid "All Sites <span>%s</span>"
 msgstr "所有网站 <span>%s</span>"
 
 #: ../buddypress/blogs/index.php:20
-#, fuzzy, php-format
+#, php-format
 msgid "My Sites <span>%s</span>"
-msgstr "我的朋友 <span>%s</span>"
+msgstr "我的网站 <span>%s</span>"
 
 #: ../buddypress/blogs/index.php:36 ../buddypress/forums/index.php:42
 #: ../buddypress/groups/index.php:36 ../buddypress/groups/single/forum.php:36
@@ -1236,9 +1220,8 @@ msgstr "创建新主题："
 
 #: ../buddypress/forums/index.php:86 ../buddypress/groups/single/forum.php:75
 #: ../buddypress/groups/single/forum/edit.php:47
-#, fuzzy
 msgid "Title:"
-msgstr "标题："
+msgstr "标题： "
 
 #: ../buddypress/forums/index.php:89 ../buddypress/groups/single/forum.php:78
 #: ../buddypress/groups/single/forum/edit.php:50
@@ -1270,9 +1253,8 @@ msgid ""
 msgstr ""
 
 #: ../buddypress/groups/create.php:29 ../buddypress/groups/single/admin.php:16
-#, fuzzy
 msgid "Group Name (required)"
-msgstr "姓名（必填） ："
+msgstr "组名称（必填）"
 
 #: ../buddypress/groups/create.php:34 ../buddypress/groups/single/admin.php:19
 msgid "Group Description (required)"
@@ -1352,9 +1334,8 @@ msgid "Group admins only"
 msgstr ""
 
 #: ../buddypress/groups/create.php:105
-#, fuzzy
 msgid "Group Forums"
-msgstr "论坛"
+msgstr "集团论坛"
 
 #: ../buddypress/groups/create.php:109
 msgid "Should this group have a forum?"
@@ -1410,9 +1391,8 @@ msgid "active %s"
 msgstr "活跃 %s"
 
 #: ../buddypress/groups/groups-loop.php:95
-#, fuzzy
 msgid "There were no groups found."
-msgstr "很抱歉，没有发现帖子。"
+msgstr "目前还没有发现群体。"
 
 #: ../buddypress/groups/index.php:19
 #, php-format
@@ -1459,9 +1439,8 @@ msgstr "的档案图片 %s"
 
 #: ../buddypress/groups/single/admin.php:190
 #: ../buddypress/groups/single/admin.php:217
-#, fuzzy
 msgid "Demote to Member"
-msgstr "大多数会员"
+msgstr "降级为成员"
 
 #: ../buddypress/groups/single/admin.php:205
 msgid "Moderators"
@@ -1481,9 +1460,8 @@ msgid "(banned)"
 msgstr ""
 
 #: ../buddypress/groups/single/admin.php:266
-#, fuzzy
 msgid "Remove Ban"
-msgstr "删除邀请"
+msgstr "删除班"
 
 #: ../buddypress/groups/single/admin.php:270
 msgid "Kick &amp; Ban"
@@ -1499,9 +1477,8 @@ msgstr ""
 
 #: ../buddypress/groups/single/admin.php:290
 #: ../buddypress/groups/single/members.php:79
-#, fuzzy
 msgid "This group has no members."
-msgstr "本主题不存在。"
+msgstr "该组没有成员。"
 
 #: ../buddypress/groups/single/admin.php:324
 msgid ""
@@ -1532,9 +1509,8 @@ msgid "Post a New Topic:"
 msgstr "发布一个新主题："
 
 #: ../buddypress/groups/single/forum/edit.php:25
-#, fuzzy
 msgid "Edit:"
-msgstr "编辑"
+msgstr "编辑："
 
 #: ../buddypress/groups/single/forum/edit.php:87
 msgid "This topic does not exist."
@@ -1558,9 +1534,8 @@ msgid "There are no posts for this topic."
 msgstr "没有帖子这个话题。"
 
 #: ../buddypress/groups/single/forum/topic.php:134
-#, fuzzy
 msgid "You will auto join this group when you reply to this topic."
-msgstr "您无法回复此主题。"
+msgstr "您将自动加入该群时，你回答这个问题。"
 
 #: ../buddypress/groups/single/forum/topic.php:139
 msgid "Add a reply:"
@@ -1575,9 +1550,8 @@ msgid "Group Admins"
 msgstr ""
 
 #: ../buddypress/groups/single/group-header.php:20
-#, fuzzy
 msgid "Group Mods"
-msgstr "新群组"
+msgstr "组MODS的"
 
 #: ../buddypress/groups/single/request-membership.php:4
 #, php-format
@@ -1632,20 +1606,19 @@ msgid "Activation Key:"
 msgstr "激活码"
 
 #: ../buddypress/members/index-activate.php:13
-#, fuzzy
 msgid ""
 "Your account was activated successfully. Your account details have been sent "
 "to you in a separate email."
-msgstr "您的帐户已成功激活。在一个单独的电子邮件帐户信息已经发送给您。"
+msgstr "您的帐户已成功激活。在一个单独的电子邮件帐户信息已经发送给您。 "
 
 #: ../buddypress/members/index-activate.php:15
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "Your account was activated successfully. You can now <a href=\"%s\">log in</"
 "a> with the username and password you provided when you signed up."
 msgstr ""
 "您的账户已成功激活.现在，您可以<a href=\"%s\">登录</a>的用户名和你注册时您所"
-"提供的密码。"
+"提供的密码。 "
 
 #: ../buddypress/members/index-activate.php:25
 msgid "Activate"
@@ -1880,9 +1853,8 @@ msgstr ""
 
 #: ../buddypress/members/register.php:80
 #: ../buddypress/members/single/profile/edit.php:33
-#, fuzzy
 msgid "Who can see this field?"
-msgstr "您不能编辑此回复。"
+msgstr "谁可以看到这个领域？"
 
 #: ../buddypress/members/register.php:85
 #: ../buddypress/members/single/profile/edit.php:38
@@ -1894,9 +1866,8 @@ msgid "You have no pending friendship requests."
 msgstr "您没有待处理的友谊请求。"
 
 #: ../buddypress/members/single/groups/invites.php:37
-#, fuzzy
 msgid "You have no outstanding group invites."
-msgstr "您没有未读通知。"
+msgstr "你有没有优秀团邀请。"
 
 #: ../buddypress/members/single/index-component-profile.php:30
 msgid "Change Picture"
@@ -1970,9 +1941,8 @@ msgid "Suggested"
 msgstr "建议"
 
 #: ../buddypress/members/single/member-reviews.php:64
-#, fuzzy
 msgid "Sorry, there was no review found."
-msgstr "很抱歉，没有找到活动。"
+msgstr "对不起，没有审查发现。"
 
 #: ../buddypress/members/single/messages/compose.php:5
 msgid "Send To (Username or Friend's Name)"
@@ -2012,9 +1982,8 @@ msgid "Sorry, no messages were found."
 msgstr "对不起，没有找到相关的信息。"
 
 #: ../buddypress/members/single/messages/notices-loop.php:36
-#, fuzzy
 msgid "Sent:"
-msgstr "内容："
+msgstr "发送时间："
 
 #: ../buddypress/members/single/messages/notices-loop.php:54
 msgid "Sorry, no notices were found."
@@ -2050,9 +2019,8 @@ msgid "You have no notifications."
 msgstr "你有没有通知。"
 
 #: ../buddypress/members/single/notifications/feedback-no-notifications.php:23
-#, fuzzy
 msgid "This member has no notifications."
-msgstr "您没有未读通知。"
+msgstr "这名成员没有通知。"
 
 #: ../buddypress/members/single/notifications/notifications-loop.php:6
 msgid "Date Received"
@@ -2162,9 +2130,8 @@ msgid "Account Email"
 msgstr "电子邮件帐户"
 
 #: ../buddypress/members/single/settings/general.php:16
-#, fuzzy
 msgid "Change Password <span>(leave blank for no change)</span>"
-msgstr "当前密码 <span>（需要更新电子邮件或更改当前密码）</span>"
+msgstr "更改密码 <span>（如果不写，没有变化）</span>"
 
 #: ../buddypress/members/single/settings/general.php:18
 msgid "Repeat New Password"
@@ -2267,14 +2234,12 @@ msgid " 1st half in:"
 msgstr "在上半年："
 
 #: ../np_calender/calender.php:60
-#, fuzzy
 msgid "Language I am learning"
 msgstr "语言我学习"
 
 #: ../np_calender/calender.php:63
-#, fuzzy
-msgid "My native language"
-msgstr "我的母语"
+msgid "My native language "
+msgstr "我的母语 "
 
 #: ../np_calender/calender.php:69
 msgid "Schedule"
