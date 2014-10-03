@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: knowtion\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bbpress\n"
 "POT-Creation-Date: 2014-10-02 22:49+0530\n"
-"PO-Revision-Date: 2014-10-02 22:52+0530\n"
+"PO-Revision-Date: 2014-10-04 00:49+0530\n"
 "Last-Translator: \n"
 "Language-Team: knowtion <knowtion@gmail.com>\n"
 "Language: zh\n"
@@ -55,9 +55,8 @@ msgid "Topics"
 msgstr "主题"
 
 #: ../bbpress/best-conversation-starter.php:75 ../bbpress/loop-forums.php:99
-#, fuzzy
 msgid "No Best Conversation Starter were found here!"
-msgstr "没有大多数贡献者找到了！"
+msgstr "没有最好话匣子都在这里找到！"
 
 #: ../bbpress/content-single-topic-lead.php:18
 #: ../bbpress/content-single-topic-lead.php:90
@@ -361,14 +360,12 @@ msgid "Merge with this topic:"
 msgstr ""
 
 #: ../bbpress/form-topic-merge.php:56
-#, fuzzy
 msgid "There are no other topics in this forum to merge with."
-msgstr "没有帖子这个话题。"
+msgstr "有在这个论坛没有其他话题与合并。"
 
 #: ../bbpress/form-topic-merge.php:64 ../bbpress/form-topic-split.php:68
-#, fuzzy
 msgid "Topic Extras"
-msgstr "主题标签："
+msgstr "主题额外"
 
 #: ../bbpress/form-topic-merge.php:71
 msgid "Merge topic subscribers"
@@ -379,9 +376,8 @@ msgid "Merge topic favoriters"
 msgstr ""
 
 #: ../bbpress/form-topic-merge.php:81
-#, fuzzy
 msgid "Merge topic tags"
-msgstr "主题标签："
+msgstr "合并的话题标签"
 
 #: ../bbpress/form-topic-merge.php:106 ../bbpress/form-topic-split.php:110
 #, fuzzy
@@ -645,18 +641,16 @@ msgid "User Role"
 msgstr "用户角色"
 
 #: ../bbpress/form-user-edit.php:153
-#, fuzzy
 msgid "Network Role"
-msgstr "用户角色"
+msgstr "网络的作用"
 
 #: ../bbpress/form-user-edit.php:156
 msgid "Grant this user super admin privileges for the Network."
 msgstr ""
 
 #: ../bbpress/form-user-edit.php:173
-#, fuzzy
 msgid "Save Changes"
-msgstr "更改"
+msgstr "保存更改"
 
 #: ../bbpress/form-user-edit.php:178
 msgid "Update Profile"
@@ -844,18 +838,16 @@ msgid "REPLY"
 msgstr "回复"
 
 #: ../bbpress/page-topics-no-replies.php:51
-#, fuzzy
 msgid " No Unanswered topics were found here!."
-msgstr "烦人！任何话题都在这里找到！"
+msgstr "没有尚未回复的主题都是在这里找到！"
 
 #: ../bbpress/top-contributors.php:31 ../sidebar-forums.php:35
 msgid "TOP CONTRIBUTORS"
 msgstr "杰出贡献者"
 
 #: ../bbpress/top-contributors.php:79 ../sidebar-forums.php:52
-#, fuzzy
 msgid "No Top Contributer were found here!"
-msgstr "没有大多数贡献者找到了！"
+msgstr "无顶贡献者都在这里找到！"
 
 #: ../bbpress/user-details.php:29 ../bbpress/user-profile.php:15
 msgid "Profile"
@@ -892,9 +884,8 @@ msgid "You currently have no favorite topics."
 msgstr "您尚未创建任何主题。"
 
 #: ../bbpress/user-favorites.php:28
-#, fuzzy
 msgid "This user has no favorite topics."
-msgstr "该用户还没有创建任何主题。"
+msgstr "该用户没有最喜爱的主题。"
 
 #: ../bbpress/user-profile.php:24
 #, fuzzy, php-format
@@ -947,9 +938,8 @@ msgid "You are not currently subscribed to any topics."
 msgstr "您目前没有订阅任何论坛。"
 
 #: ../bbpress/user-subscriptions.php:47
-#, fuzzy
 msgid "This user is not currently subscribed to any topics."
-msgstr "该用户还没有回答任何主题。"
+msgstr "此用户目前没有订阅任何主题。"
 
 #: ../bbpress/user-topics-created.php:15
 msgid "Forum Topics Started"
@@ -1156,9 +1146,9 @@ msgid "Site registration is currently disabled"
 msgstr ""
 
 #: ../buddypress/blogs/index.php:16
-#, fuzzy, php-format
+#, php-format
 msgid "All Sites <span>%s</span>"
-msgstr "所有主题 <span>%s</span>"
+msgstr "所有网站 <span>%s</span>"
 
 #: ../buddypress/blogs/index.php:20
 #, fuzzy, php-format
@@ -1212,9 +1202,9 @@ msgstr "通过启动 %1$s"
 
 #. translators: "started by [poster] in [forum]"
 #: ../buddypress/forums/forums-loop.php:72
-#, fuzzy, php-format
+#, php-format
 msgid "in %1$s"
-msgstr "方式：%1$s"
+msgstr "在：%1$s"
 
 #: ../buddypress/forums/forums-loop.php:122
 msgid "Sorry, there were no forum topics found."
@@ -1261,9 +1251,8 @@ msgid "Tags (comma separated):"
 msgstr "标签（以逗号分隔） ："
 
 #: ../buddypress/forums/index.php:95
-#, fuzzy
 msgid "Post In Group Forum:"
-msgstr "在小组论坛"
+msgstr "邮政集团论坛："
 
 #. translators: no option picked in select box
 #: ../buddypress/forums/index.php:98
@@ -1395,9 +1384,8 @@ msgid "To skip the avatar upload process, hit the \"Next Step\" button."
 msgstr ""
 
 #: ../buddypress/groups/create.php:157
-#, fuzzy
 msgid "Crop Group Avatar"
-msgstr "作物头像"
+msgstr "作物组阿凡达"
 
 #: ../buddypress/groups/create.php:204
 #: ../buddypress/groups/single/invites-loop.php:79
@@ -1427,9 +1415,9 @@ msgid "There were no groups found."
 msgstr "很抱歉，没有发现帖子。"
 
 #: ../buddypress/groups/index.php:19
-#, fuzzy, php-format
+#, php-format
 msgid "All Groups <span>%s</span>"
-msgstr "所有主题 <span>%s</span>"
+msgstr "所有组 <span>%s</span>"
 
 #: ../buddypress/groups/index.php:40
 #: ../buddypress/members/single/groups.php:23
@@ -1446,11 +1434,10 @@ msgid "Notify group members of these changes via email"
 msgstr ""
 
 #: ../buddypress/groups/single/admin.php:137
-#, fuzzy
 msgid ""
 "If you'd like to remove the existing avatar but not upload a new one, please "
 "use the delete avatar button."
-msgstr "如果你想删除目前的化身，但不能上传一个新的，请使用删除头像按钮。"
+msgstr "如果你想删除现有的化身，但不能上传一个新的，请使用删除头像按钮。"
 
 #: ../buddypress/groups/single/admin.php:139
 msgid "Delete Avatar"
@@ -1912,9 +1899,8 @@ msgid "You have no outstanding group invites."
 msgstr "您没有未读通知。"
 
 #: ../buddypress/members/single/index-component-profile.php:30
-#, fuzzy
 msgid "Change Picture"
-msgstr "修改头像"
+msgstr "更改图片"
 
 #: ../buddypress/members/single/index-component-settings.php:17
 #: ../header.php:142
@@ -1931,9 +1917,8 @@ msgid "Notification"
 msgstr "通知"
 
 #: ../buddypress/members/single/index-component-settings.php:25
-#, fuzzy
 msgid "Delete Account"
-msgstr "创建一个帐户"
+msgstr "删除帐户"
 
 #: ../buddypress/members/single/member-details.php:113
 msgid "Time"
@@ -1994,9 +1979,8 @@ msgid "Send To (Username or Friend's Name)"
 msgstr "发送到（用户名或朋友的名字）"
 
 #: ../buddypress/members/single/messages/compose.php:15
-#, fuzzy
 msgid "This is a notice to all users."
-msgstr "该用户还没有回答任何主题。"
+msgstr "这是通知所有用户。"
 
 #: ../buddypress/members/single/messages/compose.php:18
 msgid "Subject"
@@ -2058,14 +2042,12 @@ msgid "You have no unread notifications."
 msgstr "您没有未读通知。"
 
 #: ../buddypress/members/single/notifications/feedback-no-notifications.php:11
-#, fuzzy
 msgid "This member has no unread notifications."
-msgstr "您没有未读通知。"
+msgstr "这件有没有未读通知。"
 
 #: ../buddypress/members/single/notifications/feedback-no-notifications.php:19
-#, fuzzy
 msgid "You have no notifications."
-msgstr "您没有未读通知。"
+msgstr "你有没有通知。"
 
 #: ../buddypress/members/single/notifications/feedback-no-notifications.php:23
 #, fuzzy
@@ -2166,9 +2148,8 @@ msgid "I understand the consequences."
 msgstr ""
 
 #: ../buddypress/members/single/settings/general.php:1
-#, fuzzy
 msgid "General Account Settings"
-msgstr "帐户明细"
+msgstr "一般帐户设定"
 
 #: ../buddypress/members/single/settings/general.php:8
 msgid ""
@@ -2177,9 +2158,8 @@ msgid ""
 msgstr "当前密码 <span>（需要更新电子邮件或更改当前密码）</span>"
 
 #: ../buddypress/members/single/settings/general.php:13
-#, fuzzy
 msgid "Account Email"
-msgstr "帐户明细"
+msgstr "电子邮件帐户"
 
 #: ../buddypress/members/single/settings/general.php:16
 #, fuzzy
@@ -2191,9 +2171,8 @@ msgid "Repeat New Password"
 msgstr "重复新密码"
 
 #: ../buddypress/members/single/settings/notifications.php:1
-#, fuzzy
 msgid "Notification Settings"
-msgstr "通知"
+msgstr "通知设置"
 
 #: ../buddypress/members/single/settings/notifications.php:6
 msgid "Send an email notice when:"
