@@ -37,13 +37,13 @@ $current_locale=get_locale();
                             <?php
                                 if($current_locale=="en_us" || $current_locale=="en"){
                             ?>
-                                <span class="header-lang-selected">EN</span>    
+                            <span class="header-lang-selected" title="English">EN</span>    
 
                             <?php 
                                 }
                                 else { 
                             ?>
-                                <span class="header-lang-text" onclick="changecurrentlocale('en');">EN</span>
+                                <span class="header-lang-text" title="English" onclick="changecurrentlocale('en');">EN</span>
                             <?php 
                                 }
                             ?>
@@ -51,13 +51,13 @@ $current_locale=get_locale();
                             <?php
                                 if($current_locale=="zh"){
                             ?>
-                                <span class="header-lang-selected">ZH</span>
+                                <span class="header-lang-selected" title="Chinese">ZH</span>
 
                             <?php 
                                 }
                                 else { 
                             ?>
-                                <span class="header-lang-text" onclick="changecurrentlocale('zh');">ZH</span>
+                                <span class="header-lang-text" title="Chinese" onclick="changecurrentlocale('zh');">ZH</span>
                             <?php 
                                 }
                             ?>
