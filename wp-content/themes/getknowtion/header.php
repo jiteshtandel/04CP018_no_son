@@ -42,6 +42,7 @@
     //$_SESSION['profileid'] = $profileid;
     $_SESSION['token'] = $token;
     // video call code ends
+    $current_locale=get_locale();
 ?>
 <!DOCTYPE html>
 <html style="margin: 0px !important;" xmlns="http://www.w3.org/1999/xhtml">
@@ -148,10 +149,34 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="header-lang-text pull-left">
-                                            <span style="cursor: pointer;">EN</span>
+                                        <div class="header-lang-main pull-right">
+                                        <?php
+                                            if($current_locale=="en_us" || $current_locale=="en"){
+                                        ?>
+                                            <span class="header-lang-selected">EN</span>    
+                                            
+                                        <?php 
+                                            }
+                                            else { 
+                                        ?>
+                                            <span class="header-lang-text" onclick="changecurrentlocale('en');">EN</span>
+                                        <?php 
+                                            }
+                                        ?>
                                             <span>|</span>
-                                            <span style="cursor: pointer;">ZH</span>
+                                        <?php
+                                            if($current_locale=="zh"){
+                                        ?>
+                                            <span class="header-lang-selected">ZH</span>
+                                            
+                                        <?php 
+                                            }
+                                            else { 
+                                        ?>
+                                            <span class="header-lang-text" onclick="changecurrentlocale('zh');">ZH</span>
+                                        <?php 
+                                            }
+                                        ?>
                                         </div>
                                     </div>
                                 </td>

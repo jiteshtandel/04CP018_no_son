@@ -82,9 +82,15 @@ div#workingarea{width: 960px;margin: 0px;text-align: left;}
 	background-image:url(../images/header-bg.jpg);
 	background-repeat:repeat-x;	
 }
-.header-lang-text{
-    margin:12px 0px 0px 50px;
+.header-lang-main{
+    margin:12px 40px 0px 0px;
     color:#fff;
+}
+.header-lang-text{
+    cursor: pointer;
+}
+.header-lang-selected{
+    color:#ACD158;
 }
 #container{
 	padding: 30px 25px 25px 25px;

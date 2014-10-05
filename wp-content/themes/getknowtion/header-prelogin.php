@@ -6,6 +6,7 @@
  */
 /* Disable BP CHAT ON ALL PRELOGIN PAGE to hide error message*/
 add_filter("bpchat_is_disabled","my_custom_chat_disable");
+$current_locale=get_locale();
 ?>
 <!DOCTYPE html>
 <html style="margin: 0px !important;" xmlns="http://www.w3.org/1999/xhtml">
@@ -31,7 +32,37 @@ add_filter("bpchat_is_disabled","my_custom_chat_disable");
             <tr>
                 <td align="left" valign="middle" class="loginheader">
                     <header>
-                          <a href="<?php echo home_url();?>"><img src="<?php echo THEME_DIR; ?>/images/logo.png" border="0" alt="Knowtion" /></a>
+                        <a href="<?php echo home_url();?>"><img src="<?php echo THEME_DIR; ?>/images/logo.png" border="0" alt="Knowtion" /></a>
+                        <div class="header-lang-main pull-right">
+                            <?php
+                                if($current_locale=="en_us" || $current_locale=="en"){
+                            ?>
+                                <span class="header-lang-selected">EN</span>    
+
+                            <?php 
+                                }
+                                else { 
+                            ?>
+                                <span class="header-lang-text" onclick="changecurrentlocale('en');">EN</span>
+                            <?php 
+                                }
+                            ?>
+                                <span>|</span>
+                            <?php
+                                if($current_locale=="zh"){
+                            ?>
+                                <span class="header-lang-selected">ZH</span>
+
+                            <?php 
+                                }
+                                else { 
+                            ?>
+                                <span class="header-lang-text" onclick="changecurrentlocale('zh');">ZH</span>
+                            <?php 
+                                }
+                            ?>
+                            </div>
+                        </div>
                     </header>
                 </td>
             </tr>
