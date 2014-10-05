@@ -89,7 +89,7 @@
                                         <div class="logo">
                                             <a href="<?php echo $homepagepath;?>"><img alt="knowtion" title="knowtion" src="<?php echo THEME_DIR; ?>/images/logo.png" width="140" height="40"></a>
                                         </div>
-                                         <div class="search">
+                                        <div class="search">
                                             <form method="post" id="searchform" method="get" action="<?php echo site_url(); ?>/members/">
                                                 <input type="hidden" name="actionname" value="searchmembers">
                                                 <input type="hidden" id="searchsubmit" value="Search" />
@@ -100,62 +100,59 @@
                                                   </tr>
                                               </table>
                                               </form>
-                                          </div>
-                                          <div class="menu">
-                                                <div class="dropdown">
-                                                    <div class="user">
-                                                        <div class="header-account-text">
-                                                            <?php _e( 'My Account', 'knowtion' ); ?>
-                                                            <?php if($totalnotifications>0){?>
-                                                                <div class="notification-count-main"><?php echo $totalnotifications;?></div>
-                                                            <?php }?>
-                                                        </div>
-                                                    </div>
-                                                    <div class="headersubmneu">
-                                                        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
-                                                            <tr>
-                                                                <td class="popover-border-bottom"><!-- --></td>
-                                                                <td class="popover-top-arrow"><!-- --></td>
-                                                                <td class="popover-border-bottom" style="width: 12px;"><!-- --></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td colspan="3" class="popover-border-bottom popover-border-right popover-border-left popover-bg">
-                                                                    <ul class="root">
-                                                                    <li><a href="<?php echo $homepagepath . 'profile';?>"><?php _e( 'My Account', 'knowtion' ); ?></a></li>
-                                                                        <li>
-                                                                            <a href="<?php echo $homepagepath . 'messages';?>">
-                                                                                <?php _e( 'Messages', 'knowtion' ); ?>
-                                                                                <?php if($totalunreadmessages>0){?>
-                                                                                    <div class="notification-count-main"><?php echo $totalunreadmessages; ?></div>
-                                                                                <?php }?>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="<?php echo $homepagepath . 'friends';?>">
-                                                                                <?php _e( 'Friends', 'knowtion' ); ?>
-                                                                                <?php if($totalfriendsrequest>0){?>
-                                                                                    <div class="notification-count-main"><?php echo $totalfriendsrequest; ?></div>
-                                                                                <?php }?>
-                                                                                
-                                                                            </a>
-                                                                        </li>
-                                                                        <li><a href="<?php echo $homepagepath . 'settings';?>"><?php _e( 'Settings', 'knowtion' ); ?></a></li>
-                                                                        <li><a href="javascript:void(0);" onclick="MemberLogout('<?php echo wp_logout_url(HOME_URL); ?>');"><?php _e( 'Sign Out', 'knowtion' ); ?></a></li>
-                                                                    </ul>                                                    
-                                                                </td>
-                                                            </tr>
-                                                        </table> 
+                                        </div>
+                                        <div class="menu">
+                                            <div class="dropdown">
+                                                <div class="user">
+                                                    <div class="header-account-text">
+                                                        <?php _e( 'My Account', 'knowtion' ); ?>
+                                                        <?php if($totalnotifications>0){?>
+                                                            <div class="notification-count-main"><?php echo $totalnotifications;?></div>
+                                                        <?php }?>
                                                     </div>
                                                 </div>
-                                                <!--<a href="<?php echo $homepagepath . 'messages';?>" title="Messages">
-                                                    <div class="message">
-                                                    <?php if($totalunreadmessages>0){?>
-                                                        <span class="message-unread-count"><?php echo messages_get_unread_count(); ?></span>
-                                                    <?php }?>
-                                                    </div>
-                                                </a>
-                                                <a href="<?php echo $homepagepath . 'settings';?>" title="Messages"><div class="Settings" title="Settings"></div></a>-->
-                                          </div>      
+                                                <div class="headersubmneu">
+                                                    <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+                                                        <tr>
+                                                            <td class="popover-border-bottom"><!-- --></td>
+                                                            <td class="popover-top-arrow"><!-- --></td>
+                                                            <td class="popover-border-bottom" style="width: 12px;"><!-- --></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3" class="popover-border-bottom popover-border-right popover-border-left popover-bg">
+                                                                <ul class="root">
+                                                                    <li><a href="<?php echo $homepagepath . 'profile';?>"><?php _e( 'My Account', 'knowtion' ); ?></a></li>
+                                                                    <li>
+                                                                        <a href="<?php echo $homepagepath . 'messages';?>">
+                                                                            <?php _e( 'Messages', 'knowtion' ); ?>
+                                                                            <?php if($totalunreadmessages>0){?>
+                                                                                <div class="notification-count-main"><?php echo $totalunreadmessages; ?></div>
+                                                                            <?php }?>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="<?php echo $homepagepath . 'friends';?>">
+                                                                            <?php _e( 'Friends', 'knowtion' ); ?>
+                                                                            <?php if($totalfriendsrequest>0){?>
+                                                                                <div class="notification-count-main"><?php echo $totalfriendsrequest; ?></div>
+                                                                            <?php }?>
+
+                                                                        </a>
+                                                                    </li>
+                                                                    <li><a href="<?php echo $homepagepath . 'settings';?>"><?php _e( 'Settings', 'knowtion' ); ?></a></li>
+                                                                    <li><a href="javascript:void(0);" onclick="MemberLogout('<?php echo wp_logout_url(HOME_URL); ?>');"><?php _e( 'Sign Out', 'knowtion' ); ?></a></li>
+                                                                </ul>                                                    
+                                                            </td>
+                                                        </tr>
+                                                    </table> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header-lang-text pull-left">
+                                            <span style="cursor: pointer;">EN</span>
+                                            <span>|</span>
+                                            <span style="cursor: pointer;">ZH</span>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
