@@ -1055,6 +1055,7 @@ input[type=reset]{
 #buddypress table.notification-settings th.title,
 #buddypress table.profile-settings th.title {
 	width: 80%;
+        text-align: left;
 }
 #buddypress table.notification-settings .yes,
 #buddypress table.notification-settings .no {

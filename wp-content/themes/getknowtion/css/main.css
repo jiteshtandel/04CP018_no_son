@@ -10,7 +10,10 @@
 */
 	
 /* Common */
-html{ margin-top:0px !important;}
+html{ 
+    margin-top:0px !important;
+    height: 100%;
+}
 @font-face {
     font-family: 'open_sansregular';
     src: url('../font/open-sans/OpenSans-Regular-webfont.eot');
@@ -39,6 +42,7 @@ body {
 	margin:0px;
 	padding:0px;
 	background-color:#676767;
+        height: 100%;
 	
 }
 *{
@@ -72,7 +76,12 @@ select{
     border:1px solid #ccc;
 }
 
-div#workingarea{width: 960px;margin: 0px;text-align: left;}
+div#workingarea{
+    width: 960px;
+    height: 100%;
+    margin: 0px;
+    text-align: left;
+}
 
 #header{
 	width: 960px;
@@ -807,6 +816,7 @@ body #loginform input#user_login,body #loginform input#user_pass{
 }
 .maincontainer{
     width:960px;
+    height: 100%;
 }
 
 .loginheader{
@@ -1203,6 +1213,6 @@ a.deactive-language{
 	color:#0B0;
 	cursor:pointer;
 }
-#controller_2_MX40NDk4MzAxMn5-MTQxMTU4MDU3NzAyNX5jalZyd3kwM0pMV0ZqS3VTMXJteHpoMDV-fg{
+#controller_1_MX40NDk4MzAxMn5-U2F0IFNlcCAxMyAwMTo0ODoxNiBQRFQgMjAxNH4wLjk0MjA5NH5-{
     display:block;
 }

@@ -27,7 +27,7 @@ $current_locale=get_locale();
 <?php wp_head();?>
 </head>
 <body <?php body_class(); ?>>
-    <div align="center" style="width:100%;">
+    <div align="center" style="height: 100%;width:100%;">
         <table class="maincontainer" cellpadding="0" cellspacing="0" border="0">
             <tr>
                 <td align="left" valign="middle" class="loginheader">

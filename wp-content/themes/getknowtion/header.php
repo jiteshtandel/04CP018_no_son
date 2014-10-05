@@ -79,11 +79,11 @@
 <script src="<?php echo THEME_DIR."/js/pages/opentok/common.js"; ?>" type="text/javascript" charset="utf-8"></script>
 </head>
     <body <?php body_class(); ?>>
-    	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+    	<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
         	<tr>
-            	<td valign="top" align="center" style="width:960px;">
+            	<td valign="top" align="center" style="width:960px;height: 100%;">
             		<div id="workingarea">
-                            <table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+                            <table cellpadding="0" cellspacing="0" border="0" style="width:100%;height: 100%;">
                             <tr>
                                 <td valign="top" align="left" id="header">
                                     <div class="top">
