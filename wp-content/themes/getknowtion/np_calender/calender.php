@@ -92,6 +92,12 @@
         <div class="clear"></div>
     </div>
     <!-- Timepicker div ends -->
+    <!-- 
+
+        <?php print_r($dates); ?>
+
+     -->
+    
 </div>
 <script type="text/javascript">
     var templateDir = "<?php bloginfo('template_directory'); ?>";
@@ -100,7 +106,8 @@
             $str = 'var dates = [';
             if(is_array($dates)){
                 foreach($dates as $dt){
-                    $str .= 'new Date('. date('Y, m, d', strtotime($dt->schedule_date .' -1 month')) .'),';
+                    //$str .= 'new Date('. date('Y, m, d', strtotime($dt->schedule_date .' -1 month')) .'),';
+                    $str .= 'new Date("'. date('Y/n/j', strtotime($dt->schedule_date)) .'"),';
                 }
                 $str = rtrim($str, ',');
             }
@@ -112,7 +119,7 @@
             $str = 'var m_dates = [';
             if(is_array($mdates)){
                 foreach($mdates as $dt){
-                    $str .= 'new Date('. date('Y, m, d', strtotime($dt->schedule_date .' -1 month')) .'),';
+                    $str .= 'new Date("'. date('Y/n/j', strtotime($dt->schedule_date)) .'"),';
                 }
                 $str = rtrim($str, ',');
             }
